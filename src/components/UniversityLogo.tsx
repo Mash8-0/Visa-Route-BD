@@ -1,3 +1,5 @@
+import { forwardRef } from "react";
+
 interface UniversityLogoProps {
   logoUrl?: string | null;
   shortName: string;
@@ -13,33 +15,31 @@ const sizeClasses = {
   xl: "w-24 h-24 md:w-32 md:h-32 text-2xl md:text-4xl",
 };
 
-const UniversityLogo = ({
-  logoUrl,
-  shortName,
-  color,
-  size = "md",
-  className = "",
-}: UniversityLogoProps) => {
-  const baseClasses = `rounded-xl flex items-center justify-center shadow-md ${sizeClasses[size]} ${className}`;
+const UniversityLogo = forwardRef<HTMLDivElement, UniversityLogoProps>(
+  ({ logoUrl, shortName, color, size = "md", className = "" }, ref) => {
+    const baseClasses = `rounded-xl flex items-center justify-center shadow-md ${sizeClasses[size]} ${className}`;
 
-  if (logoUrl) {
+    if (logoUrl) {
+      return (
+        <div ref={ref} className={`${baseClasses} bg-background border border-border overflow-hidden p-1`}>
+          <img
+            src={logoUrl}
+            alt={`${shortName} logo`}
+            className="w-full h-full object-contain"
+            loading="lazy"
+          />
+        </div>
+      );
+    }
+
     return (
-      <div className={`${baseClasses} bg-background border border-border overflow-hidden p-1`}>
-        <img
-          src={logoUrl}
-          alt={`${shortName} logo`}
-          className="w-full h-full object-contain"
-          loading="lazy"
-        />
+      <div ref={ref} className={`${baseClasses} bg-gradient-to-br ${color}`}>
+        <span className="text-white font-bold drop-shadow-md">{shortName}</span>
       </div>
     );
   }
+);
 
-  return (
-    <div className={`${baseClasses} bg-gradient-to-br ${color}`}>
-      <span className="text-white font-bold drop-shadow-md">{shortName}</span>
-    </div>
-  );
-};
+UniversityLogo.displayName = "UniversityLogo";
 
 export default UniversityLogo;
