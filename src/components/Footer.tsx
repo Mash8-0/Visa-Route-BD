@@ -1,9 +1,8 @@
-import { forwardRef } from "react";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
-const Footer = forwardRef<HTMLElement>((_, ref) => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
@@ -28,7 +27,7 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
   ];
 
   return (
-    <footer ref={ref} id="about" className="bg-foreground text-background py-16">
+    <footer id="about" className="bg-foreground text-background py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
@@ -44,15 +43,18 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
               Your trusted partner for visa and education consultancy. Making global education accessible since 2015.
             </p>
             <div className="flex gap-4">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
+              {socialLinks.map((social, index) => {
+                const IconComponent = social.icon;
+                return (
+                  <a
+                    key={index}
+                    href={social.href}
+                    className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
+                  >
+                    <IconComponent className="w-5 h-5" />
+                  </a>
+                );
+              })}
             </div>
           </div>
 
@@ -116,8 +118,6 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
       </div>
     </footer>
   );
-});
-
-Footer.displayName = "Footer";
+};
 
 export default Footer;
