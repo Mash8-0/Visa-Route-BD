@@ -33,13 +33,13 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <Link to="/" className="group">
+          <Link to="/" className="group flex-shrink-0">
             <img 
               src={logo} 
               alt="VisaRoute BD" 
-              className="h-14 md:h-16 object-contain transition-transform group-hover:scale-105"
+              className="h-16 md:h-20 object-contain transition-transform group-hover:scale-105"
             />
           </Link>
 
@@ -76,7 +76,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-20 left-0 right-0 bg-background border-b border-border animate-slide-in-bottom">
+          <div className="lg:hidden absolute top-24 left-0 right-0 bg-background border-b border-border animate-slide-in-bottom">
             <div className="container px-4 py-6 flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link
