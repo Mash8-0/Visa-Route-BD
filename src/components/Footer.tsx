@@ -1,14 +1,16 @@
+import { forwardRef } from "react";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
-const Footer = () => {
+const Footer = forwardRef<HTMLElement>((_, ref) => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: "Universities", href: "#universities" },
-    { name: "Services", href: "#services" },
-    { name: "Processing", href: "#processing" },
-    { name: "Success Story", href: "#success" },
+    { name: "Universities", href: "/universities" },
+    { name: "Services", href: "/services" },
+    { name: "Processing", href: "/processing" },
+    { name: "Success Story", href: "/success-story" },
   ];
 
   const services = [
@@ -26,19 +28,18 @@ const Footer = () => {
   ];
 
   return (
-    <footer id="about" className="bg-foreground text-background py-16">
+    <footer ref={ref} id="about" className="bg-foreground text-background py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-6">
-            <a href="#" className="flex items-center gap-2">
+            <Link to="/" className="inline-block">
               <img 
                 src={logo} 
                 alt="VisaRoute BD Logo" 
-                className="w-10 h-10 object-contain"
+                className="h-12 object-contain"
               />
-              <span className="font-display text-xl font-bold">VisaRoute BD</span>
-            </a>
+            </Link>
             <p className="text-background/70 leading-relaxed">
               Your trusted partner for visa and education consultancy. Making global education accessible since 2015.
             </p>
@@ -61,12 +62,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-background/70 hover:text-primary transition-colors"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -101,9 +102,9 @@ const Footer = () => {
             © {currentYear} VisaRoute BD. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-background/60">
-            <a href="/admin/auth" className="hover:text-background transition-colors">
+            <Link to="/admin/auth" className="hover:text-background transition-colors">
               Admin
-            </a>
+            </Link>
             <a href="#" className="hover:text-background transition-colors">
               Privacy Policy
             </a>
@@ -115,6 +116,8 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
+
+Footer.displayName = "Footer";
 
 export default Footer;
