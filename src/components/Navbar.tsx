@@ -39,7 +39,7 @@ const Navbar = () => {
             <img 
               src={logo} 
               alt="VisaRoute BD" 
-              className="h-12 object-contain transition-transform group-hover:scale-105"
+              className="h-14 md:h-16 object-contain transition-transform group-hover:scale-105"
             />
           </Link>
 
