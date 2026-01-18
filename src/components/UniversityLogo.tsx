@@ -24,7 +24,7 @@ const UniversityLogo = ({
 
   if (logoUrl) {
     return (
-      <div className={`${baseClasses} bg-background border border-border overflow-hidden p-1`}>
+      <div className={`${baseClasses} bg-white border border-gray-200 overflow-hidden p-2`}>
         <img
           src={logoUrl}
           alt={`${shortName} logo`}
