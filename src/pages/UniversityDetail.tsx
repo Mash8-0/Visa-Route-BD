@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, MapPin, Calendar, Globe, GraduationCap, Building, Star, Clock, BookOpen, Users, Loader2 } from "lucide-react";
+import { ArrowLeft, MapPin, Calendar, Globe, GraduationCap, Building, Star, Loader2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useUniversity, Program } from "@/hooks/useUniversities";
@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import UniversityLogo from "@/components/UniversityLogo";
+import ProgramAccordion from "@/components/ProgramAccordion";
 
 // Group programs by level
 const groupProgramsByLevel = (programs: Program[]) => {
@@ -210,43 +211,13 @@ const UniversityDetail = () => {
                       {Object.entries(groupedPrograms).map(([level, programs]) => (
                         <TabsContent key={level} value={level} className="mt-0">
                           <div className="grid gap-3 sm:gap-4">
-                            {programs.map((program, index) => (
-                              <div
-                                key={index}
-                                className="group relative overflow-hidden bg-muted/30 hover:bg-muted/60 rounded-xl p-4 sm:p-5 transition-all duration-300 border border-border/50 hover:border-border hover:shadow-md"
-                              >
-                                {/* Decorative gradient line */}
-                                <div className={`absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b ${getLevelColor(level)}`} />
-
-                                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4 pl-3">
-                                  <div className="flex-1">
-                                    <div className="flex items-start gap-2 sm:gap-3">
-                                      <div className={`p-1.5 sm:p-2 rounded-lg bg-gradient-to-br ${getLevelColor(level)} text-white shrink-0`}>
-                                        <BookOpen className="w-3 h-3 sm:w-4 sm:h-4" />
-                                      </div>
-                                      <div>
-                                        <h3 className="font-semibold text-foreground text-sm sm:text-lg group-hover:text-primary transition-colors">
-                                          {program.name}
-                                        </h3>
-                                        <p className="text-xs sm:text-sm text-muted-foreground mt-0.5 sm:mt-1 flex items-center gap-1">
-                                          <Users className="w-3 h-3" />
-                                          {program.faculty}
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div className="flex flex-wrap items-center gap-2 sm:justify-end pl-6 sm:pl-0">
-                                    <Badge className={`${getLevelBadgeClass(level)} border-0 text-xs`}>
-                                      {program.level}
-                                    </Badge>
-                                    <Badge variant="outline" className="flex items-center gap-1 text-xs">
-                                      <Clock className="w-3 h-3" />
-                                      {program.duration}
-                                    </Badge>
-                                  </div>
-                                </div>
-                              </div>
+                            {programs.map((program) => (
+                              <ProgramAccordion
+                                key={program.id}
+                                program={program}
+                                levelColor={getLevelColor(level)}
+                                levelBadgeClass={getLevelBadgeClass(level)}
+                              />
                             ))}
                           </div>
                         </TabsContent>
