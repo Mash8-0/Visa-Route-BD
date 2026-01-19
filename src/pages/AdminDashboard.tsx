@@ -71,6 +71,13 @@ interface ProgramForm {
   duration: string;
   level: "Foundation" | "Diploma" | "Bachelor" | "Master" | "PhD";
   faculty: string;
+  study_mode: string;
+  intakes: string;
+  career_opportunities: string;
+  emgs_fee: string;
+  registration_fee: string;
+  tuition_fee: string;
+  total_fees: string;
 }
 
 const initialUniversityForm: UniversityForm = {
@@ -95,6 +102,13 @@ const initialProgramForm: ProgramForm = {
   duration: "",
   level: "Bachelor",
   faculty: "",
+  study_mode: "Full-time",
+  intakes: "",
+  career_opportunities: "",
+  emgs_fee: "",
+  registration_fee: "",
+  tuition_fee: "",
+  total_fees: "",
 };
 
 const AdminDashboard = () => {
@@ -227,12 +241,22 @@ const AdminDashboard = () => {
   const handleSaveProgram = async () => {
     setIsSaving(true);
     try {
+      const intakesArray = programForm.intakes.split(",").map((i) => i.trim()).filter(Boolean);
+      const careerArray = programForm.career_opportunities.split(",").map((c) => c.trim()).filter(Boolean);
+
       const data = {
         university_id: programForm.university_id,
         name: programForm.name,
         duration: programForm.duration,
         level: programForm.level,
         faculty: programForm.faculty,
+        study_mode: programForm.study_mode || null,
+        intakes: intakesArray.length > 0 ? intakesArray : null,
+        career_opportunities: careerArray.length > 0 ? careerArray : null,
+        emgs_fee: programForm.emgs_fee ? parseFloat(programForm.emgs_fee) : null,
+        registration_fee: programForm.registration_fee ? parseFloat(programForm.registration_fee) : null,
+        tuition_fee: programForm.tuition_fee ? parseFloat(programForm.tuition_fee) : null,
+        total_fees: programForm.total_fees ? parseFloat(programForm.total_fees) : null,
       };
 
       if (isEditing && programForm.id) {
@@ -267,6 +291,13 @@ const AdminDashboard = () => {
       duration: prog.duration,
       level: prog.level,
       faculty: prog.faculty,
+      study_mode: prog.studyMode || "Full-time",
+      intakes: prog.intakes?.join(", ") || "",
+      career_opportunities: prog.careerOpportunities?.join(", ") || "",
+      emgs_fee: prog.emgsFee?.toString() || "",
+      registration_fee: prog.registrationFee?.toString() || "",
+      tuition_fee: prog.tuitionFee?.toString() || "",
+      total_fees: prog.totalFees?.toString() || "",
     });
     setIsEditing(true);
     setIsDialogOpen(true);
@@ -569,13 +600,90 @@ const AdminDashboard = () => {
                         />
                       </div>
                     </div>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <Label>Faculty</Label>
+                        <Input
+                          value={programForm.faculty}
+                          onChange={(e) => setProgramForm({ ...programForm, faculty: e.target.value })}
+                          placeholder="e.g., Faculty of Engineering"
+                        />
+                      </div>
+                      <div>
+                        <Label>Study Mode</Label>
+                        <Select
+                          value={programForm.study_mode}
+                          onValueChange={(v) => setProgramForm({ ...programForm, study_mode: v })}
+                        >
+                          <SelectTrigger>
+                            <SelectValue />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="Full-time">Full-time</SelectItem>
+                            <SelectItem value="Part-time">Part-time</SelectItem>
+                            <SelectItem value="Online">Online</SelectItem>
+                            <SelectItem value="Hybrid">Hybrid</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                    </div>
                     <div>
-                      <Label>Faculty</Label>
+                      <Label>Intakes (comma-separated)</Label>
                       <Input
-                        value={programForm.faculty}
-                        onChange={(e) => setProgramForm({ ...programForm, faculty: e.target.value })}
-                        placeholder="e.g., Faculty of Engineering"
+                        value={programForm.intakes}
+                        onChange={(e) => setProgramForm({ ...programForm, intakes: e.target.value })}
+                        placeholder="e.g., January, May, September"
                       />
+                    </div>
+                    <div>
+                      <Label>Career Opportunities (comma-separated)</Label>
+                      <Textarea
+                        value={programForm.career_opportunities}
+                        onChange={(e) => setProgramForm({ ...programForm, career_opportunities: e.target.value })}
+                        placeholder="e.g., Software Engineer, Data Scientist, Project Manager"
+                        rows={2}
+                      />
+                    </div>
+                    <div className="border-t pt-4">
+                      <h4 className="font-medium text-sm mb-3">Fee Structure (RM)</h4>
+                      <div className="grid grid-cols-2 gap-4">
+                        <div>
+                          <Label>EMGS Fee</Label>
+                          <Input
+                            type="number"
+                            value={programForm.emgs_fee}
+                            onChange={(e) => setProgramForm({ ...programForm, emgs_fee: e.target.value })}
+                            placeholder="e.g., 1860"
+                          />
+                        </div>
+                        <div>
+                          <Label>Registration Fee</Label>
+                          <Input
+                            type="number"
+                            value={programForm.registration_fee}
+                            onChange={(e) => setProgramForm({ ...programForm, registration_fee: e.target.value })}
+                            placeholder="e.g., 500"
+                          />
+                        </div>
+                        <div>
+                          <Label>Tuition Fee</Label>
+                          <Input
+                            type="number"
+                            value={programForm.tuition_fee}
+                            onChange={(e) => setProgramForm({ ...programForm, tuition_fee: e.target.value })}
+                            placeholder="e.g., 45000"
+                          />
+                        </div>
+                        <div>
+                          <Label>Total Fees</Label>
+                          <Input
+                            type="number"
+                            value={programForm.total_fees}
+                            onChange={(e) => setProgramForm({ ...programForm, total_fees: e.target.value })}
+                            placeholder="e.g., 47360"
+                          />
+                        </div>
+                      </div>
                     </div>
                     <Button onClick={handleSaveProgram} disabled={isSaving} className="w-full">
                       {isSaving ? <Loader2 className="w-4 h-4 animate-spin" /> : isEditing ? "Update" : "Add"} Program
