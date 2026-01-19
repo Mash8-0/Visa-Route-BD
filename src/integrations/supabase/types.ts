@@ -43,30 +43,51 @@ export type Database = {
       }
       programs: {
         Row: {
+          career_opportunities: string[] | null
           created_at: string
           duration: string
+          emgs_fee: number | null
           faculty: string
           id: string
+          intakes: string[] | null
           level: string
           name: string
+          registration_fee: number | null
+          study_mode: string | null
+          total_fees: number | null
+          tuition_fee: number | null
           university_id: string
         }
         Insert: {
+          career_opportunities?: string[] | null
           created_at?: string
           duration: string
+          emgs_fee?: number | null
           faculty: string
           id?: string
+          intakes?: string[] | null
           level: string
           name: string
+          registration_fee?: number | null
+          study_mode?: string | null
+          total_fees?: number | null
+          tuition_fee?: number | null
           university_id: string
         }
         Update: {
+          career_opportunities?: string[] | null
           created_at?: string
           duration?: string
+          emgs_fee?: number | null
           faculty?: string
           id?: string
+          intakes?: string[] | null
           level?: string
           name?: string
+          registration_fee?: number | null
+          study_mode?: string | null
+          total_fees?: number | null
+          tuition_fee?: number | null
           university_id?: string
         }
         Relationships: [
