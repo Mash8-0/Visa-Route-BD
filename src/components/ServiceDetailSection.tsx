@@ -152,10 +152,9 @@ const servicesData: ServiceDetail[] = [
 interface ServiceCardProps {
   service: ServiceDetail;
   index: number;
-  isReversed: boolean;
 }
 
-const ServiceCard = ({ service, index, isReversed }: ServiceCardProps) => {
+const ServiceCard = ({ service, index }: Omit<ServiceCardProps, 'isReversed'>) => {
   const Icon = service.icon;
 
   return (
@@ -163,28 +162,30 @@ const ServiceCard = ({ service, index, isReversed }: ServiceCardProps) => {
       id={service.title.toLowerCase().replace(/\s+/g, '-')} 
       className={`py-12 sm:py-16 lg:py-20 ${index % 2 === 0 ? 'bg-background' : 'bg-muted/30'}`}
     >
-      <div className="container mx-auto px-4">
-        <div className={`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 lg:gap-16 items-start`}>
-          {/* Left/Right Content */}
-          <div className="flex-1 w-full">
-            {/* Header */}
-            <div className="mb-6 sm:mb-8">
-              <div className={`inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gradient-to-r ${service.gradientFrom} ${service.gradientTo} mb-4`}>
-                <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center`}>
-                  <Icon className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-sm font-medium text-muted-foreground">{service.tagline}</span>
-              </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-foreground mb-4">
-                {service.title}
-              </h2>
-              <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
-                {service.description}
-              </p>
+      <div className="container mx-auto px-4 max-w-6xl">
+        {/* Centered Tagline Badge */}
+        <div className="flex justify-center mb-8">
+          <div className={`inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-r ${service.gradientFrom} ${service.gradientTo} border border-border/30 shadow-sm`}>
+            <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow-md`}>
+              <Icon className="w-5 h-5 text-white" />
             </div>
+            <span className="text-sm font-medium text-foreground">{service.tagline}</span>
+          </div>
+        </div>
+
+        {/* Two Column Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          {/* Left Box - Content */}
+          <div className="bg-card rounded-2xl p-6 sm:p-8 shadow-lg border border-border/50 h-full flex flex-col">
+            <h2 className="text-2xl sm:text-3xl font-display font-bold text-foreground mb-4">
+              {service.title}
+            </h2>
+            <p className="text-muted-foreground text-base leading-relaxed mb-6">
+              {service.description}
+            </p>
 
             {/* Features */}
-            <div className="mb-8">
+            <div className="flex-1">
               <h3 className="text-lg font-semibold text-foreground mb-4">What We Offer</h3>
               <div className="grid sm:grid-cols-2 gap-3">
                 {service.features.map((feature, idx) => (
@@ -192,40 +193,40 @@ const ServiceCard = ({ service, index, isReversed }: ServiceCardProps) => {
                     <div className={`w-5 h-5 rounded-full bg-gradient-to-br ${service.color} flex items-center justify-center flex-shrink-0 mt-0.5`}>
                       <Check className="w-3 h-3 text-white" />
                     </div>
-                    <span className="text-sm sm:text-base text-foreground/80">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* CTA Button */}
-            <Link to="/contact">
-              <Button className={`bg-gradient-to-r ${service.color} hover:opacity-90 text-white rounded-full px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg shadow-lg transition-all hover:shadow-xl hover:-translate-y-0.5`}>
-                Get Started Today
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
-              </Button>
-            </Link>
-          </div>
-
-          {/* Right/Left Process */}
-          <div className="flex-1 w-full">
-            <div className={`bg-card rounded-2xl p-6 sm:p-8 shadow-lg border border-border/50`}>
-              <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-6">How It Works</h3>
-              <div className="space-y-6">
-                {service.process.map((step, idx) => (
-                  <div key={idx} className="flex gap-4">
-                    <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${service.color} flex items-center justify-center flex-shrink-0 text-white font-bold shadow-lg`}>
-                      {step.step}
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-foreground mb-1">{step.title}</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
-                    </div>
+                    <span className="text-sm text-foreground/80">{feature}</span>
                   </div>
                 ))}
               </div>
             </div>
           </div>
+
+          {/* Right Box - How It Works */}
+          <div className="bg-card rounded-2xl p-6 sm:p-8 shadow-lg border border-border/50 h-full flex flex-col">
+            <h3 className="text-xl font-semibold text-foreground mb-6">How It Works</h3>
+            <div className="space-y-6 flex-1">
+              {service.process.map((step, idx) => (
+                <div key={idx} className="flex gap-4">
+                  <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${service.color} flex items-center justify-center flex-shrink-0 text-white font-bold shadow-lg`}>
+                    {step.step}
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-foreground mb-1">{step.title}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Centered CTA Button */}
+        <div className="flex justify-center mt-8">
+          <Link to="/contact">
+            <Button className={`bg-gradient-to-r ${service.color} hover:opacity-90 text-white rounded-full px-8 py-6 text-lg shadow-lg transition-all hover:shadow-xl hover:-translate-y-0.5`}>
+              Get Started Today
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
@@ -273,7 +274,6 @@ const ServiceDetailSection = () => {
           key={service.title} 
           service={service} 
           index={index}
-          isReversed={index % 2 !== 0}
         />
       ))}
 
