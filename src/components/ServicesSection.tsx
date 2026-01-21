@@ -165,10 +165,10 @@ const ServicesSection = () => {
 
                 {/* CTA */}
                 <Link
-                  to={`/services#${service.anchor}`}
+                  to="/contact"
                   className="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-medium group-hover:gap-2 transition-all relative z-10 text-sm sm:text-base"
                 >
-                  Learn More
+                  Get help
                   <ArrowRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-all" />
                 </Link>
               </div>
