@@ -19,6 +19,18 @@ const faqData = [
       {
         question: "Can I have multiple consultation sessions?",
         answer: "Absolutely! You can schedule follow-up consultations as needed. We're here to support you throughout your decision-making process."
+      },
+      {
+        question: "How do I book a consultation?",
+        answer: "You can book a consultation through our website contact form, WhatsApp, phone call, or by visiting our office. We offer both in-person and online sessions."
+      },
+      {
+        question: "What should I prepare before the consultation?",
+        answer: "Bring your academic transcripts, any test scores you have, and a list of questions. Having a rough idea of your preferred countries and courses also helps us guide you better."
+      },
+      {
+        question: "Do my parents need to attend the consultation?",
+        answer: "While not required, we encourage parents to join as they're often key decision-makers. We can also arrange separate sessions to address their specific concerns."
       }
     ]
   },
@@ -36,6 +48,18 @@ const faqData = [
       {
         question: "What documents do I need for admission?",
         answer: "Typically you'll need academic transcripts, passport, language test scores (IELTS/TOEFL), SOP, LORs, and CV. We provide a detailed checklist specific to your chosen universities."
+      },
+      {
+        question: "How long does the admission process take?",
+        answer: "The timeline varies by university, but typically 4-8 weeks after submission. Some universities offer faster decisions while others may take up to 12 weeks."
+      },
+      {
+        question: "Can I apply without IELTS/TOEFL scores?",
+        answer: "Some universities accept alternative proofs of English proficiency like Duolingo, PTE, or previous English-medium education. We'll identify suitable options for your situation."
+      },
+      {
+        question: "What if I get rejected from all universities?",
+        answer: "Rejections are rare with proper guidance, but if it happens, we analyze feedback, strengthen your application, and help you apply to the next intake with an improved profile."
       }
     ]
   },
@@ -53,6 +77,18 @@ const faqData = [
       {
         question: "What if my visa gets rejected?",
         answer: "While rare, if a rejection occurs, we analyze the reasons, address any gaps, and assist with the reapplication process. Many rejections can be successfully appealed."
+      },
+      {
+        question: "How much bank balance do I need for a student visa?",
+        answer: "Requirements vary by country, but generally you need to show funds covering tuition plus living expenses for at least one year. We provide specific guidance based on your destination."
+      },
+      {
+        question: "Do you provide mock visa interviews?",
+        answer: "Yes, we conduct multiple mock interview sessions covering common questions, proper etiquette, and confidence-building techniques to ensure you're fully prepared."
+      },
+      {
+        question: "Can my family visit me on my student visa?",
+        answer: "Most countries allow family visits on tourist visas. Some student visas also permit dependents. We'll explain the specific rules for your destination country."
       }
     ]
   },
@@ -70,6 +106,18 @@ const faqData = [
       {
         question: "What if my plans change after booking?",
         answer: "We prioritize flexible booking options. Most student tickets allow date changes with minimal or no fees. We'll help you navigate any changes needed."
+      },
+      {
+        question: "How much baggage can I carry as a student?",
+        answer: "Student fares often include extra baggage allowance (typically 30-40kg checked baggage). We negotiate the best baggage deals with airlines for our students."
+      },
+      {
+        question: "Should I book a direct flight or with layovers?",
+        answer: "Direct flights are convenient but pricier. Flights with layovers can save money and offer a break during long journeys. We help you choose based on your preferences and budget."
+      },
+      {
+        question: "Do you help with travel insurance?",
+        answer: "Yes, we recommend and help arrange comprehensive travel insurance covering medical emergencies, trip cancellation, lost baggage, and other common travel risks."
       }
     ]
   },
@@ -87,6 +135,18 @@ const faqData = [
       {
         question: "What's included in arrival support?",
         answer: "Our arrival support includes airport pickup, transfer to accommodation, city orientation tour, SIM card setup assistance, and guidance on opening a local bank account."
+      },
+      {
+        question: "Can I see the accommodation before booking?",
+        answer: "We arrange virtual tours for private accommodations and provide detailed photos and reviews. For university hostels, we share experiences from previous students."
+      },
+      {
+        question: "What if I don't like my accommodation after arrival?",
+        answer: "We help you explore alternatives and facilitate moves if needed. Most rental agreements have notice periods, so we advise on the best approach for your situation."
+      },
+      {
+        question: "Do you help with roommate matching?",
+        answer: "Yes, we can connect you with other students from similar backgrounds or those attending the same university to help you find compatible roommates."
       }
     ]
   },
@@ -104,6 +164,18 @@ const faqData = [
       {
         question: "Can I work while studying abroad?",
         answer: "Most student visas allow part-time work (typically 20 hours/week during term). We provide information on work regulations and opportunities in your destination country."
+      },
+      {
+        question: "What types of scholarships are available?",
+        answer: "Options include merit-based, need-based, country-specific, subject-specific, sports scholarships, and diversity scholarships. We help identify all opportunities you qualify for."
+      },
+      {
+        question: "Do you help with education loan applications?",
+        answer: "Yes, we guide you through the education loan process, help with documentation, and connect you with banks offering favorable terms for international students."
+      },
+      {
+        question: "Are there scholarships that cover full tuition?",
+        answer: "Yes, several full-tuition and even fully-funded scholarships exist covering tuition, living expenses, and travel. Competition is high, but we help you put forward the strongest application."
       }
     ]
   }
