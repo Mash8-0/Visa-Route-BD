@@ -11,6 +11,7 @@ const services = [
     color: "from-blue-500 to-cyan-500",
     iconBg: "bg-blue-500/10",
     iconColor: "text-blue-600",
+    anchor: "free-consultation",
   },
   {
     icon: GraduationCap,
@@ -19,6 +20,7 @@ const services = [
     color: "from-emerald-500 to-teal-500",
     iconBg: "bg-emerald-500/10",
     iconColor: "text-emerald-600",
+    anchor: "university-admissions",
   },
   {
     icon: Stamp,
@@ -27,6 +29,7 @@ const services = [
     color: "from-violet-500 to-purple-500",
     iconBg: "bg-violet-500/10",
     iconColor: "text-violet-600",
+    anchor: "visa-assistance",
   },
   {
     icon: Plane,
@@ -35,6 +38,7 @@ const services = [
     color: "from-orange-500 to-amber-500",
     iconBg: "bg-orange-500/10",
     iconColor: "text-orange-600",
+    anchor: "air-ticketing",
   },
   {
     icon: Home,
@@ -43,6 +47,7 @@ const services = [
     color: "from-pink-500 to-rose-500",
     iconBg: "bg-pink-500/10",
     iconColor: "text-pink-600",
+    anchor: "accommodation",
   },
   {
     icon: Award,
@@ -51,6 +56,7 @@ const services = [
     color: "from-amber-500 to-yellow-500",
     iconBg: "bg-amber-500/10",
     iconColor: "text-amber-600",
+    anchor: "scholarships",
   },
 ];
 
@@ -159,10 +165,10 @@ const ServicesSection = () => {
 
                 {/* CTA */}
                 <Link
-                  to="/contact"
+                  to={`/services#${service.anchor}`}
                   className="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-medium group-hover:gap-2 transition-all relative z-10 text-sm sm:text-base"
                 >
-                  Get help
+                  Learn More
                   <ArrowRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-all" />
                 </Link>
               </div>
