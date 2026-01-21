@@ -1,7 +1,113 @@
-import { ArrowRight, Check, MessageSquare, GraduationCap, Stamp, Plane, Home, Award, LucideIcon } from "lucide-react";
+import { ArrowRight, Check, MessageSquare, GraduationCap, Stamp, Plane, Home, Award, LucideIcon, HelpCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
+// FAQ Data
+const faqData = [
+  {
+    category: "Free Consultation",
+    questions: [
+      {
+        question: "Is the consultation really free?",
+        answer: "Yes, our initial consultation is completely free with no hidden charges. We believe every student deserves access to quality guidance regardless of their financial situation."
+      },
+      {
+        question: "How long does a consultation session last?",
+        answer: "A typical consultation session lasts 30-45 minutes. During this time, we assess your profile, discuss your goals, and provide initial recommendations for your study abroad journey."
+      },
+      {
+        question: "Can I have multiple consultation sessions?",
+        answer: "Absolutely! You can schedule follow-up consultations as needed. We're here to support you throughout your decision-making process."
+      }
+    ]
+  },
+  {
+    category: "University Admissions",
+    questions: [
+      {
+        question: "How many universities can I apply to?",
+        answer: "We recommend applying to 5-8 universities with a mix of ambitious, moderate, and safe choices. Our team helps you strategically select institutions based on your profile."
+      },
+      {
+        question: "Do you write the SOP for me?",
+        answer: "We guide you through the SOP writing process, providing structure, feedback, and multiple rounds of review. The final content reflects your authentic voice and experiences."
+      },
+      {
+        question: "What documents do I need for admission?",
+        answer: "Typically you'll need academic transcripts, passport, language test scores (IELTS/TOEFL), SOP, LORs, and CV. We provide a detailed checklist specific to your chosen universities."
+      }
+    ]
+  },
+  {
+    category: "Visa Assistance",
+    questions: [
+      {
+        question: "What is the visa success rate?",
+        answer: "Our visa success rate is over 95%. We thoroughly prepare each application and provide comprehensive interview coaching to maximize your chances of approval."
+      },
+      {
+        question: "How early should I start the visa process?",
+        answer: "We recommend starting 3-4 months before your intended travel date. This allows ample time for document preparation, application submission, and any additional requirements."
+      },
+      {
+        question: "What if my visa gets rejected?",
+        answer: "While rare, if a rejection occurs, we analyze the reasons, address any gaps, and assist with the reapplication process. Many rejections can be successfully appealed."
+      }
+    ]
+  },
+  {
+    category: "Air Ticketing & Travel",
+    questions: [
+      {
+        question: "How much can I save with student fares?",
+        answer: "Student fares typically offer 10-25% savings compared to regular fares, plus additional benefits like extra baggage allowance and flexible rebooking options."
+      },
+      {
+        question: "Can I book one-way tickets?",
+        answer: "Yes, we can arrange one-way tickets. However, some visa requirements may need proof of return travel, so we advise on the best approach for your situation."
+      },
+      {
+        question: "What if my plans change after booking?",
+        answer: "We prioritize flexible booking options. Most student tickets allow date changes with minimal or no fees. We'll help you navigate any changes needed."
+      }
+    ]
+  },
+  {
+    category: "Accommodation & Arrival",
+    questions: [
+      {
+        question: "Is university hostel or private accommodation better?",
+        answer: "Both have advantages. Hostels offer community and convenience, while private accommodation provides more independence. We help you weigh options based on your preferences and budget."
+      },
+      {
+        question: "How early should I book accommodation?",
+        answer: "For university hostels, apply as soon as you receive your offer letter as spaces fill quickly. For private accommodation, 1-2 months before arrival is ideal."
+      },
+      {
+        question: "What's included in arrival support?",
+        answer: "Our arrival support includes airport pickup, transfer to accommodation, city orientation tour, SIM card setup assistance, and guidance on opening a local bank account."
+      }
+    ]
+  },
+  {
+    category: "Scholarships & Funding",
+    questions: [
+      {
+        question: "Am I eligible for scholarships?",
+        answer: "Eligibility varies by scholarship. We assess your profile against various criteria including academics, extracurriculars, nationality, and field of study to identify suitable opportunities."
+      },
+      {
+        question: "When should I start applying for scholarships?",
+        answer: "Start researching 12-18 months before your intended start date. Many prestigious scholarships have early deadlines, often 6-9 months before the academic year begins."
+      },
+      {
+        question: "Can I work while studying abroad?",
+        answer: "Most student visas allow part-time work (typically 20 hours/week during term). We provide information on work regulations and opportunities in your destination country."
+      }
+    ]
+  }
+];
 interface ServiceDetail {
   icon: LucideIcon;
   title: string;
@@ -276,6 +382,62 @@ const ServiceDetailSection = () => {
           index={index}
         />
       ))}
+
+      {/* FAQ Section */}
+      <section id="faq" className="py-12 sm:py-16 lg:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          {/* Section Header */}
+          <div className="text-center mb-10 sm:mb-12">
+            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-border/30 shadow-sm mb-6">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center shadow-md">
+                <HelpCircle className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-sm font-medium text-foreground">Got Questions?</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-foreground mb-4">
+              Frequently Asked <span className="gradient-text">Questions</span>
+            </h2>
+            <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
+              Find answers to common questions about our services. Can't find what you're looking for? Contact us directly.
+            </p>
+          </div>
+
+          {/* FAQ Accordion by Category */}
+          <div className="space-y-6">
+            {faqData.map((category, categoryIdx) => (
+              <div key={categoryIdx} className="bg-card rounded-2xl p-6 sm:p-8 shadow-lg border border-border/50">
+                <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500"></span>
+                  {category.category}
+                </h3>
+                <Accordion type="single" collapsible className="w-full">
+                  {category.questions.map((faq, faqIdx) => (
+                    <AccordionItem key={faqIdx} value={`${categoryIdx}-${faqIdx}`} className="border-border/50">
+                      <AccordionTrigger className="text-left text-foreground hover:no-underline hover:text-primary py-4">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground leading-relaxed">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+            ))}
+          </div>
+
+          {/* Contact CTA */}
+          <div className="text-center mt-10">
+            <p className="text-muted-foreground mb-4">Still have questions?</p>
+            <Link to="/contact">
+              <Button className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:opacity-90 text-white rounded-full px-8 py-6 text-lg shadow-lg transition-all hover:shadow-xl hover:-translate-y-0.5">
+                Contact Us
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Final CTA Section */}
       <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 relative overflow-hidden">
