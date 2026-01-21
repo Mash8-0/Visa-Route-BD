@@ -262,6 +262,9 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ service, index }: Omit<ServiceCardProps, 'isReversed'>) => {
   const Icon = service.icon;
+  
+  // Find FAQ data for this service
+  const serviceFaq = faqData.find(faq => faq.category === service.title);
 
   return (
     <section 
@@ -281,7 +284,7 @@ const ServiceCard = ({ service, index }: Omit<ServiceCardProps, 'isReversed'>) =
 
         {/* Two Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-          {/* Left Box - Content */}
+          {/* Left Box - Service Details */}
           <div className="bg-card rounded-2xl p-6 sm:p-8 shadow-lg border border-border/50 h-full flex flex-col">
             <h2 className="text-2xl sm:text-3xl font-display font-bold text-foreground mb-4">
               {service.title}
@@ -306,22 +309,28 @@ const ServiceCard = ({ service, index }: Omit<ServiceCardProps, 'isReversed'>) =
             </div>
           </div>
 
-          {/* Right Box - How It Works */}
+          {/* Right Box - FAQ */}
           <div className="bg-card rounded-2xl p-6 sm:p-8 shadow-lg border border-border/50 h-full flex flex-col">
-            <h3 className="text-xl font-semibold text-foreground mb-6">How It Works</h3>
-            <div className="space-y-6 flex-1">
-              {service.process.map((step, idx) => (
-                <div key={idx} className="flex gap-4">
-                  <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${service.color} flex items-center justify-center flex-shrink-0 text-white font-bold shadow-lg`}>
-                    {step.step}
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-foreground mb-1">{step.title}</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
+              <HelpCircle className={`w-5 h-5`} />
+              Frequently Asked Questions
+            </h3>
+            {serviceFaq ? (
+              <Accordion type="single" collapsible className="w-full flex-1">
+                {serviceFaq.questions.map((faq, faqIdx) => (
+                  <AccordionItem key={faqIdx} value={`faq-${faqIdx}`} className="border-border/50">
+                    <AccordionTrigger className="text-left text-foreground hover:no-underline hover:text-primary py-4 text-sm sm:text-base">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground leading-relaxed text-sm">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            ) : (
+              <p className="text-muted-foreground text-sm">No FAQs available for this service.</p>
+            )}
           </div>
         </div>
 
@@ -382,62 +391,6 @@ const ServiceDetailSection = () => {
           index={index}
         />
       ))}
-
-      {/* FAQ Section */}
-      <section id="faq" className="py-12 sm:py-16 lg:py-20 bg-muted/30">
-        <div className="container mx-auto px-4 max-w-4xl">
-          {/* Section Header */}
-          <div className="text-center mb-10 sm:mb-12">
-            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-border/30 shadow-sm mb-6">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center shadow-md">
-                <HelpCircle className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-sm font-medium text-foreground">Got Questions?</span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-foreground mb-4">
-              Frequently Asked <span className="gradient-text">Questions</span>
-            </h2>
-            <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-              Find answers to common questions about our services. Can't find what you're looking for? Contact us directly.
-            </p>
-          </div>
-
-          {/* FAQ Accordion by Category */}
-          <div className="space-y-6">
-            {faqData.map((category, categoryIdx) => (
-              <div key={categoryIdx} className="bg-card rounded-2xl p-6 sm:p-8 shadow-lg border border-border/50">
-                <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500"></span>
-                  {category.category}
-                </h3>
-                <Accordion type="single" collapsible className="w-full">
-                  {category.questions.map((faq, faqIdx) => (
-                    <AccordionItem key={faqIdx} value={`${categoryIdx}-${faqIdx}`} className="border-border/50">
-                      <AccordionTrigger className="text-left text-foreground hover:no-underline hover:text-primary py-4">
-                        {faq.question}
-                      </AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground leading-relaxed">
-                        {faq.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
-              </div>
-            ))}
-          </div>
-
-          {/* Contact CTA */}
-          <div className="text-center mt-10">
-            <p className="text-muted-foreground mb-4">Still have questions?</p>
-            <Link to="/contact">
-              <Button className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:opacity-90 text-white rounded-full px-8 py-6 text-lg shadow-lg transition-all hover:shadow-xl hover:-translate-y-0.5">
-                Contact Us
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* Final CTA Section */}
       <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 relative overflow-hidden">
