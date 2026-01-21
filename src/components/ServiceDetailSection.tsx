@@ -420,38 +420,71 @@ const ServiceCard = ({ service, index }: Omit<ServiceCardProps, 'isReversed'>) =
   );
 };
 
+// Service card for the grid overview
+const ServiceOverviewCard = ({ service }: { service: ServiceDetail }) => {
+  const Icon = service.icon;
+  const anchor = service.title.toLowerCase().replace(/\s+/g, '-');
+  
+  // Map service to icon background color
+  const iconBgColors: Record<string, string> = {
+    "Free Consultation": "bg-cyan-500",
+    "University Admissions": "bg-emerald-500",
+    "Visa Assistance": "bg-violet-500",
+    "Air Ticketing & Travel": "bg-amber-500",
+    "Accommodation & Arrival": "bg-orange-500",
+    "Scholarships & Funding": "bg-yellow-500",
+  };
+
+  return (
+    <div className="bg-card rounded-2xl p-6 shadow-lg border border-border/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+      <div className={`w-12 h-12 rounded-xl ${iconBgColors[service.title] || 'bg-indigo-500'} flex items-center justify-center mb-4`}>
+        <Icon className="w-6 h-6 text-white" />
+      </div>
+      <h3 className="text-lg font-semibold text-foreground mb-2">{service.title}</h3>
+      <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+        {service.features.slice(0, 2).join(', ').replace(/One-on-one personalized counselling sessions/, 'Personal counselling').replace(/Complete assessment of your academic profile/, 'course & country selection').replace(/Statement of Purpose \(SOP\) writing and review/, 'SOP & LOR review').replace(/Letter of Recommendation \(LOR\) guidance/, 'application management').replace(/Complete visa document checklist/, 'Document checklist').replace(/Application form filling assistance/, 'application submission').replace(/Exclusive student airfare discounts/, 'Student fares').replace(/Flexible booking and cancellation options/, 'flight planning').replace(/University hostel booking assistance/, 'Pre-arranged housing').replace(/Private accommodation search/, 'airport pickup').replace(/Scholarship opportunity research/, 'Find scholarships').replace(/Eligibility assessment and matching/, 'assist with application')}.
+      </p>
+      <a
+        href={`#${anchor}`}
+        className="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-medium hover:gap-2 transition-all text-sm"
+      >
+        Learn More
+        <ArrowRight className="w-4 h-4 ml-1 opacity-0 group-hover:opacity-100 transition-all" />
+      </a>
+    </div>
+  );
+};
+
 const ServiceDetailSection = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-indigo-500/10 via-purple-500/5 to-pink-500/10 relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-indigo-500/10 rounded-full blur-3xl animate-float" style={{ animationDuration: '8s' }} />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float" style={{ animationDuration: '10s', animationDelay: '1s' }} />
-        </div>
+      <section className="py-12 sm:py-16 lg:py-20 bg-background relative overflow-hidden">
+        {/* Decorative corner accent */}
+        <div className="absolute top-0 left-0 w-32 h-32 border-l-4 border-t-4 border-indigo-500/20 rounded-tl-3xl" />
+        
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 sm:mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
             Our <span className="gradient-text">Services</span>
           </h1>
-          <p className="text-muted-foreground text-base sm:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed mb-8">
-            From your first consultation to your arrival abroad, we provide comprehensive support 
-            at every step of your educational journey. Explore our services and let us help you 
-            achieve your dreams.
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-12">
+            Comprehensive support for your educational journey abroad
           </p>
           
-          {/* Quick Navigation */}
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
             {servicesData.map((service) => (
-              <a
-                key={service.title}
-                href={`#${service.title.toLowerCase().replace(/\s+/g, '-')}`}
-                className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border/50 hover:border-indigo-500/50 hover:shadow-md transition-all text-sm sm:text-base`}
-              >
-                <service.icon className="w-4 h-4" />
-                <span>{service.title}</span>
-              </a>
+              <ServiceOverviewCard key={service.title} service={service} />
             ))}
           </div>
+
+          {/* CTA Button */}
+          <Link to="/contact">
+            <Button className="bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 hover:opacity-90 text-white rounded-full px-8 py-6 text-lg shadow-lg transition-all hover:shadow-xl hover:-translate-y-0.5 hover:scale-105">
+              Get Free Consultation
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+          </Link>
         </div>
       </section>
 
