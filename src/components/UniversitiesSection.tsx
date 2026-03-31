@@ -4,13 +4,18 @@ import { Link } from "react-router-dom";
 import { useUniversities } from "@/hooks/useUniversities";
 import UniversityLogo from "@/components/UniversityLogo";
 
+// Curated list of university IDs to show on the home page
+const FEATURED_IDS = ["alfa", "inti", "icms", "segi", "apu", "ucsi", "unikl", "sunway"];
+
 const UniversitiesSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const { data: universities = [], isLoading } = useUniversities();
 
-  // Get first 8 universities for preview
-  const previewUniversities = universities.slice(0, 8);
+  // Show curated featured universities in the specified order
+  const previewUniversities = FEATURED_IDS
+    .map((id) => universities.find((u) => u.id === id))
+    .filter(Boolean) as typeof universities;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
