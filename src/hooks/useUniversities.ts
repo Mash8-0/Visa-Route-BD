@@ -208,15 +208,6 @@ export const useUniversity = (id: string | undefined) => {
         faculty: prog.faculty,
       }));
 
-      const extraPrograms = getExtraProgramsForUniversity(
-        university.name,
-        shortName
-      );
-
-      const mergedPrograms = mergeProgramsWithoutDuplicates(
-        dbPrograms,
-        extraPrograms
-      );
 
       return {
         id: university.id,
