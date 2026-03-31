@@ -10,6 +10,7 @@ import Universities from "./pages/Universities";
 import UniversityDetail from "./pages/UniversityDetail";
 import Services from "./pages/Services";
 import Processing from "./pages/Processing";
+import Assessment from "./pages/Assessment";
 import SuccessStory from "./pages/SuccessStory";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/universities/:id" element={<UniversityDetail />} />
           <Route path="/services" element={<Services />} />
           <Route path="/processing" element={<Processing />} />
+          <Route path="/assessment" element={<Assessment />} />
           <Route path="/success-story" element={<SuccessStory />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
