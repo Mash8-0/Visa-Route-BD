@@ -69,7 +69,7 @@ const ContactSection = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-                Get Your <span className="gradient-text">Free Assessment</span>
+                Get Your <span className="gradient-text">Free Consultation </span>
               </h2>
               <p className="text-muted-foreground">
                 Start your journey today with a free consultation. Our experts are here to guide you.
@@ -83,7 +83,9 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Call us</p>
-                  <p className="font-semibold text-foreground">+880 1234-567890</p>
+                  <a href="https://wa.me/601114227214" target="_blank" rel="noopener noreferrer" className="font-medium hover:underline">
+                      +60-11 1422 7214
+                    </a>
                 </div>
               </div>
 
@@ -103,7 +105,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Visit us</p>
-                  <p className="font-semibold text-foreground">Dhaka, Bangladesh</p>
+                  <p className="font-semibold text-foreground">Putra Majestik, Jalan Kasipillay, Jalan Ipoh,51200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
                 </div>
               </div>
             </div>

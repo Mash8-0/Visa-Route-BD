@@ -3,6 +3,7 @@ import { MessageSquare, GraduationCap, Stamp, Plane, Home, Award, ArrowRight } f
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
+
 const services = [
   {
     icon: MessageSquare,
@@ -165,7 +166,7 @@ const ServicesSection = () => {
 
                 {/* CTA */}
                 <Link
-                  to="/contact"
+                  to="/services"
                   className="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-medium group-hover:gap-2 transition-all relative z-10 text-sm sm:text-base"
                 >
                   Get help
@@ -177,14 +178,15 @@ const ServicesSection = () => {
         )}
 
         {/* CTA Button */}
-        <div className={`text-center mt-8 sm:mt-12 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: '0.6s' }}>
-          <Link to="/contact">
+        <div className={`text-center mt-8 sm:mt-12 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: "0.6s" }}>
+          <Link to="/services">
             <Button className="btn-glass-primary rounded-full px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg">
               Get Free Consultation
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
             </Button>
           </Link>
         </div>
+
       </div>
     </section>
   );

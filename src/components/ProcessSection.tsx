@@ -364,19 +364,22 @@ const ProcessSection = () => {
                     }`}
                     style={{ transitionDelay: `${index * 200 + 100}ms` }}
                   >
-                    {/* Step Badge - Glossy glass effect */}
-                    <div 
-                      className={`inline-flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-gradient-to-br from-card/90 via-card/80 to-muted/60 border border-border/40 backdrop-blur-xl mb-4 group hover:scale-105 transition-all duration-300 ${
-                        isLeft ? "" : "ml-auto"
-                      }`}
-                      style={{
-                        boxShadow: '0 8px 32px -8px hsl(var(--primary) / 0.2), 0 4px 16px -4px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.05)'
-                      }}
-                    >
-                      <span className={`w-9 h-9 rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center text-sm font-bold text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                        {index + 1}
-                      </span>
-                      <span className="text-foreground font-semibold text-lg">{step.step}</span>
+                    {/* Step Badge */}
+                    <div className={`w-full flex ${isLeft ? "justify-start" : "justify-end"}`}>
+                      <div
+                        className="inline-flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-gradient-to-br from-card/90 via-card/80 to-muted/60 border border-border/40 backdrop-blur-xl mb-4 group hover:scale-105 transition-all duration-300"
+                        style={{
+                          boxShadow:
+                            "0 8px 32px -8px hsl(var(--primary) / 0.2), 0 4px 16px -4px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.15), inset 0 -1px 0 rgba(0,0,0,0.05)",
+                        }}
+                      >
+                        <span
+                          className={`w-9 h-9 rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center text-sm font-bold text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                        >
+                          {index + 1}
+                        </span>
+                        <span className="text-foreground font-semibold text-lg">{step.step}</span>
+                      </div>
                     </div>
 
                     {/* Items */}

@@ -1,9 +1,12 @@
+import React, { useState } from "react";
+
 interface UniversityLogoProps {
   logoUrl?: string | null;
   shortName: string;
   color: string;
   size?: "sm" | "md" | "lg" | "xl";
   className?: string;
+  variant?: "box" | "circle";
 }
 
 const sizeClasses = {
@@ -19,10 +22,15 @@ const UniversityLogo = ({
   color,
   size = "md",
   className = "",
+  variant = "box",
 }: UniversityLogoProps) => {
-  const baseClasses = `rounded-xl flex items-center justify-center shadow-md ${sizeClasses[size]} ${className}`;
+  const [imgError, setImgError] = useState(false);
 
-  if (logoUrl) {
+  const radius = variant === "circle" ? "rounded-full" : "rounded-2xl";
+
+  const baseClasses = `${radius} flex items-center justify-center shadow-md ${sizeClasses[size]} ${className}`;
+
+  if (logoUrl && !imgError) {
     return (
       <div className={`${baseClasses} bg-white border border-gray-200 overflow-hidden p-2`}>
         <img
@@ -30,6 +38,7 @@ const UniversityLogo = ({
           alt={`${shortName} logo`}
           className="w-full h-full object-contain"
           loading="lazy"
+          onError={() => setImgError(true)}
         />
       </div>
     );
