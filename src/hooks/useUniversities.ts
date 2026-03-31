@@ -145,11 +145,6 @@ export const useUniversities = () => {
           undefined;
 
         const dbPrograms = programsByUniversity?.[uni.id] || [];
-        const extraPrograms = getExtraProgramsForUniversity(uni.name, shortName);
-        const mergedPrograms = mergeProgramsWithoutDuplicates(
-          dbPrograms,
-          extraPrograms
-        );
 
         return {
           id: uni.id,
