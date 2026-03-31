@@ -221,7 +221,7 @@ export const useUniversity = (id: string | undefined) => {
         ranking: university.ranking || undefined,
         website: university.website,
         logoUrl: resolvedLogo,
-        programs: mergedPrograms,
+        programs: dbPrograms,
         facilities: university.facilities || [],
         highlights: university.highlights || [],
       };
