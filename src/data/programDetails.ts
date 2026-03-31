@@ -1642,6 +1642,28 @@ export const programDetailsAliases: Record<string, string> = {
   "doctor-of-business-administration": "doctor-of-business-administration-dba",
   "doctor-of-business-administration-dba-by-coursework":
     "doctor-of-business-administration-dba",
+
+  // Slugs from DB names with & (produces "art-design" not "art-and-design")
+  "master-of-art-design-by-research": "master-in-art-and-design",
+  "master-of-art-design": "master-in-art-and-design",
+  "doctor-of-philosophy-in-art-design-by-research": "doctor-of-philosophy-in-art-and-design",
+  "doctor-of-philosophy-in-art-design": "doctor-of-philosophy-in-art-and-design",
+
+  // DB name "Performing Arts" → "performing-arts" (plural)
+  "doctor-of-philosophy-in-performing-arts-by-research": "doctor-of-philosophy-in-performing-art",
+  "doctor-of-philosophy-in-performing-arts": "doctor-of-philosophy-in-performing-art",
+
+  // DB name "Sports Science" → "sports-science" (plural)
+  "doctor-of-philosophy-in-sports-science-by-research": "doctor-of-philosophy-in-sport-science",
+  "doctor-of-philosophy-in-sports-science": "doctor-of-philosophy-in-sport-science",
+
+  // DB name "Oil & Gas" → "oil-gas"
+  "master-of-business-administration-in-oil-gas-by-coursework": "mba-in-oil-and-gas-management",
+  "master-of-business-administration-in-oil-gas": "mba-in-oil-and-gas-management",
+
+  // DB name "TESL" full slug
+  "master-of-education-in-teaching-of-english-as-a-second-language-tesl-by-research": "master-of-education-in-tesl",
+  "master-of-education-in-teaching-of-english-as-a-second-language-tesl": "master-of-education-in-tesl",
 };
 
 export const resolveProgramDetailsKey = (key: string) =>
