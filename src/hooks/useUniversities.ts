@@ -158,7 +158,7 @@ export const useUniversities = () => {
           ranking: uni.ranking || undefined,
           website: uni.website,
           logoUrl: resolvedLogo,
-          programs: mergedPrograms,
+          programs: dbPrograms,
           facilities: uni.facilities || [],
           highlights: uni.highlights || [],
         };
