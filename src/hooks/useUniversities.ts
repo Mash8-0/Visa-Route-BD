@@ -62,6 +62,12 @@ const nameLogoMap: Record<string, string> = {
   LIMKOKWINGUNIVERSITY: "/universities/limkokwing.png",
   "LIMKOKWINGUNIVERSITYOFCREATIVE TECHNOLOGY": "/universities/limkokwing.png",
   LIMKOKWINGUNIVERSITYOFCREATIVETECHNOLOGY: "/universities/limkokwing.png",
+
+  INTERNATIONALUNIVERSITYCOLLEGEOFMANAGEMENTANDSPORTS: "/universities/icms.png",
+  ICMS: "/universities/icms.png",
+
+  UNIVERSITIKUALALUMPUR: "/universities/unikl-logo-web.png",
+  UNIKL: "/universities/unikl-logo-web.png",
 };
 
 const normalizeKey = (value: unknown) =>

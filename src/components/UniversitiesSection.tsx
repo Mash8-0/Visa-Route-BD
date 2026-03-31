@@ -73,7 +73,7 @@ const UniversitiesSection = () => {
                     logoUrl={uni.logoUrl}
                     shortName={uni.shortName}
                     color={uni.color}
-                    size="sm"
+                    size="md"
                     className="mb-3 sm:mb-4 group-hover:scale-110 transition-transform"
                   />
                   <h3 className="font-semibold text-foreground text-xs sm:text-sm lg:text-base mb-1 sm:mb-2 line-clamp-2 group-hover:text-primary transition-colors">
