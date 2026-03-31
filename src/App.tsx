@@ -10,6 +10,7 @@ import Universities from "./pages/Universities";
 import UniversityDetail from "./pages/UniversityDetail";
 import Services from "./pages/Services";
 import Processing from "./pages/Processing";
+import Assessment from "./pages/Assessment";
 import SuccessStory from "./pages/SuccessStory";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
