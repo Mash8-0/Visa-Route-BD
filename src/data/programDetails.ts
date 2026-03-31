@@ -23,12 +23,8 @@ export type ProgramDetails = {
   fees?: ProgramFees;
 };
 
-// Key = slugify(program.name)
+// Key = slugify(program.name)  ✅ IMPORTANT
 export const programDetailsMap: Record<string, ProgramDetails> = {
-  /* =========================
-     FOUNDATION PROGRAMS
-     ========================= */
-
   "foundation-in-business": {
     code: "N/340/3/0805 (FA15158) 01/27",
     overview:
@@ -52,7 +48,9 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       emgs: "RM 3,500",
       registrationInternational: "RM 2,500",
       additionalFees: "RM 700",
-      tuition: { year1: "RM 14,000" },
+      tuition: {
+        year1: "RM 14,000",
+      },
       total: "RM 20,700",
     },
   },
@@ -80,26 +78,24 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       emgs: "RM 3,500",
       registrationInternational: "RM 2,500",
       additionalFees: "RM 700",
-      tuition: { year1: "RM 14,000" },
+      tuition: {
+        year1: "RM 14,000",
+      },
       total: "RM 20,700",
     },
   },
 
-  /* =========================
-     DIPLOMA PROGRAMS
-     ========================= */
-
   "diploma-in-accountancy": {
     code: "R/344/4/0486 (FA8465) 02/27",
     overview:
-      "Diploma of Accountancy is designed to teach the students about the essentials of accounting. Students will learn how to record all financial transactions, financial information in report and analysis and etc. Study Accountancy is very important because everything in our life, especially business is involved with finance. In many ways, accounting is the backbone of business. Its role is to track a company's finances in their numerous forms, from credits, debits, and profitability to payroll and tax filing.",
+      "Diploma of Accountancy is designed to teach the students about the essentials of accounting. Students will learn how to record all financial transactions, financial information in report and analysis and etc. Study Accountancy is very important because everything in our life, especially business is involved with finance. In many ways, accounting is the backbone of business. Its role is to track a company’s finances in their numerous forms, from credits, debits, and profitability to payroll and tax filing.",
     studyMode: "Full Time",
     durationOfStudy: "2.5 Years",
     duration: "2.5 Years",
     intakes: ["January", "May", "September"],
     careers: [
       "Childcare Centre Manager",
-      "Children's Event Organiser",
+      "Children’s Event Organiser",
       "Education Administrator",
       "Early Childhood Coordinator",
       "Preschool Teacher",
@@ -111,7 +107,11 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       emgs: "RM 3,500",
       registrationInternational: "RM 2,500",
       additionalFees: "RM 1,000",
-      tuition: { year1: "RM 10,500", year2: "RM 9,500", year3: "RM 9,500" },
+      tuition: {
+        year1: "RM 10,500",
+        year2: "RM 9,500",
+        year3: "RM 9,500",
+      },
       total: "RM 36,500",
     },
   },
@@ -139,7 +139,11 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       emgs: "RM 3,500",
       registrationInternational: "RM 2,500",
       additionalFees: "RM 1,000",
-      tuition: { year1: "RM 10,500", year2: "RM 9,500", year3: "RM 9,500" },
+      tuition: {
+        year1: "RM 10,500",
+        year2: "RM 9,500",
+        year3: "RM 9,500",
+      },
       total: "RM 36,500",
     },
   },
@@ -164,7 +168,11 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       emgs: "RM 3,500",
       registrationInternational: "RM 2,500",
       additionalFees: "RM 1,000",
-      tuition: { year1: "RM 10,500", year2: "RM 9,500", year3: "RM 9,500" },
+      tuition: {
+        year1: "RM 10,500",
+        year2: "RM 9,500",
+        year3: "RM 9,500",
+      },
       total: "RM 36,500",
     },
   },
@@ -172,7 +180,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   "diploma-in-information-technology": {
     code: "R/0611/4/0122 (PA 13793) 10/30",
     overview:
-      "The 21st century is a reign of technology. Millennial are way far too familiar with gadgets and computers. Here at ALFA University College, we want you to explore more than what you know, extensive than what you understand about technology. We are molding you to become a computer network architect, a computer programmer, a computer systems analyst, a database administrator, an information security analyst, an information architect, a web developer, and so much more.",
+      "The 21st century is a reign of technology. Millennial are way far too familiar with gadgets and computers. Here at ALFA University College, we want you to explore more than what you know, extensive than what you understand about technology. We are molding you to become a computer network architect, a computer programmer, a computer systems analyst, a database administrator, an information security analyst, an information architect, a web developer, and so much more. We will teach you about technologies and how you can turn your hobby into a career.",
     studyMode: "Full Time",
     durationOfStudy: "2.5 Years",
     duration: "2.5 Years",
@@ -189,7 +197,11 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       emgs: "RM 3,500",
       registrationInternational: "RM 2,500",
       additionalFees: "RM 1,000",
-      tuition: { year1: "RM 11,500", year2: "RM 10,500", year3: "RM 10,500" },
+      tuition: {
+        year1: "RM 11,500",
+        year2: "RM 10,500",
+        year3: "RM 10,500",
+      },
       total: "RM 39,500",
     },
   },
@@ -197,14 +209,14 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   "diploma-in-early-childhood-education": {
     code: "R2/0112/4/0098 (A9699) 07/27",
     overview:
-      "We paint the white canvas with colors. We show them the brilliant way to hold the future, and we are the reason for them to grow excellent. It is a real opportunity to make a difference in young lives and also influence future generations. We will ensure that children get off to a good start in their lives and their learning. ALFA University College offers an outstanding module for teaching and learning activities in preparation for nursery and pre-school.",
+      "We paint the white canvas with colors. We show them the brilliant way to hold the future, and we are the reason for them to grow excellent. It is a real opportunity to make a difference in young lives and also influence future generations. We will ensure that children get off to a good start in their lives and their learning. ALFA University College offers an outstanding module for teaching and learning activities in preparation for nursery and pre-school. If you are looking for an in-demand career with opportunities now and in the future, early childhood education is a very viable option.",
     studyMode: "Full Time",
     durationOfStudy: "2.5 Years",
     duration: "2.5 Years",
     intakes: ["January", "May", "September"],
     careers: [
       "Childcare Centre Manager",
-      "Children's Event Organiser",
+      "Children’s Event Organiser",
       "Education Administrator",
       "Early Childhood Coordinator",
       "Preschool Teacher",
@@ -216,15 +228,23 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       emgs: "RM 3,500",
       registrationInternational: "RM 2,500",
       additionalFees: "RM 1,000",
-      tuition: { year1: "RM 10,500", year2: "RM 9,500", year3: "RM 9,500" },
+      tuition: {
+        year1: "RM 10,500",
+        year2: "RM 9,500",
+        year3: "RM 9,500",
+      },
       total: "RM 36,500",
     },
   },
 
+  /* =========================
+     ✅ D6 → D19 Programs Added
+     ========================= */
+
   "diploma-in-early-childhood-education-odl": {
     code: "R-DL/0112/4/0102 ( PA 10020) 01/30",
     overview:
-      "We paint the white canvas with colors. We show them the brilliant way to hold the future, and we are the reason for them to grow excellent. It is a real opportunity to make a difference in young lives and also influence future generations. ALFA University College offers an outstanding module for teaching and learning activities in preparation for nursery and pre-school via Open Distance Learning.",
+      "We paint the white canvas with colors. We show them the brilliant way to hold the future, and we are the reason for them to grow excellent. It is a real opportunity to make a difference in young lives and also influence future generations. We will ensure that children get off to a good start in their lives and their learning. ALFA University College offers an outstanding module for teaching and learning activities in preparation for nursery and pre-school. If you are looking for an in-demand career with opportunities now and in the future, early childhood education is a very viable option.",
     studyMode: "Full Time",
     durationOfStudy: "2.5 Years",
     intakes: ["January", "May", "September"],
@@ -236,7 +256,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       "Pre-school management consultancy",
       "Education administrator",
       "Special education teacher",
-      "Children's event organizer",
+      "Children’s event organizer",
       "School counselor and guidance officer",
     ],
     fees: {
@@ -251,12 +271,13 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   "diploma-in-graphic-design": {
     code: "R3/0211/4/0163 (A5775) 05/30",
     overview:
-      "The magnificent graphic presentation came from an outstanding person who was able to join creativity and passion. If you are into creating visual concepts, love to venture into new ideas, focus on branding, logos, and websites, this course is for you. ALFA University College will ensure your time here spends well with lots of hands-on activities with the technology.",
+      "The magnificent graphic presentation came from an outstanding person who was able to join creativity and passion. If you are into creating visual concepts, love to venture into new ideas, focus on branding, logos, and websites, this course is for you. ALFA University College will ensure your time here spends well with lots of hands-on activities with the technology and how you can turn your hobby into a career. The future frontwards will be full of career prospects, freelance opportunities, financial gains, arts recognition, and ways to put your name in the international medium.",
     studyMode: "Full Time",
     durationOfStudy: "2.5 Years",
     intakes: ["January", "May", "September"],
     careers: [
-      "Graphic Designer",
+      "Strong Graphic Design enables an organization to effectively deliver its message to its audience and market",
+      "The need for Graphic Designer",
       "Art Director",
       "Publication Designer",
       "Creative Director",
@@ -278,7 +299,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   "diploma-in-multimedia-design": {
     code: "R2/213/4/0237 (A5933) 06/27",
     overview:
-      "If you love outstanding visual images, digital animation, mobile apps, video games, interactive advertisement, and media caricature, ALFA University College offers you a Diploma in Multimedia Design. This course applied new technology in engaging media content for students to explore.",
+      "If you love outstanding visual images, digital animation, mobile apps, video games, interactive advertisement, and media caricature, ALFA University College offers you a Diploma in Multimedia Design. This course applied new technology in engaging media content for students to explore. We will occupy you with various design areas such as 3D animation, video editing, web design, and graphic design.",
     studyMode: "Full Time",
     durationOfStudy: "2.5 Years",
     intakes: ["January", "May", "September"],
@@ -305,7 +326,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   "diploma-in-architecture": {
     code: "R2/581/4/0099A (A7672) 06/29",
     overview:
-      "It is time to DRAW your blueprint of the future. Architecture is not only a platform for mind illustration but a medium for you to create magnificent and first-class designs for the world. ALFA University College offers you more than just a piece of knowledge. A valuable experience is waiting ahead.",
+      "It is time to DRAW your blueprint of the future. Architecture is not only a platform for mind illustration but a medium for you to create magnificent and first-class designs for the world. There are a thousand opportunities for you to gain your inspiration, and it is all started here at ALFA University College. In this course, you will learn how to plan buildings, structures, and environmental impact. Not only that, you will develop transferable skills in empathy, understanding, delegation, communication, and leadership. With a one-to-one approach and a fully equipped studio space, ALFA University College offers you more than just a piece of knowledge. A valuable experience is waiting ahead.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years",
     intakes: ["January", "May", "September"],
@@ -332,7 +353,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   "diploma-in-interior-architecture": {
     code: "R2/581/4/0098A (A7673) 06/29",
     overview:
-      "Across the world, many companies are looking for young talent to design new projects. It is about presenting outstanding ideas and materializing them into an eye-witness product. ALFA University College offers you a Diploma in Interior Architecture covering creativity, communication, organization, and the latest technology.",
+      "Across the world, many companies are looking for young talent to design new projects. It is about presenting outstanding ideas and materializing them into an eye-witness product. If you wish to be the next prolific designer, ALFA University College offers you a Diploma in Interior Architecture. Within this course, you will learn about creativity, communication, organization, design history, business skills, IT skills, the latest technology communication programs, and so much more. What’s waiting ahead? A profession including Interior Architecture, Interior Design, Interior Styling, Retail Design, Hospitality Design, Furniture Design, Film, and Exhibition Design.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years",
     intakes: ["January", "May", "September"],
@@ -359,7 +380,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   "diploma-in-culinary-arts": {
     code: "N/811/4/0409 (PA 14848) 11/26",
     overview:
-      "The Malaysia Food and Beverages Industry (F&B) is identified as a fast-growing market and one of the main contributors to the national account. ALFA University College offers an outstanding module for culinary arts with lots of hands-on activities.",
+      "The Malaysia Food and Beverages Industry (F&B) is identified as a fast-growing market and one of the main contributors to the national account. In 2018, the Malaysia F&B Industry was valued at around RM 180 billion, growing annually at a rate of 7.6%. The F&B industry in Malaysia is very diverse with a wide range of processed food for Asian taste and dietary preference as well as many western recipes. This industry is predominantly dominated by small and medium-sized companies (SMEs). Besides SMEs, many foreign and MNCs companies are manufacturing processed food products in the country too. The F&B sector is very diverse including cocoa and chocolate products, fishery products, cereals and cereal products, processed fruits and vegetables, confectionery, food ingredients, herbs and spices, beverages, animal feed, and others.",
     studyMode: "Full Time",
     durationOfStudy: "2.5 Years",
     intakes: ["January", "May", "September"],
@@ -384,7 +405,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   "diploma-in-tourism-management": {
     code: "R/1015/4/0064 (FA12167) 11/29",
     overview:
-      "Global tourism today has become a rapidly expanding people-oriented industry. ALFA University College venture into the Tourism Management industry so that our graduates will be among the best that this industry could ever have.",
+      "Global tourism today has become a rapidly expanding people-oriented industry. Not to be left behind, ALFA University College venture into the Tourism Management industry so that our graduates will be among the best that this industry could ever have. For those who love meeting new people, exploring the glam world of tourism, communicating with the international correspondent, managing customers, and companies, a Diploma in Tourism Management is your next venture. Your days will be a full tour in tourism geography, hospitality industry, managing attractions and transportations, domestic tourism, and public relations.",
     studyMode: "Full Time",
     durationOfStudy: "2.5 Years",
     intakes: ["January", "May", "September"],
@@ -545,325 +566,1004 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       total: "RM 48,000",
     },
   },
-
-  /* =========================
-     BACHELOR PROGRAMS
-     ========================= */
-
-  "bachelor-of-arts-honours-business-administration": {
-    code: "B1",
+    "bachelor-of-arts-honours-business-administration": {
+    code: "N-DL/0414/6/0078 (PA 16720) 08/28",
     overview:
-      "The Bachelor of Arts (Honours) in Business Administration equips students with comprehensive knowledge in business management, strategic planning, marketing, finance, and organizational leadership. Graduates are prepared for diverse roles in the corporate world.",
+      "Bachelor of Arts (Honours) of Business Administration offers you a wealth of knowledge, acquisition of competent skills, and professional development to succeed in the global business workforce. The course that we provide prepares you for the real practice. You will be equipped with a solid foundation in the core business skills, as well as other essential areas of study. ALFA University College will closely monitor your commitment for a three-year-study and assist you to graduate with flying colors. The additional focus on hands-on education will not only improve your intellectual competency but boost your analytical aptitudes in a variety of abilities both in the soft and hard skills. It too, enhances the development of leadership and interpersonal skills in you. Our Bachelor (Hons) of Business Administration is a bridging program to thousands of opportunities in the business arena.",
     studyMode: "Coursework",
     durationOfStudy: "3 Years",
     duration: "3 Years",
     intakes: ["January", "May", "September"],
     careers: [
-      "Business Manager",
+      "Entrepreneur",
+      "Business Executive",
+      "Office Administrator",
+      "Operations Assistant",
       "Marketing Executive",
       "Operations Manager",
-      "Business Analyst",
-      "Entrepreneur",
-      "Management Consultant",
-      "Sales Director",
-      "Corporate Strategist",
+      "Human Resources Manager",
+      "Marketing Manager",
+      "Digital Marketing Manager",
     ],
     fees: {
       emgs: "RM 3,500",
-      registrationInternational: "RM 2,000",
+      registrationInternational: "RM 2,500",
       additionalFees: "RM 2,000",
-      tuition: { year1: "RM 13,500", year2: "RM 12,500", year3: "RM 12,500" },
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,500",
+      },
       total: "RM 40,500",
     },
   },
 
   "bachelor-of-arts-honours-business-administration-odl": {
-    code: "B2",
+    code: "N-DL/0414/6/0078 (PA 16720) 08/28",
     overview:
-      "The Bachelor of Arts (Honours) in Business Administration via Open Distance Learning (ODL) offers the same comprehensive business education with flexible study arrangements, allowing students to balance work and study commitments.",
-    studyMode: "Coursework (ODL)",
+      "This ODL programme provides you a wealth of knowledge, acquisition of competent skills, and professional development to succeed in the global business workforce. The course that we provide prepares you for the real practice. You will be equipped with a solid foundation in the core business skills, as well as other essential areas of study. ALFA University College will closely monitor your commitment for a three-year-study and assist you to graduate with flying colors. The additional focus on hands-on education will not only improve your intellectual competency but boost your analytical aptitudes in a variety of abilities both in the soft and hard skills. It too, enhances the development of leadership and interpersonal skills in you. Our Bachelor (Hons) of Business Administration is a bridging program to thousands of opportunities in the business arena.",
+    studyMode: "Coursework",
     durationOfStudy: "3 Years",
     duration: "3 Years",
     intakes: ["January", "May", "September"],
     careers: [
-      "Business Manager",
+      "Entrepreneur",
+      "Business Executive",
+      "Office Administrator",
+      "Operations Assistant",
       "Marketing Executive",
       "Operations Manager",
-      "Business Analyst",
-      "Entrepreneur",
-      "Management Consultant",
+      "Human Resources Manager",
+      "Marketing Manager",
+      "Digital Marketing Manager",
     ],
     fees: {
       emgs: "RM 3,500",
-      registrationInternational: "RM 2,000",
-      additionalFees: "RM 0",
-      tuition: { year1: "RM 10,000", year2: "RM 11,000", year3: "RM 11,000" },
+      registrationInternational: "RM 2,500",
+      additionalFees: "ODL",
+      tuition: {
+        year1: "RM 10,000",
+        year2: "RM 11,000",
+        year3: "RM 11,000",
+      },
       total: "RM 32,000",
     },
   },
 
   "bachelor-of-early-childhood-education-honours": {
-    code: "B3",
+    code: "N/0112/6/0001 (PA 16363) 07/28",
     overview:
-      "The Bachelor of Early Childhood Education (Honours) prepares educators to shape the minds of young children. This programme covers child development, pedagogy, curriculum design, and classroom management for early learning environments.",
+      "Be ready to become global leaders and managers for major hospitality industry segments by developing strategies that can be applied at the workplace from running world class front to back of the house operations, building quest relations, managing financial trans- actions, creating marketing opportunities to cultivating business ventures. Bachelor of Science (Honours) in Hospitality Management at ALFA College has been established to provide knowledge, information and increase graduates’ experience in the operations and management functions available in the Hospitality industry. Hence, this study will focus on the hospitality industry’s operations and management, such as front office, housekeeping, food & beverage, food service, event management, club management, hotel marketing, and many more. Besides, this program also will prepare graduates in the world of professionalism and careers in hotels, resorts, private clubs, restaurants, catering businesses and conferences.",
     studyMode: "Coursework",
     durationOfStudy: "3 Years",
     duration: "3 Years",
     intakes: ["January", "May", "September"],
     careers: [
-      "Early Childhood Teacher",
-      "Preschool Director",
+      "Preschool Teacher",
+      "Early Childhood Educator",
+      "Curriculum Assistant",
+      "Childcare Centre Supervisor",
       "Education Coordinator",
-      "Child Development Specialist",
-      "Curriculum Designer",
-      "School Counselor",
-      "Kindergarten Owner",
+      "Learning Support Executive",
     ],
     fees: {
       emgs: "RM 3,500",
-      registrationInternational: "RM 2,000",
+      registrationInternational: "RM 2,500",
       additionalFees: "RM 2,000",
-      tuition: { year1: "RM 13,500", year2: "RM 12,500", year3: "RM 12,500" },
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,500",
+      },
       total: "RM 40,500",
     },
   },
 
   "bachelor-of-e-business-honours": {
-    code: "B4",
+    code: "N/340/6/0824 (PA 14723) 08/26",
     overview:
-      "The Bachelor of E-Business (Honours) combines business fundamentals with digital technology skills. Students learn about e-commerce strategies, digital marketing, online business operations, and technology-driven business solutions.",
+      "Our Bachelor of E-Business does not only prepare you for the substance of the world business but also equips you with the knowledge for you to be hot to trot in a local and international platform. This degree allows you to explore the heterogeneity of technologies and essential subjects such as masters in marketing, production, operation, strategic management, finance, communication, and leadership. Be with ALFA University College and be the next star in the business.",
     studyMode: "Coursework",
     durationOfStudy: "3 Years",
     duration: "3 Years",
     intakes: ["January", "May", "September"],
     careers: [
-      "E-Commerce Manager",
-      "Digital Business Analyst",
-      "E-Business Consultant",
-      "Digital Marketing Manager",
-      "Online Retail Manager",
-      "Tech Entrepreneur",
+      "E-Business Executive",
+      "Digital Marketing Executive",
+      "E-Commerce Specialist",
+      "Business Analyst",
+      "Online Sales Executive",
+      "Entrepreneur",
     ],
     fees: {
       emgs: "RM 3,500",
-      registrationInternational: "RM 2,000",
+      registrationInternational: "RM 2,500",
       additionalFees: "RM 2,000",
-      tuition: { year1: "RM 13,500", year2: "RM 12,500", year3: "RM 12,500" },
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,500",
+      },
       total: "RM 40,500",
     },
   },
 
   "bachelor-honours-human-resource-management": {
-    code: "B5",
+    code: "N/0414/6/0002 (PA 15206) 02/27",
     overview:
-      "The Bachelor (Honours) in Human Resource Management provides in-depth knowledge of workforce management, talent acquisition, employee relations, compensation planning, and organizational development.",
+      "Bachelor In Human Resource Management degree is designed to provide students with a strong academic foundation in core business functions including general business administration, accounting, finance, entrepreneurship, project management, information technology, human resources, marketing, international business, logistics and organizational behavior. These competencies are flexible enough that upon graduation, careers in a variety of different fields may be available. By studying business theories and learning best business practices, business majors may develop critical skill-sets, such as knowing how to analyse problems by using and applying data. Business majors also have the opportunity to gain proficiency in managing large groups of people and may become adept at fostering professional communications. Business majors may also develop strong leadership skills and learn how to manage projects and meet deadlines. The Bachelor of Human Resource Management (Hons) is a three-year programme that provides students with the knowledge and skills necessary to succeed in the field of human resource management. The programme covers a wide range of topics, including recruitment and selection, training and development, performance management, compensation and benefits, employee relations, and strategic human resource management. Students will also have the opportunity to gain practical experience through internships and case studies. Upon completion of the programme, graduates will be well-equipped to pursue careers in human resource management in various industries.",
     studyMode: "Coursework",
     durationOfStudy: "3 Years",
     duration: "3 Years",
     intakes: ["January", "May", "September"],
     careers: [
-      "HR Manager",
-      "Talent Acquisition Specialist",
-      "Compensation & Benefits Manager",
-      "Training & Development Manager",
-      "Employee Relations Officer",
-      "Organizational Development Consultant",
+      "HR Executive",
+      "Recruitment Specialist",
+      "Training Coordinator",
+      "Talent Acquisition Executive",
+      "Admin Executive",
+      "Payroll Executive",
     ],
     fees: {
       emgs: "RM 3,500",
-      registrationInternational: "RM 2,000",
+      registrationInternational: "RM 2,500",
       additionalFees: "RM 2,000",
-      tuition: { year1: "RM 13,500", year2: "RM 12,500", year3: "RM 12,500" },
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,500",
+      },
       total: "RM 40,500",
     },
   },
 
   "bachelor-of-information-technology-honours": {
-    code: "B6",
+    code: "N/482/6/0216 (PA 14725) 08/26",
     overview:
-      "The Bachelor of Information Technology (Honours) provides comprehensive training in software development, database management, networking, and systems analysis. Students gain hands-on experience with current technologies and industry practices.",
+      "ALFA University College offers you a course that will bring you to EDGE of technology, underlying specialized skills, and succeed in highly competitive environments which rapidly changing the world. With uncountable numbers of career opportunities, the world is looking for someone who masters information technology just at their fingertips. You will learn business, communication skills, leadership, and human relations, Java programming, and other dominant subjects in the course. You’ll benefit from a program developed through unassailable industry consultation that allows you to undertake projects, placements, and internships with businesses, which can often lead to employment opportunities.",
     studyMode: "Coursework",
     durationOfStudy: "3 Years",
     duration: "3 Years",
     intakes: ["January", "May", "September"],
     careers: [
       "Software Developer",
-      "Systems Analyst",
-      "IT Consultant",
-      "Database Administrator",
-      "Network Engineer",
+      "System Analyst",
+      "IT Executive",
       "Web Developer",
-      "IT Project Manager",
+      "Database Administrator",
+      "Network Executive",
     ],
     fees: {
       emgs: "RM 3,500",
-      registrationInternational: "RM 2,000",
+      registrationInternational: "RM 2,500",
       additionalFees: "RM 2,000",
-      tuition: { year1: "RM 14,000", year2: "RM 13,500", year3: "RM 13,500" },
+      tuition: {
+        year1: "RM 14,000",
+        year2: "RM 13,500",
+        year3: "RM 13,500",
+      },
       total: "RM 43,000",
     },
   },
 
   "bachelor-of-science-honours-in-hospitality-management": {
-    code: "B7",
+    code: "N/1013/6/0001 (PA 14957) 02/27",
     overview:
-      "The Bachelor of Science (Honours) in Hospitality Management prepares students for leadership roles in the hospitality industry. The programme covers hotel management, food & beverage operations, tourism, and event management.",
+      "Be ready to become global leaders and managers for major hospitality industry segments by developing strategies that can be applied at the workplace from running world class front to back of the house operations, building quest relations, managing financial trans- actions, creating marketing opportunities to cultivating business ventures. Bachelor of Science (Honours) in Hospitality Management at ALFA College has been established to provide knowledge, information and increase graduates’ experience in the operations and management functions available in the Hospitality industry. Hence, this study will focus on the hospitality industry’s operations and management, such as front office, housekeeping, food & beverage, food service, event management, club management, hotel marketing, and many more. Besides, this program also will prepare graduates in the world of professionalism and careers in hotels, resorts, private clubs, restaurants, catering businesses and conferences.",
     studyMode: "Coursework",
     durationOfStudy: "3 Years",
     duration: "3 Years",
     intakes: ["January", "May", "September"],
     careers: [
-      "Hotel Manager",
-      "F&B Manager",
-      "Resort Manager",
-      "Events Manager",
-      "Tourism Director",
-      "Hospitality Consultant",
-      "Revenue Manager",
+      "Hotel Executive",
+      "Guest Relations Officer",
+      "Hospitality Manager",
+      "Front Office Executive",
+      "Tourism Executive",
+      "Events Executive",
     ],
     fees: {
       emgs: "RM 3,500",
-      registrationInternational: "RM 2,000",
+      registrationInternational: "RM 2,500",
       additionalFees: "RM 2,000",
-      tuition: { year1: "RM 15,500", year2: "RM 13,500", year3: "RM 13,500" },
+      tuition: {
+        year1: "RM 15,500",
+        year2: "RM 13,500",
+        year3: "RM 13,500",
+      },
       total: "RM 44,500",
     },
   },
 
   "bachelor-of-arts-honours-graphic-design": {
-    code: "B8",
+    code: "N/214/6/0222 (FA 14849) 08/26",
     overview:
-      "The Bachelor of Arts (Honours) in Graphic Design develops creative professionals skilled in visual communication, branding, typography, digital media, and design thinking. Students build a professional portfolio through hands-on projects.",
+      "This programme develops creative and technical skills in visual communication, branding, design systems, digital media, and professional graphic design practice.",
     studyMode: "Coursework",
     durationOfStudy: "3 Years",
     duration: "3 Years",
     intakes: ["January", "May", "September"],
     careers: [
       "Graphic Designer",
+      "Creative Designer",
+      "Brand Designer",
+      "Visual Communication Executive",
       "Art Director",
-      "Creative Director",
-      "Brand Identity Designer",
-      "UI/UX Designer",
-      "Publication Designer",
       "Freelance Designer",
     ],
     fees: {
       emgs: "RM 3,500",
-      registrationInternational: "RM 2,000",
+      registrationInternational: "RM 2,500",
       additionalFees: "RM 2,000",
-      tuition: { year1: "RM 14,000", year2: "RM 13,500", year3: "RM 13,500" },
+      tuition: {
+        year1: "RM 14,000",
+        year2: "RM 13,500",
+        year3: "RM 13,500",
+      },
       total: "RM 43,000",
     },
   },
 
   "bachelor-of-arts-honours-creative-multimedia": {
-    code: "B9",
+    code: "N/213/6/0357 (PA 14850) 08/26",
     overview:
-      "The Bachelor of Arts (Honours) in Creative Multimedia explores digital art, animation, interactive media, game design, and multimedia production. Students gain expertise in cutting-edge creative technologies.",
+      "The year has spoken, the floor has opened, the world welcomes creative multimedia graduates to colors the entire atmosphere with technologies and creativity. ALFA University College is the platform for you to be listed among those professionals that the sphere needs. Be with us, and we shall give you not only the lesson on application development, game design, digital animation, web development, interactive arts but together with business empowerment, communication skills, in-depth knowledge, and so much more. The magical touch of the professional in the field awaits you.",
     studyMode: "Coursework",
     durationOfStudy: "3 Years",
     duration: "3 Years",
     intakes: ["January", "May", "September"],
     careers: [
       "Multimedia Designer",
-      "3D Animator",
-      "Game Designer",
-      "Motion Graphics Artist",
-      "Digital Content Creator",
-      "Interactive Media Developer",
-      "VFX Artist",
+      "Animator",
+      "Creative Content Producer",
+      "Video Editor",
+      "Interactive Media Designer",
+      "Digital Artist",
     ],
     fees: {
       emgs: "RM 3,500",
-      registrationInternational: "RM 2,000",
+      registrationInternational: "RM 2,500",
       additionalFees: "RM 2,000",
-      tuition: { year1: "RM 14,000", year2: "RM 13,500", year3: "RM 13,500" },
+      tuition: {
+        year1: "RM 14,000",
+        year2: "RM 13,500",
+        year3: "RM 13,500",
+      },
       total: "RM 43,000",
     },
   },
 
   "bachelor-of-law-enforcement": {
-    code: "B10",
+    code: "N/1032/6/0005 (PA 17047) 02/29",
     overview:
-      "The Bachelor of Law Enforcement prepares students for careers in law enforcement, security management, and public safety. The programme covers criminal justice, investigation techniques, legal frameworks, and enforcement management.",
+      "Bachelor of Law Enforcement offers you a wealth of knowledge, acquisition of competent skills, and professional development to succeed in the global business workforce. The course that we provide prepares you for the real practice. You will be equipped with a solid foundation in the core business skills, as well as other essential areas of study. ALFA University College will closely monitor your commitment for a three-year-study and assist you to graduate with flying colors. The additional focus on hands-on education will not only improve your intellectual competency but boost your analytical aptitudes in a variety of abilities both in the soft and hard skills. It too, enhances the development of leadership and interpersonal skills in you. Our Bachelor (Hons) of Business Administration is a bridging program to thousands of opportunities in the business arena.",
     studyMode: "Coursework",
     durationOfStudy: "3 Years",
     duration: "3 Years",
     intakes: ["January", "May", "September"],
     careers: [
-      "Law Enforcement Officer",
-      "Security Manager",
+      "Enforcement Officer",
       "Investigation Officer",
-      "Compliance Manager",
-      "Public Safety Director",
-      "Intelligence Analyst",
+      "Security Executive",
+      "Compliance Officer",
+      "Public Safety Officer",
+      "Administrative Officer",
     ],
     fees: {
       emgs: "RM 3,500",
-      registrationInternational: "RM 2,000",
+      registrationInternational: "RM 2,500",
       additionalFees: "RM 2,000",
-      tuition: { year1: "RM 13,500", year2: "RM 13,500", year3: "RM 13,500" },
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 13,500",
+        year3: "RM 13,500",
+      },
       total: "RM 42,500",
     },
   },
 
   "bachelor-of-science-honours-in-architecture": {
-    code: "B11",
+    code: "N/0731/6/0013 (PA 17786) 11/29",
     overview:
-      "The Bachelor of Science (Honours) in Architecture provides comprehensive training in architectural design, building technology, sustainable design, and urban planning. Students develop skills through studio-based learning and real-world projects.",
+      "It is time to DRAW your blueprint of the future. Architecture is not only a platform for mind illustration but a medium for you to create magnificent and first-class designs for the world. There are a thousand opportunities for you to gain your inspiration, and it is all started here at ALFA University College. In this course, you will learn how to plan buildings, structures, and environmental impact. Not only that, you will develop transferable skills in empathy, understanding, delegation, communication, and leadership. With a one-to-one approach and a fully equipped studio space, ALFA University College offers you more than just a piece of knowledge. A valuable experience is waiting ahead.",
     studyMode: "Coursework",
     durationOfStudy: "3 Years",
     duration: "3 Years",
     intakes: ["January", "May", "September"],
     careers: [
-      "Architectural Designer",
-      "Urban Planner",
-      "Building Consultant",
-      "Project Manager",
-      "Landscape Architect",
-      "Sustainability Consultant",
-      "Interior Architect",
+      "Architectural Assistant",
+      "Design Consultant",
+      "CAD Designer",
+      "Project Coordinator",
+      "Planning Assistant",
+      "Built Environment Executive",
     ],
     fees: {
       emgs: "RM 3,500",
-      registrationInternational: "RM 2,000",
+      registrationInternational: "RM 2,500",
       additionalFees: "RM 2,000",
-      tuition: { year1: "RM 20,000", year2: "RM 18,500", year3: "RM 18,500" },
+      tuition: {
+        year1: "RM 20,000",
+        year2: "RM 18,500",
+        year3: "RM 18,500",
+      },
       total: "RM 59,000",
     },
   },
 
   "bachelor-in-computer-science-cyber-security-and-networks": {
-    code: "B12",
+    code: "N/0613/6/0115 (PA 18146) 06/30",
     overview:
-      "The Bachelor in Computer Science (Cyber Security and Networks) trains students in cybersecurity, network infrastructure, ethical hacking, digital forensics, and information security management. Graduates are prepared for the growing demand in cybersecurity professionals.",
+      "The Bachelor of Computer Science (Cyber Security and Networks) program at ALFA University College offers comprehensive education in network design, distributed applications, and defending against cyber-attacks. It prepares students for a wide range of career opportunities in the rapidly evolving IT Security sector. The curriculum covers core computer science principles, advanced cybersecurity techniques, and practical skills in network security, ethical hacking, and digital forensics. Graduates will be equipped to pursue careers as cybersecurity analysts, network administrators, IT security specialists, and more in various industries including finance, healthcare, government, and technology.",
     studyMode: "Coursework",
     durationOfStudy: "3 Years",
     duration: "3 Years",
     intakes: ["January", "May", "September"],
     careers: [
       "Cybersecurity Analyst",
-      "Network Security Engineer",
-      "Penetration Tester",
-      "Information Security Manager",
-      "Digital Forensics Analyst",
-      "Security Consultant",
-      "IT Security Auditor",
+      "Network Administrator",
+      "System Security Executive",
+      "IT Security Specialist",
+      "Security Operations Analyst",
+      "Infrastructure Engineer",
     ],
     fees: {
       emgs: "RM 3,500",
-      registrationInternational: "RM 2,000",
+      registrationInternational: "RM 2,500",
       additionalFees: "RM 2,000",
-      tuition: { year1: "RM 16,000", year2: "RM 15,000", year3: "RM 15,000" },
+      tuition: {
+        year1: "RM 16,000",
+        year2: "RM 15,000",
+        year3: "RM 15,000",
+      },
       total: "RM 48,000",
+    },
+  },
+    "master-of-business-administration": {
+    code: "N/340/7/0783 (FA14726) 08/26",
+    overview:
+      "The ALFA MBA is ideal for individuals seeking to develop their potential to manage and lead in the current dynamic and complex organisational environment. It is a highly valued qualification for middle and senior managers or entrepreneurs in both public and private sectors looking to develop their management skills and leadership styles. ALFA’s goal is to enhance students capabilities and well-knowledge equipped by shaping amazing learning for the MBA advancement of the students. The ALFA MBA brings together diversified people, perspectives, and organizations to enhance management practice and respond to the contemporary business world and management issues such as uncertainty about the future in financial management, monitoring performance, regulation and compliance, competencies and recruiting the right talent, technology, exploding data, customer service, sustainability, innovation and ethics.",
+    studyMode: "Full Time || Coursework ",
+    durationOfStudy: "1 Year 4 Months",
+    duration: "1 Year 4 Months Minimum",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Business Manager",
+      "Operations Manager",
+      "Management Consultant",
+      "Business Development Manager",
+      "Corporate Executive",
+      "Entrepreneur",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "N/A",
+      },
+      total: "RM 27,500",
+    },
+  },
+
+  "master-of-business-administration-odl": {
+    code: "N/0414/7/0015 (PA 15961) 10/27",
+    overview:
+      "The ALFA MBA Open Distance Learning (ODL) is ideal for individuals seeking to develop their potential to manage and lead in the current dynamic and complex organisational environment. It is a highly valued qualification for middle and senior managers or entrepreneurs in both public and private sectors looking to develop their management skills and leadership styles. ALFA’s goal is to enhance students capabilities and well-knowledge equipped by shaping amazing learning for the MBA advancement of the students. The ALFA MBA brings together diversified people, perspectives, and organizations to enhance management practice and respond to the contemporary business world and management issues such as uncertainty about the future in financial management, monitoring performance, regulation and compliance, competencies and recruiting the right talent, technology, exploding data, customer service, sustainability, innovation and ethics.",
+    studyMode: "Full Time || Coursework",
+    durationOfStudy: "1 Year 4 Months",
+    duration: "1 Year 4 Months Minimum",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Business Manager",
+      "Administrative Manager",
+      "Operations Executive",
+      "Marketing Manager",
+      "Business Consultant",
+      "Entrepreneur",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "ODL",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "N/A",
+      },
+      total: "RM 26,000",
+    },
+  },
+
+  "master-of-business-administration-international-business": {
+    code: "N/340/7/0784 (FA14947) 09/28",
+    overview:
+      "The ALFA MBA is ideal for individuals seeking to develop their potential to manage and lead in the current dynamic and complex organisational environment. It is a highly valued qualification for middle and senior managers or entrepreneurs in both public and private sectors looking to develop their management skills and leadership styles. ALFA’s goal is to enhance students capabilities and well-knowledge equipped by shaping amazing learning for the MBA advancement of the students.The ALFA MBA brings together diversified people, perspectives, and organizations to enhance management practice and respond to the contemporary business world and management issues such as uncertainty about the future in financial management, monitoring performance, regulation and compliance, competencies and recruiting the right talent, technology, exploding data, customer service, sustainability, innovation and ethics.",
+    studyMode: "Full Time || Coursework",
+    durationOfStudy: "1 Year 3 Months",
+    duration: "1 Year 3 Months Minimum",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "International Business Executive",
+      "Business Development Manager",
+      "Trade Analyst",
+      "Corporate Strategist",
+      "Regional Operations Manager",
+      "Entrepreneur",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 0",
+      },
+      total: "RM 27,500",
+    },
+  },
+
+  "master-of-project-management": {
+    code: "N/345/7/1126 (FA14958) 09/28",
+    overview:
+      "Master of Project Management provides practice, tools, and techniques for the management of operations. You can apply the knowledge that you gain during the program in various projects and analyse the current operational performance of an organisation in terms of production, distribution, and International logistics and how to improve by redesigning business processes. The ALFA Master of Project Management is an industry-driven programme designed for individuals who want to establish themselves as professionals in the project management field and those who are interested to pursue a new career in project management. The programme helps students to develop the ability to solve real-world problems, exercise sound management judgment, and develop efficient decision-making skills.The ALFA Master of Project Management aims to train students to acquire a wide perspective by providing courses in the core area of project management such as project management principles, managerial accounting and business linance, project quality management, managing talent and leadership, risk management, project monitoring and controlling system management, and business management. In addition, courses like innovation, resource management and entrepreneurship, will allow ALFA Master of Project Management graduates to be competent professionals in the era of globalisation, thus improving employability. This programme is ideal for project managers, supervisors engineers, project directors from various sectors – national and international public and non governmental organisations, ministries, banks, consulting companies, and entrepreneurs.",
+    studyMode: "Full Time || Coursework",
+    durationOfStudy: "1 Year 3 Months",
+    duration: "1 Year 3 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Project Manager",
+      "Project Coordinator",
+      "Operations Manager",
+      "Planning Executive",
+      "Project Consultant",
+      "Programme Executive",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,000",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 13,500",
+        year3: "RM 0",
+      },
+      total: "RM 27,000",
+    },
+  },
+
+  "master-in-information-technology": {
+    code: "N/0611/7/0003 (PA 16152) 12/27",
+    overview:
+      "The Master of Information Technology (MIT) is a broad, flexible and technical degree which offers exciting and diverse career opportunities and challenges. As well as providing foundation IT skills for entrants with limited IT experience, the program provides opportunities for experienced IT professionals to enhance and apply their skills within emerging technology driven growth areas including IT, communications, management, business and entrepreneurship.",
+    studyMode: "Full Time || Coursework",
+    durationOfStudy: "1 Year 3 Months",
+    duration: "1 Year 3 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "IT Manager",
+      "System Analyst",
+      "Technology Consultant",
+      "Software Project Lead",
+      "Digital Transformation Executive",
+      "IT Strategist",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 15,000",
+        year2: "RM 14,000",
+        year3: "RM 0",
+      },
+      total: "RM 30,500",
+    },
+  },
+
+  "master-of-education-in-early-childhood-education": {
+    code: "N/143/7/0121 (PA 15160) 12/28",
+    overview:
+      "Be the MASTER with us. Be the STAR in the eyes of thousands of children that will be sowing the seeds of you. Here at ALFA University College, we define learning as a prime parameter in education that should impact the kids and the entire generation. By joining us in Early Childhood Education, you are just a step away from making a history of engendering the next future LEADER, LEADERS FOR ALL. Our program is grounded in absolute perfect theories supported the high-quality educational experiences. We are ready to equip you with a hands-on, real-world connection into the scope of education in the 21st Century. Not only that, you will be an expert in maneuvering between the diverse environments working with children and families, fostering life enhancement and development, children psychology. leadership, and much more. You will be a prodigy of theory, research-based education, children, development, and enhancing the best curriculum in an early childhood environment.",
+    studyMode: "Full Time || Research",
+    durationOfStudy: "2 Years",
+    duration: "2 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Lecturer",
+      "Researcher",
+      "Education Specialist",
+      "Curriculum Developer",
+      "Academic Coordinator",
+      "Early Childhood Education Consultant",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 0",
+      },
+      total: "RM 27,500",
+    },
+  },
+
+  "master-of-education-in-tesl": {
+    code: "N/145/7/0122 (PA 15159) 12/28",
+    overview:
+      "The Master in Education (Teaching of English as a Second Language) programme is designed in line with the latest, interactive and innovative developments to enhance students’ scholarship in the field of TESL. The post – graduate students would be experiencing learning the advanced coursework subjects and they would also be able to expertise in conducting researches in various dimensions in TESL. This programme is ideal for those who want to gain a specialized knowledge in teaching English.Students will be learning the core principles of teaching and learning the English language, teaching methodologies in TESL, literature in TESL, theories and practices in TESL, pedagogy and researches in TESL, as well as skills in conducting research. At ALFA University College, we believe our graduates are shaped into being ‘A Leader for All”, and this specially tailored programme will be an added value for those who has passion towards the English language and further inspires them to be a comprehensive society for the betterment of the nation.",
+    studyMode: "Full Time || Research",
+    durationOfStudy: "2 Years",
+    duration: "2 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "TESL Lecturer",
+      "Language Researcher",
+      "Curriculum Specialist",
+      "Academic Coordinator",
+      "English Language Trainer",
+      "Education Consultant",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 0",
+      },
+      total: "RM 27,500",
+    },
+  },
+
+  "master-of-science-in-management": {
+    code: "N/345/7/1127 (PA 14959) 09/28",
+    overview:
+      "The objective of the Master of Science in Management is to provide postgraduate students the opportunity to enhance their knowledge through independent research in a selected area of management. The focus on research and training in the program will enable the postgraduate students to be competent in handling basic applied research in their chosen specialties.",
+    studyMode: "Full Time || Research",
+    durationOfStudy: "3 Years",
+    duration: "3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Management Researcher",
+      "Lecturer",
+      "Corporate Strategist",
+      "Policy Analyst",
+      "Organizational Consultant",
+      "Academic Research Executive",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,500",
+      },
+      total: "RM 40,000",
+    },
+  },
+
+  "master-in-art-and-design": {
+    code: " N/0210/7/0006 (PA 17320) 06/29",
+    overview:
+      "Master of Art and Design is a practice-based programme that requires students to provide solutions through innovative design thinking process. The disciplines involved are wide-ranging from multimedia, fine art, animation, graphic design and fashion, among others, covering the length and breath of the creative industry. The programme is designed to equip students with the necessary skills and knowledge to excel in the creative industry, including design research, critical thinking, and professional practice. Students will have the opportunity to work on real-world projects and collaborate with industry professionals, preparing them for a successful career in the creative arts.",
+    studyMode: "full Time || Research",
+    durationOfStudy: "3 Years",
+    duration: "3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Design Researcher",
+      "Lecturer",
+      "Creative Director",
+      "Art Consultant",
+      "Visual Arts Specialist",
+      "Academic Researcher",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,500",
+      },
+      total: "RM 40,000",
+    },
+  },
+
+  "master-in-education": {
+    code: "M10",
+    overview:
+      "This research-based programme provides advanced knowledge in education systems, pedagogy, curriculum, leadership, and academic research.",
+    studyMode: "By Research",
+    durationOfStudy: "1 Year 6 Months",
+    duration: "1 Year 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Lecturer",
+      "Education Researcher",
+      "Academic Coordinator",
+      "Curriculum Specialist",
+      "School Administrator",
+      "Education Consultant",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 17,500",
+        year2: "RM 18,000",
+        year3: "RM 0",
+      },
+      total: "RM 37,000",
+    },
+  },
+
+  "master-of-philosophy-in-engineering": {
+    code: "N/0710/7/0023 (PA 18244) 06/30",
+    overview:
+      "The objective of the Master of Philosophy in Engineering (By Research) is to provide postgraduate students the opportunity to enhance their knowledge through independent research in a selected area of engineering. The focus on research and training in the program will enable the postgraduate students to be competent in handling basic applied research in their chosen specialties.",
+    studyMode: "full Time || Research",
+    durationOfStudy: "3 Years",
+    duration: "3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Engineering Researcher",
+      "Lecturer",
+      "R&D Engineer",
+      "Technical Consultant",
+      "Innovation Specialist",
+      "Engineering Analyst",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 16,000",
+        year2: "RM 15,000",
+        year3: "RM 15,000",
+      },
+      total: "RM 47,500",
+    },
+  },
+
+  "master-in-supply-chain-management": {
+    code: "N/0414/7/0277 (PA 18246) 06/30",
+    overview:
+      "Master in Supply Chain Management is ideal for individuals seeking to develop their potential to manage and lead in the current dynamic and complex organisational environment. It is a highly valued qualification for middle and senior managers or entrepreneurs in both public and private sectors looking to develop their management skills and leadership styles and ALFA’s goal is to enhance student’s capabilities and well-knowledge equipped by shaping amazing learning for the MBA advancement of the students. The ALFA International Business MBA focuses on business on a global scale. It offers a broad range of learning advancement, from the fundamentals of trading business information system strategy and global business commercial awareness to understanding the international business environment, and managing human resources.",
+    studyMode: "full Time || Coursework",
+    durationOfStudy: "1 Year 3 Months",
+    duration: "1 Year 3 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Supply Chain Manager",
+      "Logistics Executive",
+      "Procurement Manager",
+      "Operations Manager",
+      "Inventory Analyst",
+      "Distribution Executive",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 15,000",
+        year2: "RM 14,500",
+        year3: "RM 0",
+      },
+      total: "RM 31,000",
+    },
+  },
+
+  "mba-in-oil-and-gas-management": {
+    code: "N/0414/7/0285 (PA 18245) 07/30",
+    overview:
+      "The Master of Business Administration in Oil and Gas program at ALFA University College focuses on developing leadership and management skills in the oil and gas sector. The program covers topics such as project management, supply chain, and energy strategies. It aims to prepare students for senior positions in the global energy industry through a blend of theoretical and practical learning.",
+    studyMode: "full Time || Coursework",
+    durationOfStudy: "1 Year 3 Months",
+    duration: "1 Year 3 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Oil and Gas Executive",
+      "Operations Manager",
+      "Project Manager",
+      "Business Development Manager",
+      "Industry Consultant",
+      "Corporate Strategist",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 16,000",
+        year2: "RM 16,000",
+        year3: "RM 0",
+      },
+      total: "RM 33,500",
+    },
+  },
+
+  "master-of-music": {
+    code: "M14",
+    overview:
+      "This research-based programme develops advanced musical knowledge, performance studies, composition, and academic research in music.",
+    studyMode: "By Research",
+    durationOfStudy: "3 Years",
+    duration: "3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Music Lecturer",
+      "Researcher",
+      "Composer",
+      "Performer",
+      "Music Director",
+      "Academic Consultant",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,500",
+      },
+      total: "RM 40,000",
+    },
+  },
+    "doctor-of-philosophy-in-management": {
+    code: "N/345/8/1093 (PA 15094) 11/28",
+    overview:
+      "For those who set their heart to reach higher professional goals in managing, ALFA University College offers you a Doctor of Philosophy in Management. A remarkable education asset, a truly marketable value that is a clamor in today’s workforce. Not only creating an impressive status-quo level, but it also creates another dimension of credibility, undeniable expertise, and a lifelong achievement in learning. Ph.D. in Management gives you a wealth of knowledge, solid confidence and prepares you to be the next pool of respective scholars. As a player in education premier and embedded with the “VISION OF ALFA UNIVERSITY COLLEGE”, we help you connect with the global society gaining more valuable skills which universally accepted. The program is designed to equip you with the necessary skills and knowledge to excel in the field of management, including research methodologies, leadership theories, organizational behavior, strategic management, and business ethics. Students will have the opportunity to conduct original research and contribute to the advancement of knowledge in the field of management.",
+    studyMode: "By Research",
+    durationOfStudy: "3 Years",
+    duration: "3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "University Lecturer",
+      "Researcher",
+      "Management Consultant",
+      "Policy Analyst",
+      "Corporate Strategist",
+      "Academic Leader",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,000",
+      },
+      total: "RM 39,500",
+    },
+  },
+
+  "doctor-of-philosophy-in-social-sciences": {
+    code: "N/310/8/0045 (PA 15157) 12/28",
+    overview:
+      "We called upon all charismatic personages to join us in Doctor of Philosophy in Social Sciences here at ALFA University College. This course explores the subfields of Sociology, Anthropology, Ethnology, and much more for you to master. It is a breathtaking journey of education with no boundaries. You will accomplish and excel at the highest parameters of Social Sciences with a complete understanding of society. Your scholastic and philosophical shall illustrate the diversity of human societies and cultural models across the continent and the similarities that make all human beings fundamentally indistinguishable.",
+    studyMode: "By Research",
+    durationOfStudy: "3 Years",
+    duration: "3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "University Lecturer",
+      "Social Science Researcher",
+      "Policy Research Analyst",
+      "Academic Consultant",
+      "Government Research Officer",
+      "Think Tank Researcher",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,000",
+      },
+      total: "RM 39,500",
+    },
+  },
+
+  "doctor-of-philosophy-in-information-technology": {
+    code: "N/482/8/0175 (PA 15113) 11/28",
+    overview:
+      "We established the pillars that uphold our tag “A Leader for All”: Innovative, Positive, Persistence, and Integrity. Ph.D. in Information Technology is another pathway for you to be in the professional community and success in every endeavor throughout the journey. The steps you take with us in ALFA University College will ensure you continue learning about the reliability and extensibility of the technology to the highest interpretation of academic. Get hold of this lifetime opportunity to venture into IT discipline, specific field, and relevant industry. The program is designed to equip students with the necessary skills and knowledge to excel in the field of information technology, including research methodologies, data analysis, software development, cybersecurity, and emerging technologies. Students will have the opportunity to conduct original research and contribute to the advancement of knowledge in the field of information technology.",
+    studyMode: "By Research",
+    durationOfStudy: "3 Years",
+    duration: "3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "IT Researcher",
+      "University Lecturer",
+      "Technology Consultant",
+      "R&D Specialist",
+      "Digital Innovation Lead",
+      "Systems Research Analyst",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,000",
+      },
+      total: "RM 39,500",
+    },
+  },
+
+  "doctor-of-philosophy-in-education": {
+    code: "N/0110/8/0013 (PA 16937) 02/31",
+    overview:
+      "We called upon all charismatic personages to join us in Doctor of Philosophy in Education here at ALFA University College. This course explores the subfields of Sociology, Anthropology, Ethnology, and much more for you to master. It is a breathtaking journey of education with no boundaries. You will accomplish and excel at the highest parameters of Education with a complete understanding of society. Your scholastic and philosophical shall illustrate the diversity of education and training models across the continent and the similarities that make all human beings fundamentally indistinguishable.",
+    studyMode: "By Research",
+    durationOfStudy: "3 Years",
+    duration: "3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "University Lecturer",
+      "Education Researcher",
+      "Curriculum Specialist",
+      "Academic Director",
+      "Policy Advisor",
+      "Education Consultant",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,000",
+      },
+      total: "RM 39,500",
+    },
+  },
+
+  "doctor-of-philosophy-in-art-and-design": {
+    code: "P5",
+    overview:
+      "This research-based doctoral programme explores advanced scholarship and creative inquiry in art, design, visual culture, and interdisciplinary design research.",
+    studyMode: "By Research",
+    durationOfStudy: "3 Years",
+    duration: "3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "University Lecturer",
+      "Art Researcher",
+      "Design Researcher",
+      "Creative Director",
+      "Academic Consultant",
+      "Visual Arts Scholar",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,000",
+      },
+      total: "RM 39,500",
+    },
+  },
+
+  "doctor-of-philosophy-in-performing-art": {
+    code: "N/0414/7/0277",
+    overview:
+      "We established the pillars that uphold our tag “A Leader for All”: Innovative, Positive, Persistence, and Integrity. Ph.D. in Information Technology is another pathway for you to be in the professional community and success in every endeavor throughout the journey. The steps you take with us in ALFA University College will ensure you continue learning about the reliability and extensibility of the technology to the highest interpretation of academic. Get hold of this lifetime opportunity to venture into IT discipline, specific field, and relevant industry.",
+    studyMode: "By Research",
+    durationOfStudy: "3 Years",
+    duration: "3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "University Lecturer",
+      "Performing Arts Researcher",
+      "Creative Director",
+      "Performance Scholar",
+      "Artistic Consultant",
+      "Academic Researcher",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,000",
+      },
+      total: "RM 39,500",
+    },
+  },
+
+  "doctor-of-philosophy-in-sport-science": {
+    code: "P7",
+    overview:
+      "This research-based doctoral programme develops advanced expertise in sport science, human performance, physical training, and scientific research in sports studies.",
+    studyMode: "By Research",
+    durationOfStudy: "3 Years",
+    duration: "3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "University Lecturer",
+      "Sport Science Researcher",
+      "Performance Analyst",
+      "Sports Consultant",
+      "Academic Researcher",
+      "Training Specialist",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 12,000",
+      },
+      total: "RM 39,500",
+    },
+  },
+
+  "doctor-of-business-administration-dba": {
+    code: "P8",
+    overview:
+      "This doctoral programme develops advanced executive-level expertise in business strategy, leadership, applied research, and organizational decision-making.",
+    studyMode: "Coursework",
+    durationOfStudy: "3 Years",
+    duration: "3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Senior Business Executive",
+      "Corporate Strategist",
+      "Business Consultant",
+      "University Lecturer",
+      "Research Practitioner",
+      "Organizational Leader",
+    ],
+    fees: {
+      emgs: "RM 3,500",
+      registrationInternational: "RM 2,500",
+      additionalFees: "RM 1,500",
+      tuition: {
+        year1: "RM 13,500",
+        year2: "RM 12,500",
+        year3: "RM 17,500",
+      },
+      total: "RM 45,000",
     },
   },
 };
 
 /**
- * KEY ALIASES — maps short/variant slugs to canonical keys
+ * ✅ KEY ALIASES (Fixes "No extra details found...")
+ * Your UI is sometimes using a SHORT slug (example: diploma-in-early-childhood)
+ * but your data is stored in a LONG slug (example: diploma-in-early-childhood-education).
  */
 export const programDetailsAliases: Record<string, string> = {
+  // Existing diploma / bachelor aliases
   "diploma-in-early-childhood": "diploma-in-early-childhood-education",
   "diploma-in-early-childhood-odl": "diploma-in-early-childhood-education-odl",
   "diploma-in-hotel-management": "diploma-in-hotel-management-work-based-learning",
@@ -871,20 +1571,77 @@ export const programDetailsAliases: Record<string, string> = {
   "diploma-in-retail-management": "diploma-in-retail-management-work-based-learning",
   "diploma-in-retail-management-wbl": "diploma-in-retail-management-work-based-learning",
   "diploma-in-tesl": "diploma-in-teaching-of-english-as-a-second-language-tesl",
-  "diploma-in-teaching-of-english-as-a-second-language": "diploma-in-teaching-of-english-as-a-second-language-tesl",
-  // Bachelor aliases
-  "bachelor-of-arts-business-administration": "bachelor-of-arts-honours-business-administration",
-  "bachelor-of-arts-business-administration-odl": "bachelor-of-arts-honours-business-administration-odl",
+  "diploma-in-teaching-of-english-as-a-second-language":
+    "diploma-in-teaching-of-english-as-a-second-language-tesl",
+
+  "bachelor-of-business-administration": "bachelor-of-arts-honours-business-administration",
+  "bachelor-of-business-administration-odl": "bachelor-of-arts-honours-business-administration-odl",
   "bachelor-of-early-childhood-education": "bachelor-of-early-childhood-education-honours",
+  "bachelor-of-ebusiness": "bachelor-of-e-business-honours",
   "bachelor-of-e-business": "bachelor-of-e-business-honours",
   "bachelor-of-human-resource-management": "bachelor-honours-human-resource-management",
+  "bachelor-of-it": "bachelor-of-information-technology-honours",
   "bachelor-of-information-technology": "bachelor-of-information-technology-honours",
-  "bachelor-of-science-hospitality-management": "bachelor-of-science-honours-in-hospitality-management",
-  "bachelor-of-arts-graphic-design": "bachelor-of-arts-honours-graphic-design",
-  "bachelor-of-arts-creative-multimedia": "bachelor-of-arts-honours-creative-multimedia",
-  "bachelor-of-science-architecture": "bachelor-of-science-honours-in-architecture",
-  "bachelor-in-computer-science": "bachelor-in-computer-science-cyber-security-and-networks",
-  "bachelor-of-computer-science-cyber-security-and-networks": "bachelor-in-computer-science-cyber-security-and-networks",
+  "bachelor-of-hospitality-management": "bachelor-of-science-honours-in-hospitality-management",
+  "bachelor-of-graphic-design": "bachelor-of-arts-honours-graphic-design",
+  "bachelor-of-creative-multimedia": "bachelor-of-arts-honours-creative-multimedia",
+  "bachelor-of-architecture": "bachelor-of-science-honours-in-architecture",
+  "bachelor-of-computer-science-cyber-security-and-networks":
+    "bachelor-in-computer-science-cyber-security-and-networks",
+
+  // Master aliases
+  "mba": "master-of-business-administration",
+  "master-of-business-administration-by-coursework": "master-of-business-administration",
+  "master-of-business-administration-odl-by-coursework": "master-of-business-administration-odl",
+  "master-of-business-administration-international-business-by-coursework":
+    "master-of-business-administration-international-business",
+  "master-of-business-administration-in-international-business":
+    "master-of-business-administration-international-business",
+  "master-of-project-management-by-coursework": "master-of-project-management",
+  "master-in-information-technology-by-coursework": "master-in-information-technology",
+  "master-of-it": "master-in-information-technology",
+  "master-of-information-technology": "master-in-information-technology",
+  "master-of-education-in-early-childhood-education-by-research":
+    "master-of-education-in-early-childhood-education",
+  "master-of-education-in-tesl-by-research": "master-of-education-in-tesl",
+  "master-of-science-in-management-by-research": "master-of-science-in-management",
+  "master-of-science-management": "master-of-science-in-management",
+  "master-in-art-and-design-by-research": "master-in-art-and-design",
+  "master-of-art-and-design": "master-in-art-and-design",
+  "master-in-education-by-research": "master-in-education",
+  "master-of-philosophy-in-engineering-by-research": "master-of-philosophy-in-engineering",
+  "master-in-supply-chain-management-by-coursework": "master-in-supply-chain-management",
+  "mba-in-oil-and-gas-management-by-coursework": "mba-in-oil-and-gas-management",
+  "master-of-music-by-research": "master-of-music",
+
+  // PhD / DBA aliases
+  "phd-in-management": "doctor-of-philosophy-in-management",
+  "phd-in-social-sciences": "doctor-of-philosophy-in-social-sciences",
+  "phd-in-information-technology": "doctor-of-philosophy-in-information-technology",
+  "phd-in-education": "doctor-of-philosophy-in-education",
+  "phd-in-art-and-design": "doctor-of-philosophy-in-art-and-design",
+  "phd-in-performing-art": "doctor-of-philosophy-in-performing-art",
+  "phd-in-sport-science": "doctor-of-philosophy-in-sport-science",
+
+  "doctor-of-philosophy-in-management-by-research":
+    "doctor-of-philosophy-in-management",
+  "doctor-of-philosophy-in-social-sciences-by-research":
+    "doctor-of-philosophy-in-social-sciences",
+  "doctor-of-philosophy-in-information-technology-by-research":
+    "doctor-of-philosophy-in-information-technology",
+  "doctor-of-philosophy-in-education-by-research":
+    "doctor-of-philosophy-in-education",
+  "doctor-of-philosophy-in-art-and-design-by-research":
+    "doctor-of-philosophy-in-art-and-design",
+  "doctor-of-philosophy-in-performing-art-by-research":
+    "doctor-of-philosophy-in-performing-art",
+  "doctor-of-philosophy-in-sport-science-by-research":
+    "doctor-of-philosophy-in-sport-science",
+
+  "dba": "doctor-of-business-administration-dba",
+  "doctor-of-business-administration": "doctor-of-business-administration-dba",
+  "doctor-of-business-administration-dba-by-coursework":
+    "doctor-of-business-administration-dba",
 };
 
 export const resolveProgramDetailsKey = (key: string) =>

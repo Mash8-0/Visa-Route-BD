@@ -1,30 +1,48 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, MapPin, Calendar, Globe, GraduationCap, Building, Star, Loader2 } from "lucide-react";
+import {
+  ArrowLeft,
+  MapPin,
+  Calendar,
+  Globe,
+  GraduationCap,
+  Building,
+  Star,
+  Clock,
+  BookOpen,
+  Users,
+  Loader2,
+} from "lucide-react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { programDetailsMap, resolveProgramDetailsKey } from "@/data/programDetails";
 import { useUniversity, Program } from "@/hooks/useUniversities";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import UniversityLogo from "@/components/UniversityLogo";
-import ProgramAccordion from "@/components/ProgramAccordion";
 
-// Group programs by level
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+// ✅ Group programs by level
 const groupProgramsByLevel = (programs: Program[]) => {
   const levels = ["Foundation", "Diploma", "Bachelor", "Master", "PhD"] as const;
   const grouped: Record<string, Program[]> = {};
 
   levels.forEach((level) => {
     const filtered = programs.filter((p) => p.level === level);
-    if (filtered.length > 0) {
-      grouped[level] = filtered;
-    }
+    if (filtered.length > 0) grouped[level] = filtered;
   });
 
   return grouped;
 };
 
-// Get level color
+// ✅ Level gradient color
 const getLevelColor = (level: string) => {
   switch (level) {
     case "Foundation":
@@ -42,6 +60,7 @@ const getLevelColor = (level: string) => {
   }
 };
 
+// ✅ Badge colors per level
 const getLevelBadgeClass = (level: string) => {
   switch (level) {
     case "Foundation":
@@ -59,10 +78,19 @@ const getLevelBadgeClass = (level: string) => {
   }
 };
 
+// ✅ Slugify Program Name to match programDetailsMap keys
+const slugify = (text: string) =>
+  text
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+
 const UniversityDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { data: university, isLoading, error } = useUniversity(id);
 
+  // ✅ Loading state
   if (isLoading) {
     return (
       <div className="min-h-screen flex flex-col bg-background">
@@ -78,16 +106,21 @@ const UniversityDetail = () => {
     );
   }
 
+  // ✅ Error state
   if (error || !university) {
     return (
       <div className="min-h-screen flex flex-col bg-background">
         <Navbar />
         <main className="flex-grow flex items-center justify-center px-4">
           <div className="text-center">
-            <h1 className="text-2xl sm:text-3xl font-bold mb-4">University Not Found</h1>
-            <p className="text-muted-foreground mb-6">The university you're looking for doesn't exist.</p>
-            <Link to="/universities">
-              <Button>
+            <h1 className="text-2xl sm:text-3xl font-bold mb-4">
+              University Not Found
+            </h1>
+            <p className="text-muted-foreground mb-6">
+              The university you're looking for doesn't exist.
+            </p>
+            <Link to="/universities" className="inline-block mb-4 sm:mb-6">
+              <Button variant="ghost" className="text-gray-700 hover:text-gray-900 px-0">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to Universities
               </Button>
@@ -105,11 +138,15 @@ const UniversityDetail = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
+
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className={`bg-gradient-to-r ${university.color} py-12 sm:py-16 lg:py-20`}>
+        {/* ✅ Hero Section */}
+        <section className="bg-white py-12 sm:py-16 lg:py-20 border-b border-border">
           <div className="container mx-auto px-4">
-            <Link to="/universities" className="inline-flex items-center text-white/80 hover:text-white mb-4 sm:mb-6 transition-colors text-sm sm:text-base">
+            <Link
+              to="/universities"
+              className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-4 sm:mb-6 transition-colors text-sm sm:text-base"
+            >
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Universities
             </Link>
@@ -119,26 +156,33 @@ const UniversityDetail = () => {
                 logoUrl={university.logoUrl}
                 shortName={university.shortName}
                 color={university.color}
-                size="lg"
-                className="bg-white flex-shrink-0"
+                size="xl"
+                className="bg-white flex-shrink-0 border"
               />
 
-              <div className="text-white">
-                <Badge variant="secondary" className="mb-2 bg-white/20 text-white border-0 text-xs sm:text-sm">
+              <div className="text-gray-900">
+                <Badge
+                  variant="secondary"
+                  className="mb-2 bg-gray-100 text-gray-800 border-0 text-xs sm:text-sm"
+                >
                   {university.type} University
                 </Badge>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-2">
+
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-2 text-gray-900">
                   {university.name}
                 </h1>
-                <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-white/90 text-xs sm:text-sm">
+
+                <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-gray-600 text-xs sm:text-sm">
                   <span className="flex items-center gap-1">
                     <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
                     {university.location}
                   </span>
+
                   <span className="flex items-center gap-1">
                     <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
                     Est. {university.established}
                   </span>
+
                   {university.ranking && (
                     <span className="flex items-center gap-1">
                       <Star className="h-3 w-3 sm:h-4 sm:w-4" />
@@ -151,11 +195,11 @@ const UniversityDetail = () => {
           </div>
         </section>
 
-        {/* Content Section */}
+        {/* ✅ Body Section */}
         <section className="py-8 sm:py-12">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
-              {/* Main Content */}
+              {/* ✅ Left content */}
               <div className="lg:col-span-2 space-y-6 sm:space-y-8">
                 {/* About */}
                 <div className="bg-card rounded-2xl p-4 sm:p-6 shadow-card">
@@ -175,25 +219,35 @@ const UniversityDetail = () => {
                     Programs Offered
                   </h2>
 
-                  {/* Program Level Summary */}
+                  {/* Summary cards */}
                   <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 mb-6 sm:mb-8">
-                    {(["Foundation", "Diploma", "Bachelor", "Master", "PhD"] as const).map((level) => {
-                      const count = university.programs.filter((p) => p.level === level).length;
-                      if (count === 0) return null;
-                      return (
-                        <div
-                          key={level}
-                          className={`relative overflow-hidden rounded-xl p-3 sm:p-4 bg-gradient-to-br ${getLevelColor(level)} text-white text-center group hover:scale-105 transition-transform duration-300`}
-                        >
-                          <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
-                          <div className="text-xl sm:text-2xl font-bold">{count}</div>
-                          <div className="text-[10px] sm:text-xs font-medium opacity-90">{level}</div>
-                        </div>
-                      );
-                    })}
+                    {(["Foundation", "Diploma", "Bachelor", "Master", "PhD"] as const).map(
+                      (level) => {
+                        const count = university.programs.filter(
+                          (p) => p.level === level
+                        ).length;
+
+                        if (count === 0) return null;
+
+                        return (
+                          <div
+                            key={level}
+                            className={`relative overflow-hidden rounded-xl p-3 sm:p-4 bg-gradient-to-br ${getLevelColor(
+                              level
+                            )} text-white text-center group hover:scale-105 transition-transform duration-300`}
+                          >
+                            <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            <div className="text-xl sm:text-2xl font-bold">{count}</div>
+                            <div className="text-[10px] sm:text-xs font-medium opacity-90">
+                              {level}
+                            </div>
+                          </div>
+                        );
+                      }
+                    )}
                   </div>
 
-                  {/* Tabbed Program View */}
+                  {/* Tabs + Accordion */}
                   {programLevels.length > 0 && (
                     <Tabs defaultValue={programLevels[0]} className="w-full">
                       <TabsList className="w-full flex flex-wrap h-auto gap-1 bg-muted/50 p-1 rounded-xl mb-4 sm:mb-6">
@@ -210,22 +264,215 @@ const UniversityDetail = () => {
 
                       {Object.entries(groupedPrograms).map(([level, programs]) => (
                         <TabsContent key={level} value={level} className="mt-0">
-                          <div className="grid gap-3 sm:gap-4">
-                            {programs.map((program) => (
-                              <ProgramAccordion
-                                key={program.id}
-                                program={program}
-                                levelColor={getLevelColor(level)}
-                                levelBadgeClass={getLevelBadgeClass(level)}
-                              />
-                            ))}
-                          </div>
+                          <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
+                            {programs.map((program) => {
+                              const key = slugify(program.name);
+
+                              // ✅ FIX: resolve key mismatch using aliases
+                              const resolvedKey = resolveProgramDetailsKey(key);
+                              const details = programDetailsMap[resolvedKey];
+
+                              return (
+                                <AccordionItem
+                                  key={program.id}
+                                  value={program.id}
+                                  className="border border-border/50 rounded-xl overflow-hidden bg-muted/30 hover:bg-muted/60 transition-all"
+                                >
+                                  <AccordionTrigger className="px-4 sm:px-5 py-4 sm:py-5 hover:no-underline">
+                                    <div className="w-full flex items-start justify-between gap-3">
+                                      <div className="flex items-start gap-2 sm:gap-3">
+                                        <div
+                                          className={`p-2 rounded-lg bg-gradient-to-br ${getLevelColor(
+                                            level
+                                          )} text-white shrink-0`}
+                                        >
+                                          <BookOpen className="w-4 h-4" />
+                                        </div>
+
+                                        <div className="text-left">
+                                          <h3 className="font-semibold text-foreground text-sm sm:text-lg">
+                                            {program.name}
+                                          </h3>
+                                          <p className="text-xs sm:text-sm text-muted-foreground mt-1 flex items-center gap-1">
+                                            <Users className="w-3 h-3" />
+                                            {program.faculty}
+                                          </p>
+                                        </div>
+                                      </div>
+
+                                      <div className="flex flex-wrap items-center gap-2 justify-end">
+                                        <Badge className={`${getLevelBadgeClass(level)} border-0 text-xs`}>
+                                          {program.level}
+                                        </Badge>
+                                        <Badge variant="outline" className="flex items-center gap-1 text-xs">
+                                          <Clock className="w-3 h-3" />
+                                          {program.duration}
+                                        </Badge>
+                                      </div>
+                                    </div>
+                                  </AccordionTrigger>
+
+                                  <AccordionContent className="px-4 sm:px-5 pb-5 sm:pb-6">
+                                    <div className="rounded-lg border bg-background p-6">
+                                      {/* Program Title + Code */}
+                                      <div className="mb-6">
+                                        <h3 className="text-lg sm:text-xl font-bold text-foreground">
+                                          {program.name}
+                                        </h3>
+
+                                        {details?.code && (
+                                          <p className="text-xs sm:text-sm text-muted-foreground mt-1">
+                                            {details.code}
+                                          </p>
+                                        )}
+                                      </div>
+
+                                      {/* Program Overview */}
+                                      <div className="mb-8">
+                                        <h4 className="font-semibold text-sm mb-2">Programme Overview:</h4>
+                                        <p className="text-sm text-muted-foreground leading-relaxed">
+                                          {details?.overview || "No overview added yet."}
+                                        </p>
+                                      </div>
+
+                                      {/* Info row */}
+                                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+                                        <div>
+                                          <p className="font-semibold text-sm">Study Mode:</p>
+                                          <p className="text-sm text-muted-foreground">
+                                            {details?.studyMode || "—"}
+                                          </p>
+                                        </div>
+
+                                        <div>
+                                          <p className="font-semibold text-sm">Duration Of Study:</p>
+                                          <p className="text-sm text-muted-foreground">
+                                            {details?.durationOfStudy || "—"}
+                                          </p>
+                                        </div>
+
+                                        <div>
+                                          <p className="font-semibold text-sm">Intakes:</p>
+                                          <p className="text-sm text-muted-foreground">
+                                            {details?.intakes?.length
+                                              ? details.intakes.join(", ")
+                                              : "—"}
+                                          </p>
+                                        </div>
+
+                                        {/* ✅ Duration removed (no need to show) */}
+                                      </div>
+
+                                      {/* Career Opportunities */}
+                                      <div className="mb-8">
+                                        <p className="font-semibold">Career Opportunities</p>
+                                        <ul className="list-disc pl-5 mt-3 space-y-1 text-sm">
+                                          {details?.careers?.length ? (
+                                            details.careers.map((c, i) => <li key={i}>{c}</li>)
+                                          ) : (
+                                            <li className="text-muted-foreground">
+                                              No career list added yet.
+                                            </li>
+                                          )}
+                                        </ul>
+                                      </div>
+
+                                      {/* Fees Structure Table */}
+                                      <div>
+                                        <h4 className="font-semibold text-base mb-3">Fees Structure:</h4>
+
+                                        {(() => {
+                                          const showYear2 = !!details?.fees?.tuition?.year2;
+                                          const showYear3 = !!details?.fees?.tuition?.year3;
+
+                                          return (
+                                            <div className="overflow-x-auto border rounded-sm">
+                                              <table className="w-full text-sm">
+                                                <thead>
+                                                  <tr className="border-b bg-muted/30">
+                                                    <th className="p-3 text-left font-semibold">EMGS</th>
+                                                    <th className="p-3 text-left font-semibold">
+                                                      Registration Fee / International Student Fee
+                                                    </th>
+                                                    <th className="p-3 text-left font-semibold">
+                                                      Additional Fees
+                                                    </th>
+                                                    <th className="p-3 text-left font-semibold">
+                                                      Tuition Fees (Year 1)
+                                                    </th>
+
+                                                    {showYear2 && (
+                                                      <th className="p-3 text-left font-semibold">
+                                                        Tuition Fees (Year 2)
+                                                      </th>
+                                                    )}
+
+                                                    {showYear3 && (
+                                                      <th className="p-3 text-left font-semibold">
+                                                        Tuition Fees (Year 3)
+                                                      </th>
+                                                    )}
+
+                                                    <th className="p-3 text-left font-semibold">Total Fees</th>
+                                                  </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                  <tr className="border-t">
+                                                    <td className="p-3">{details?.fees?.emgs || "—"}</td>
+                                                    <td className="p-3">
+                                                      {details?.fees?.registrationInternational || "—"}
+                                                    </td>
+                                                    <td className="p-3">
+                                                      {details?.fees?.additionalFees || "—"}
+                                                    </td>
+                                                    <td className="p-3">
+                                                      {details?.fees?.tuition?.year1 || "—"}
+                                                    </td>
+
+                                                    {showYear2 && (
+                                                      <td className="p-3">
+                                                        {details?.fees?.tuition?.year2 || "—"}
+                                                      </td>
+                                                    )}
+
+                                                    {showYear3 && (
+                                                      <td className="p-3">
+                                                        {details?.fees?.tuition?.year3 || "—"}
+                                                      </td>
+                                                    )}
+
+                                                    <td className="p-3 font-semibold">
+                                                      {details?.fees?.total || "—"}
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          );
+                                        })()}
+
+                                        {!details && (
+                                          <p className="mt-3 text-xs text-muted-foreground">
+                                            No extra details found for this program yet. Add it in:{" "}
+                                            <span className="font-medium">src/data/programDetails.ts</span>{" "}
+                                            using key:{" "}
+                                            <span className="font-medium">{key}</span>
+                                          </p>
+                                        )}
+                                      </div>
+                                    </div>
+                                  </AccordionContent>
+                                </AccordionItem>
+                              );
+                            })}
+                          </Accordion>
                         </TabsContent>
                       ))}
                     </Tabs>
                   )}
 
-                  {/* Total Programs Count */}
+                  {/* Total Count */}
                   <div className="mt-4 sm:mt-6 pt-4 border-t border-border/50 flex items-center justify-between text-xs sm:text-sm text-muted-foreground">
                     <span>Total Programs Available</span>
                     <Badge variant="secondary" className="text-sm sm:text-base">
@@ -235,18 +482,24 @@ const UniversityDetail = () => {
                 </div>
               </div>
 
-              {/* Sidebar */}
+              {/* ✅ Right Sidebar */}
               <div className="space-y-4 sm:space-y-6">
                 {/* Quick Actions */}
                 <div className="bg-card rounded-2xl p-4 sm:p-6 shadow-card">
                   <h3 className="font-semibold mb-4 text-sm sm:text-base">Quick Actions</h3>
                   <div className="space-y-3">
-                    <a href={university.website} target="_blank" rel="noopener noreferrer" className="w-full block">
+                    <a
+                      href={university.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full block"
+                    >
                       <Button variant="outline" className="w-full justify-start text-sm">
                         <Globe className="mr-2 h-4 w-4" />
                         Visit Website
                       </Button>
                     </a>
+
                     <Link to="/contact" className="block">
                       <Button className="w-full text-sm">Apply Now</Button>
                     </Link>
@@ -258,7 +511,11 @@ const UniversityDetail = () => {
                   <h3 className="font-semibold mb-4 text-sm sm:text-base">Highlights</h3>
                   <div className="flex flex-wrap gap-2">
                     {university.highlights.map((highlight, index) => (
-                      <Badge key={index} variant="secondary" className="bg-primary/10 text-primary border-0 text-xs sm:text-sm">
+                      <Badge
+                        key={index}
+                        variant="secondary"
+                        className="bg-primary/10 text-primary border-0 text-xs sm:text-sm"
+                      >
                         {highlight}
                       </Badge>
                     ))}
@@ -270,7 +527,10 @@ const UniversityDetail = () => {
                   <h3 className="font-semibold mb-4 text-sm sm:text-base">Facilities</h3>
                   <ul className="space-y-2">
                     {university.facilities.map((facility, index) => (
-                      <li key={index} className="flex items-center gap-2 text-muted-foreground text-xs sm:text-sm">
+                      <li
+                        key={index}
+                        className="flex items-center gap-2 text-muted-foreground text-xs sm:text-sm"
+                      >
                         <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                         {facility}
                       </li>
@@ -278,10 +538,12 @@ const UniversityDetail = () => {
                   </ul>
                 </div>
               </div>
+              {/* ✅ End Sidebar */}
             </div>
           </div>
         </section>
       </main>
+
       <Footer />
     </div>
   );

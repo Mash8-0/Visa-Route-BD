@@ -1,10 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Stamp, GraduationCap, Star } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import graduateGirl from "@/assets/graduate-girl.png";
 import graduateBoy from "@/assets/graduate-boy.png";
 
-const CountUp = ({ end, suffix = "", duration = 2000 }: { end: number; suffix?: string; duration?: number }) => {
+const CountUp = ({
+  end,
+  suffix = "",
+  duration = 2000,
+}: {
+  end: number;
+  suffix?: string;
+  duration?: number;
+}) => {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -36,18 +45,24 @@ const CountUp = ({ end, suffix = "", duration = 2000 }: { end: number; suffix?: 
 
   return (
     <div ref={ref} className="text-3xl font-bold text-foreground">
-      {count.toLocaleString()}{suffix}
+      {count.toLocaleString()}
+      {suffix}
     </div>
   );
 };
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
   return (
-    <section className="min-h-screen relative overflow-hidden pt-20" style={{ background: 'var(--gradient-hero)' }}>
+    <section
+      className="min-h-screen relative overflow-hidden pt-20"
+      style={{ background: "var(--gradient-hero)" }}
+    >
       {/* Background decorative elements */}
       <div className="absolute top-40 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-4 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -57,103 +72,123 @@ const HeroSection = () => {
                 Professional Consultancy
               </span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
               Your Future Begins{" "}
               <span className="gradient-text">Beyond Borders</span>
             </h1>
-            
+
             <p className="text-lg text-muted-foreground max-w-lg">
-              Premium visa & education consultation crafted for your global journey — clear, practical and personal.
+              Premium visa & education consultation crafted for your global
+              journey — clear, practical and personal.
             </p>
-            
+
             <div className="flex flex-wrap gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="gradient-bg text-primary-foreground hover:opacity-90 shadow-soft transition-all hover:shadow-hover group"
+                onClick={() => navigate("/processing")} // ✅ GO TO PROCESSING
               >
                 Start Your Journey
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
+
+              <Button
+                size="lg"
+                variant="outline"
                 className="border-border hover:bg-secondary transition-all"
+                onClick={() => navigate("/assessment")} // ✅ GO TO ASSESSMENT
               >
-                Free Assessment
+                Free Consultation 
               </Button>
             </div>
-            
+
             {/* Stats */}
             <div className="flex gap-12 pt-8">
               <div className="animate-fade-in-up delay-200">
-                <CountUp end={1500} suffix="+" duration={2000} />
+                <CountUp end={500} suffix="+" duration={2000} />
                 <div className="text-sm text-muted-foreground">Cases Solved</div>
               </div>
               <div className="animate-fade-in-up delay-300">
-                <CountUp end={55} suffix="+" duration={1500} />
-                <div className="text-sm text-muted-foreground">Partner Universities</div>
+                <CountUp end={55} suffix="+" duration={500} />
+                <div className="text-sm text-muted-foreground">
+                  Partner Universities
+                </div>
               </div>
             </div>
           </div>
-          
+
           {/* Right Content - Floating Badges */}
           <div className="relative h-[400px] lg:h-[500px] hidden lg:block">
             {/* Decorative circles - Behind everything */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full border-2 border-dashed border-primary/20 z-0 animate-spin-slow" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full border border-primary/10 z-0 animate-spin-slow-reverse" />
-            
+
             {/* Graduate Images - Centered in circles, shifted left */}
             <div className="absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 z-[5] flex items-center justify-center">
-              <img 
-                src={graduateGirl} 
-                alt="Female graduate student" 
+              <img
+                src={graduateGirl}
+                alt="Female graduate student"
                 className="w-36 h-44 object-cover object-top rounded-2xl shadow-xl border-3 border-white/60 -rotate-6 hover:rotate-0 hover:scale-105 transition-all duration-300 animate-float"
               />
-              <img 
-                src={graduateBoy} 
-                alt="Male graduate student" 
+              <img
+                src={graduateBoy}
+                alt="Male graduate student"
                 className="w-36 h-44 object-cover object-top rounded-2xl shadow-xl border-3 border-white/60 rotate-6 hover:rotate-0 hover:scale-105 transition-all duration-300 -ml-6 animate-float-delayed"
               />
             </div>
-            
+
             {/* Floating Badge 1 - Visa Experts (Left Bottom) */}
             <div className="absolute bottom-20 left-0 animate-float z-10">
               <div className="bg-card rounded-2xl px-6 py-4 shadow-card flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center">
                   <Stamp className="w-5 h-5 text-primary" />
                 </div>
-                <span className="font-semibold text-foreground">Visa Experts</span>
+                <span className="font-semibold text-foreground">
+                  Visa Experts
+                </span>
               </div>
             </div>
-            
+
             {/* Floating Badge 2 - Success (Right Top) */}
             <div className="absolute top-8 right-0 animate-float-delayed z-10">
               <div className="bg-card rounded-2xl px-6 py-4 shadow-card flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center">
                   <Star className="w-5 h-5 text-primary" />
                 </div>
-                <span className="font-semibold text-foreground">1.5K+ Success</span>
+                <span className="font-semibold text-foreground">
+                  500+ Success
+                </span>
               </div>
             </div>
-            
+
             {/* Floating Badge 3 - Study Abroad (Right Bottom) */}
             <div className="absolute bottom-20 right-0 animate-float delay-300 z-10">
               <div className="bg-card rounded-2xl px-6 py-4 shadow-card flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center">
                   <GraduationCap className="w-5 h-5 text-primary" />
                 </div>
-                <span className="font-semibold text-foreground">Study Abroad</span>
+                <span className="font-semibold text-foreground">
+                  Study Abroad
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
+
       {/* Wave divider */}
       <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-          <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="hsl(var(--background))"/>
+        <svg
+          viewBox="0 0 1440 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full"
+        >
+          <path
+            d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+            fill="hsl(var(--background))"
+          />
         </svg>
       </div>
     </section>

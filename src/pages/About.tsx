@@ -3,17 +3,22 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { Users, Target, Award, Heart, Lightbulb, Eye, Linkedin, Mail } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import ceoFounderImage from "@/assets/ceo-founder.jpg";
+import ceoFounderImage from "@/assets/ceo-founder.png";
 import coFounderImage from "@/assets/co-founder-coo.png";
+import clientRelationsManagerImage from "@/assets/Client Relations Manager.png";
+import internationalStudentCounsellorImage from "@/assets/Internation Student Counsellor.png";
+import risaCounsellorImage from "@/assets/Risa web photo.png";
+import ahonaCounsellorImage from "@/assets/ahona web photo.png";
+
 
 const teamMembers = [
   {
     name: "Mehedi Hasan",
     role: "Founder & CEO",
     image: ceoFounderImage,
-    bio: "With over 15 years in international education, Mehedi founded VisaRoute BD to help students achieve their global education dreams.",
+    bio: "With over 2+ years in international education, Mehedi founded VisaRoute BD to help students achieve their global education dreams.",
     linkedin: "#",
-    email: "mehedi@visaroutebd.com",
+    email: "mehedihasan@visaroutebd.com",
     isFounder: true,
     imagePosition: "object-contain object-top",
   },
@@ -21,41 +26,58 @@ const teamMembers = [
     name: "Mashrur",
     role: "Co-Founder & COO",
     image: coFounderImage,
-    bio: "Mashrur brings 12 years of operations expertise, ensuring every student receives personalized attention and support.",
+    bio: "Brings 3+ years of operations expertise, ensuring every student receives personalized attention and support.",
     linkedin: "#",
-    email: "mashrur@visaroutebd.com",
+    email: "admin@visaroutebd.com",
     isCoFounder: true,
     imagePosition: "object-contain object-[center_0%]",
   },
   {
-    name: "Dr. Michael Tan",
-    role: "Head of Admissions",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    name: "Md Rafi Ul Alam",
+    role: "Client Relations Manager",
+    image: clientRelationsManagerImage ,
     bio: "Former university admissions officer with deep knowledge of application processes.",
     linkedin: "#",
     email: "michael@visaroutebd.com",
   },
+
   {
-    name: "Priya Sharma",
-    role: "Senior Visa Consultant",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
-    bio: "Expert in Malaysian visa regulations with 8+ years helping students navigate immigration.",
+    name: "Yeasin Tanvir ",
+    role: "International Student Counsellor",
+    image: internationalStudentCounsellorImage,
+    bio: "Expert in Malaysian visa regulations with helping students navigate immigration.",
+    linkedin: "#",
+    email: "finance@visaroutebd.com",
+  },
+  {
+    name: "Md Jubair ",
+    role: "Student Counsellor",
+    image: "#",
+    bio: "Student Counsellor delivering personalized academic and visa guidance for international education.",
     linkedin: "#",
     email: "priya@visaroutebd.com",
   },
   {
-    name: "James Wong",
-    role: "Student Success Manager",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+    name: "Risa",
+    role: "Counsellor",
+    image: risaCounsellorImage ,
     bio: "Dedicated to ensuring every student's journey from application to graduation is smooth.",
     linkedin: "#",
     email: "james@visaroutebd.com",
   },
   {
-    name: "Aisha Malik",
-    role: "University Relations",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face",
-    bio: "Builds and maintains partnerships with top Malaysian universities.",
+    name: "Ahona",
+    role: "Counsellor",
+    image: ahonaCounsellorImage,
+    bio: "From ambition to admission   guiding your global education journey",
+    linkedin: "#",
+    email: "aisha@visaroutebd.com",
+  },
+  {
+    name: "Ahnaf Mottake",
+    role: "Junior Web Developer",
+    image: "#",
+    bio: "A motivated Web Developer who enjoys turning ideas into interactive and reliable web experiences.",
     linkedin: "#",
     email: "aisha@visaroutebd.com",
   },
@@ -209,8 +231,8 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { value: "10+", label: "Years Experience" },
-                { value: "1.5K+", label: "Happy Students" },
+                { value: "5+", label: "Years Experience" },
+                { value: "500+", label: "Happy Students" },
                 { value: "55+", label: "Partner Universities" },
                 { value: "98%", label: "Success Rate" },
               ].map((stat, i) => (
