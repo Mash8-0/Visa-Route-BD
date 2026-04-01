@@ -1588,6 +1588,8 @@ export const programDetailsAliases: Record<string, string> = {
   "bachelor-of-architecture": "bachelor-of-science-honours-in-architecture",
   "bachelor-of-computer-science-cyber-security-and-networks":
     "bachelor-in-computer-science-cyber-security-and-networks",
+  "bachelor-in-computer-science-cyber-security-networks-honours":
+    "bachelor-in-computer-science-cyber-security-and-networks",
 
   // Master aliases
   "mba": "master-of-business-administration",
