@@ -914,7 +914,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       tuition: {
         year1: "RM 16,000",
         year2: "RM 15,000",
-        year3: "RM 15,000",
+        year3: "RM 15,500",
       },
       total: "RM 48,000",
     },
