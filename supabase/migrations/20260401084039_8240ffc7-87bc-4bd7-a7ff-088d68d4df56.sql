@@ -1,0 +1,2 @@
+ALTER TABLE programs DROP CONSTRAINT programs_level_check;
+ALTER TABLE programs ADD CONSTRAINT programs_level_check CHECK (level = ANY (ARRAY['Foundation'::text, 'Diploma'::text, 'Bachelor'::text, 'Master'::text, 'PhD'::text, 'Certificate'::text]));
