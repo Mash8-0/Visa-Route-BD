@@ -914,7 +914,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       tuition: {
         year1: "RM 16,000",
         year2: "RM 15,000",
-        year3: "RM 15,000",
+        year3: "RM 15,500",
       },
       total: "RM 48,000",
     },
@@ -1587,6 +1587,8 @@ export const programDetailsAliases: Record<string, string> = {
   "bachelor-of-creative-multimedia": "bachelor-of-arts-honours-creative-multimedia",
   "bachelor-of-architecture": "bachelor-of-science-honours-in-architecture",
   "bachelor-of-computer-science-cyber-security-and-networks":
+    "bachelor-in-computer-science-cyber-security-and-networks",
+  "bachelor-in-computer-science-cyber-security-networks-honours":
     "bachelor-in-computer-science-cyber-security-and-networks",
 
   // Master aliases
