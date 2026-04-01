@@ -31,7 +31,7 @@ import {
 
 // ✅ Group programs by level
 const groupProgramsByLevel = (programs: Program[]) => {
-  const levels = ["Foundation", "Diploma", "Bachelor", "Master", "PhD"] as const;
+  const levels = ["Certificate", "Foundation", "Diploma", "Bachelor", "Master", "PhD"] as const;
   const grouped: Record<string, Program[]> = {};
 
   levels.forEach((level) => {

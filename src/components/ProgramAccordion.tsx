@@ -7,7 +7,7 @@ export interface ProgramDetails {
   id: string;
   name: string;
   duration: string;
-  level: "Foundation" | "Diploma" | "Bachelor" | "Master" | "PhD";
+  level: "Certificate" | "Foundation" | "Diploma" | "Bachelor" | "Master" | "PhD";
   faculty: string;
   studyMode?: string;
   intakes?: string[];
