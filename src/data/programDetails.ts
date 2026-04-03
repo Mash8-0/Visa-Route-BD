@@ -1564,6 +1564,37 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
+  "foundation-in-computing": {
+    overview:
+      "This 12-month foundation route is designed for students with SPM, IGCSE, O-Levels or similar qualifications, helping them build the knowledge and skills to progress into the first year of a computing degree. It supports progression into computing, technology, immersive technology, and game development related pathways.",
+    studyMode: "Full Time",
+    durationOfStudy: "1 year",
+    intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Software Developer",
+      "IT Consultant",
+      "Systems Analyst",
+      "Game Developer",
+      "Network Engineer",
+      "Cybersecurity Analyst",
+      "Data Scientist",
+      "Web Developer",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 7,100",
+        semester3: "RM 7,100",
+      },
+      total: "RM 41,600",
+    },
+  },
+
   // ── APU Foundation Programmes ──────────────────────────────────────
   "apu-foundation-programme-computing-technology-pathway": {
     overview:
