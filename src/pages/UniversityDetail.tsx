@@ -454,7 +454,34 @@ const UniversityDetail = () => {
                                                     </>
                                                   )}
 
-                                                  {isSemesterBased ? (
+                                                  {isDegreeLevelBased ? (
+                                                    <>
+                                                      {showDL1 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Degree Level 1</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.degreeLevel1}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showDL2 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Degree Level 2</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.degreeLevel2}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showDL3 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Degree Level 3</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.degreeLevel3}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showDL4 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Degree Level 4</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.degreeLevel4}</td>
+                                                        </tr>
+                                                      )}
+                                                    </>
+                                                  ) : isSemesterBased ? (
                                                     <>
                                                       {showSem1 && (
                                                         <tr className="border-t">
