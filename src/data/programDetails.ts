@@ -1664,6 +1664,15 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     studyMode: "Full Time",
     durationOfStudy: "1 year",
     intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Mechanical Engineer",
+      "Electrical Engineer",
+      "Civil Engineer",
+      "Mechatronics Engineer",
+      "Project Engineer",
+      "Quality Assurance Engineer",
+      "R&D Engineer",
+    ],
     fees: {
       emgs: "RM 3,400",
       registrationInternational: "RM 5,000",
