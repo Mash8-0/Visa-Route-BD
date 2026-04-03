@@ -267,10 +267,10 @@ const UniversityDetail = () => {
                           <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
                             {programs.map((program) => {
                               const key = slugify(program.name);
-
-                              // ✅ FIX: resolve key mismatch using aliases
                               const resolvedKey = resolveProgramDetailsKey(key);
-                              const details = programDetailsMap[resolvedKey];
+                              // Try university-scoped key first, then generic
+                              const scopedKey = university ? `${university.id}--${resolvedKey}` : resolvedKey;
+                              const details = programDetailsMap[scopedKey] || programDetailsMap[resolvedKey];
 
                               return (
                                 <AccordionItem
