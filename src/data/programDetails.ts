@@ -1695,6 +1695,14 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     studyMode: "Open & Distance Learning (ODL)",
     durationOfStudy: "1 year",
     intakes: ["14 May 2026", "24 September 2026"],
+    careers: [
+      "Software Developer",
+      "IT Consultant",
+      "Systems Analyst",
+      "Web Developer",
+      "Database Administrator",
+      "Network Engineer",
+    ],
     fees: {
       odlEnrolmentFee: "RM 2,580",
       tuition: {
