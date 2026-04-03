@@ -1633,6 +1633,16 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     studyMode: "Full Time",
     durationOfStudy: "1 year",
     intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Architect",
+      "Industrial Designer",
+      "Visual Effects Artist",
+      "Animator",
+      "Digital Advertising Specialist",
+      "Interior Designer",
+      "UX/UI Designer",
+      "Creative Director",
+    ],
     fees: {
       emgs: "RM 3,400",
       registrationInternational: "RM 5,000",
