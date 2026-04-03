@@ -82,6 +82,13 @@ export interface Program {
   duration: string;
   level: "Certificate" | "Foundation" | "Diploma" | "Bachelor" | "Master" | "PhD";
   faculty: string;
+  studyMode?: string;
+  intakes?: string[];
+  careerOpportunities?: string[];
+  emgsFee?: number;
+  registrationFee?: number;
+  tuitionFee?: number;
+  totalFees?: number;
 }
 
 export interface University {
