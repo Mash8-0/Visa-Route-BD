@@ -267,10 +267,10 @@ const UniversityDetail = () => {
                           <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
                             {programs.map((program) => {
                               const key = slugify(program.name);
-
-                              // ✅ FIX: resolve key mismatch using aliases
                               const resolvedKey = resolveProgramDetailsKey(key);
-                              const details = programDetailsMap[resolvedKey];
+                              // Try university-scoped key first, then generic
+                              const scopedKey = university ? `${university.id}--${resolvedKey}` : resolvedKey;
+                              const details = programDetailsMap[scopedKey] || programDetailsMap[resolvedKey];
 
                               return (
                                 <AccordionItem
@@ -389,7 +389,10 @@ const UniversityDetail = () => {
                                           const showSem1 = !!details?.fees?.tuition?.semester1;
                                           const showSem2 = !!details?.fees?.tuition?.semester2;
                                           const showSem3 = !!details?.fees?.tuition?.semester3;
-                                          const isSemesterBased = showSem1 || showSem2 || showSem3;
+                                          const showSem4 = !!details?.fees?.tuition?.semester4;
+                                          const showSem5 = !!details?.fees?.tuition?.semester5;
+                                          const showSem6 = !!details?.fees?.tuition?.semester6;
+                                          const isSemesterBased = showSem1 || showSem2 || showSem3 || showSem4 || showSem5 || showSem6;
                                           const isODL = !!details?.fees?.odlEnrolmentFee;
 
                                           const fmtRM = (v: number | undefined) =>
@@ -466,6 +469,24 @@ const UniversityDetail = () => {
                                                           <td className="p-3">{details?.fees?.tuition?.semester3}</td>
                                                         </tr>
                                                       )}
+                                                      {showSem4 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Semester 4</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.semester4}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showSem5 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Semester 5</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.semester5}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showSem6 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Semester 6</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.semester6}</td>
+                                                        </tr>
+                                                      )}
                                                     </>
                                                   ) : (
                                                     <>
@@ -498,6 +519,18 @@ const UniversityDetail = () => {
                                                     <tr className="border-t">
                                                       <td className="p-3 font-medium">Engineering Laboratory Deposit <span className="text-xs text-muted-foreground">(Refundable)</span></td>
                                                       <td className="p-3">{details.fees.engineeringLabDeposit}</td>
+                                                    </tr>
+                                                  )}
+                                                  {details?.fees?.hospitalityResourceFees && (
+                                                    <tr className="border-t">
+                                                      <td className="p-3 font-medium">Hospitality Resource Fees</td>
+                                                      <td className="p-3">{details.fees.hospitalityResourceFees}</td>
+                                                    </tr>
+                                                  )}
+                                                  {details?.fees?.eventsResourceFees && (
+                                                    <tr className="border-t">
+                                                      <td className="p-3 font-medium">Events Resource Fees</td>
+                                                      <td className="p-3">{details.fees.eventsResourceFees}</td>
                                                     </tr>
                                                   )}
                                                   {details?.fees?.personalBond && (
