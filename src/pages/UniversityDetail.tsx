@@ -521,6 +521,18 @@ const UniversityDetail = () => {
                                                       <td className="p-3">{details.fees.engineeringLabDeposit}</td>
                                                     </tr>
                                                   )}
+                                                  {details?.fees?.hospitalityResourceFees && (
+                                                    <tr className="border-t">
+                                                      <td className="p-3 font-medium">Hospitality Resource Fees</td>
+                                                      <td className="p-3">{details.fees.hospitalityResourceFees}</td>
+                                                    </tr>
+                                                  )}
+                                                  {details?.fees?.eventsResourceFees && (
+                                                    <tr className="border-t">
+                                                      <td className="p-3 font-medium">Events Resource Fees</td>
+                                                      <td className="p-3">{details.fees.eventsResourceFees}</td>
+                                                    </tr>
+                                                  )}
                                                   {details?.fees?.personalBond && (
                                                     <tr className="border-t">
                                                       <td className="p-3 font-medium">Personal Bond <span className="text-xs text-muted-foreground">(Refundable)</span></td>

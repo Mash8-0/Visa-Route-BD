@@ -19,6 +19,8 @@ export type ProgramFees = {
   libraryDeposit?: string;
   personalBond?: string;
   postArrivalFee?: string;
+  hospitalityResourceFees?: string;
+  eventsResourceFees?: string;
   tuition: ProgramTuition;
   total: string;
 };
