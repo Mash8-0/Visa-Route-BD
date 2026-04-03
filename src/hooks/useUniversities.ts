@@ -82,6 +82,13 @@ export interface Program {
   duration: string;
   level: "Certificate" | "Foundation" | "Diploma" | "Bachelor" | "Master" | "PhD";
   faculty: string;
+  studyMode?: string;
+  intakes?: string[];
+  careerOpportunities?: string[];
+  emgsFee?: number;
+  registrationFee?: number;
+  tuitionFee?: number;
+  totalFees?: number;
 }
 
 export interface University {
@@ -134,6 +141,13 @@ export const useUniversities = () => {
           duration: prog.duration,
           level: prog.level as Program["level"],
           faculty: prog.faculty,
+          studyMode: prog.study_mode || undefined,
+          intakes: prog.intakes || undefined,
+          careerOpportunities: prog.career_opportunities || undefined,
+          emgsFee: prog.emgs_fee ?? undefined,
+          registrationFee: prog.registration_fee ?? undefined,
+          tuitionFee: prog.tuition_fee ?? undefined,
+          totalFees: prog.total_fees ?? undefined,
         });
 
         return acc;
@@ -212,6 +226,13 @@ export const useUniversity = (id: string | undefined) => {
         duration: prog.duration,
         level: prog.level as Program["level"],
         faculty: prog.faculty,
+        studyMode: prog.study_mode || undefined,
+        intakes: prog.intakes || undefined,
+        careerOpportunities: prog.career_opportunities || undefined,
+        emgsFee: prog.emgs_fee ?? undefined,
+        registrationFee: prog.registration_fee ?? undefined,
+        tuitionFee: prog.tuition_fee ?? undefined,
+        totalFees: prog.total_fees ?? undefined,
       }));
 
 
