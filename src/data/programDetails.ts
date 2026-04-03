@@ -1914,7 +1914,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "diploma-in-business-administration": {
+  "apu--diploma-in-business-administration": {
     overview:
       "APU presents this diploma as a business pathway that prepares students for further study in business management, international business, marketing, digital marketing, human resource management, and related areas.",
     studyMode: "Full Time",
@@ -1946,7 +1946,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "diploma-in-accounting": {
+  "apu--diploma-in-accounting": {
     overview:
       "APU lists this as a diploma pathway in accounting for students seeking a pre-university route into accounting-related study.",
     studyMode: "Full Time",
@@ -2075,7 +2075,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "diploma-in-hotel-management": {
+  "apu--diploma-in-hotel-management": {
     overview:
       "APU lists this as a diploma in hotel management under its hospitality and tourism study area, with the intake calendar noting it under the APU-HTMi Dual Diploma Scheme for Hospitality & Tourism.",
     studyMode: "Full Time",
