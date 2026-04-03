@@ -1571,6 +1571,16 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     studyMode: "Full Time",
     durationOfStudy: "1 year",
     intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Software Developer",
+      "IT Consultant",
+      "Systems Analyst",
+      "Game Developer",
+      "Network Engineer",
+      "Cybersecurity Analyst",
+      "Data Scientist",
+      "Web Developer",
+    ],
     fees: {
       emgs: "RM 3,400",
       registrationInternational: "RM 5,000",
@@ -1592,6 +1602,16 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     studyMode: "Full Time",
     durationOfStudy: "1 year",
     intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Business Analyst",
+      "Marketing Executive",
+      "Financial Planner",
+      "Accountant",
+      "Human Resource Manager",
+      "Tourism & Hospitality Manager",
+      "Public Relations Specialist",
+      "Media & Communications Officer",
+    ],
     fees: {
       emgs: "RM 3,400",
       registrationInternational: "RM 5,000",
@@ -1613,6 +1633,16 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     studyMode: "Full Time",
     durationOfStudy: "1 year",
     intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Architect",
+      "Industrial Designer",
+      "Visual Effects Artist",
+      "Animator",
+      "Digital Advertising Specialist",
+      "Interior Designer",
+      "UX/UI Designer",
+      "Creative Director",
+    ],
     fees: {
       emgs: "RM 3,400",
       registrationInternational: "RM 5,000",
@@ -1634,6 +1664,15 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     studyMode: "Full Time",
     durationOfStudy: "1 year",
     intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Mechanical Engineer",
+      "Electrical Engineer",
+      "Civil Engineer",
+      "Mechatronics Engineer",
+      "Project Engineer",
+      "Quality Assurance Engineer",
+      "R&D Engineer",
+    ],
     fees: {
       emgs: "RM 3,400",
       registrationInternational: "RM 5,000",
@@ -1656,6 +1695,14 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     studyMode: "Open & Distance Learning (ODL)",
     durationOfStudy: "1 year",
     intakes: ["14 May 2026", "24 September 2026"],
+    careers: [
+      "Software Developer",
+      "IT Consultant",
+      "Systems Analyst",
+      "Web Developer",
+      "Database Administrator",
+      "Network Engineer",
+    ],
     fees: {
       odlEnrolmentFee: "RM 2,580",
       tuition: {
