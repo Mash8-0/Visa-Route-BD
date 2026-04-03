@@ -389,7 +389,10 @@ const UniversityDetail = () => {
                                           const showSem1 = !!details?.fees?.tuition?.semester1;
                                           const showSem2 = !!details?.fees?.tuition?.semester2;
                                           const showSem3 = !!details?.fees?.tuition?.semester3;
-                                          const isSemesterBased = showSem1 || showSem2 || showSem3;
+                                          const showSem4 = !!details?.fees?.tuition?.semester4;
+                                          const showSem5 = !!details?.fees?.tuition?.semester5;
+                                          const showSem6 = !!details?.fees?.tuition?.semester6;
+                                          const isSemesterBased = showSem1 || showSem2 || showSem3 || showSem4 || showSem5 || showSem6;
                                           const isODL = !!details?.fees?.odlEnrolmentFee;
 
                                           const fmtRM = (v: number | undefined) =>
