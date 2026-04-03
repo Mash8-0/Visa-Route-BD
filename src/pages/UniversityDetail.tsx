@@ -435,10 +435,12 @@ const UniversityDetail = () => {
                                                           <td className="p-3">{additional}</td>
                                                         </tr>
                                                       )}
-                                                      <tr className="border-t">
-                                                        <td className="p-3 font-medium">Post-Arrival Processing Fee</td>
-                                                        <td className="p-3">{postArrival}</td>
-                                                      </tr>
+                                                      {details?.fees?.postArrivalFee && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Post-Arrival Processing Fee</td>
+                                                          <td className="p-3">{details.fees.postArrivalFee}</td>
+                                                        </tr>
+                                                      )}
                                                     </>
                                                   )}
 
