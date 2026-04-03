@@ -399,7 +399,6 @@ const UniversityDetail = () => {
                                           const isSemesterBased = showSem1 || showSem2 || showSem3 || showSem4 || showSem5 || showSem6;
                                           const isDegreeLevelBased = showDL1 || showDL2 || showDL3 || showDL4;
                                           const isODL = !!details?.fees?.odlEnrolmentFee;
-                                          const isODL = !!details?.fees?.odlEnrolmentFee;
 
                                           const fmtRM = (v: number | undefined) =>
                                             v ? `RM ${v.toLocaleString()}` : null;
