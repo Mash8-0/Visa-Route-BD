@@ -392,7 +392,12 @@ const UniversityDetail = () => {
                                           const showSem4 = !!details?.fees?.tuition?.semester4;
                                           const showSem5 = !!details?.fees?.tuition?.semester5;
                                           const showSem6 = !!details?.fees?.tuition?.semester6;
+                                          const showDL1 = !!details?.fees?.tuition?.degreeLevel1;
+                                          const showDL2 = !!details?.fees?.tuition?.degreeLevel2;
+                                          const showDL3 = !!details?.fees?.tuition?.degreeLevel3;
+                                          const showDL4 = !!details?.fees?.tuition?.degreeLevel4;
                                           const isSemesterBased = showSem1 || showSem2 || showSem3 || showSem4 || showSem5 || showSem6;
+                                          const isDegreeLevelBased = showDL1 || showDL2 || showDL3 || showDL4;
                                           const isODL = !!details?.fees?.odlEnrolmentFee;
 
                                           const fmtRM = (v: number | undefined) =>
@@ -449,7 +454,34 @@ const UniversityDetail = () => {
                                                     </>
                                                   )}
 
-                                                  {isSemesterBased ? (
+                                                  {isDegreeLevelBased ? (
+                                                    <>
+                                                      {showDL1 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Degree Level 1</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.degreeLevel1}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showDL2 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Degree Level 2</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.degreeLevel2}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showDL3 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Degree Level 3</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.degreeLevel3}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showDL4 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Degree Level 4</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.degreeLevel4}</td>
+                                                        </tr>
+                                                      )}
+                                                    </>
+                                                  ) : isSemesterBased ? (
                                                     <>
                                                       {showSem1 && (
                                                         <tr className="border-t">
