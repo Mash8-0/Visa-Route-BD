@@ -1777,6 +1777,11 @@ export const programDetailsAliases: Record<string, string> = {
   // DB name "TESL" full slug
   "master-of-education-in-teaching-of-english-as-a-second-language-tesl-by-research": "master-of-education-in-tesl",
   "master-of-education-in-teaching-of-english-as-a-second-language-tesl": "master-of-education-in-tesl",
+
+  // APU Foundation Programme slugs (DB uses em-dash "–")
+  "apu-foundation-programme-computing-and-technology-pathway": "apu-foundation-programme-computing-technology-pathway",
+  "apu-foundation-programme-business-finance-and-social-sciences-pathway": "apu-foundation-programme-business-finance-social-sciences-pathway",
+  "apu-foundation-programme-architecture-and-design-pathway": "apu-foundation-programme-architecture-design-pathway",
 };
 
 export const resolveProgramDetailsKey = (key: string) =>
