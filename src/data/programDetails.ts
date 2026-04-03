@@ -5,6 +5,9 @@ export type ProgramTuition = {
   semester1?: string;
   semester2?: string;
   semester3?: string;
+  semester4?: string;
+  semester5?: string;
+  semester6?: string;
 };
 
 export type ProgramFees = {
