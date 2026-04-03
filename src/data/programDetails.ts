@@ -8,6 +8,10 @@ export type ProgramTuition = {
   semester4?: string;
   semester5?: string;
   semester6?: string;
+  degreeLevel1?: string;
+  degreeLevel2?: string;
+  degreeLevel3?: string;
+  degreeLevel4?: string;
 };
 
 export type ProgramFees = {
