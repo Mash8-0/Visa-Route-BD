@@ -385,81 +385,76 @@ const UniversityDetail = () => {
                                           const showYear2 = !!details?.fees?.tuition?.year2;
                                           const showYear3 = !!details?.fees?.tuition?.year3;
 
+                                          const fmtRM = (v: number | undefined) =>
+                                            v ? `RM ${v.toLocaleString()}` : null;
+
+                                          const emgs = details?.fees?.emgs || fmtRM(program.emgsFee) || "—";
+                                          const registration = details?.fees?.registrationInternational || fmtRM(program.registrationFee) || "—";
+                                          const additional = details?.fees?.additionalFees || "—";
+                                          const year1 = details?.fees?.tuition?.year1 || fmtRM(program.tuitionFee) || "—";
+                                          const total = details?.fees?.total || fmtRM(program.totalFees) || "—";
+
                                           return (
                                             <div className="overflow-x-auto border rounded-sm">
                                               <table className="w-full text-sm">
                                                 <thead>
                                                   <tr className="border-b bg-muted/30">
-                                                    <th className="p-3 text-left font-semibold">EMGS</th>
-                                                    <th className="p-3 text-left font-semibold">
-                                                      Registration Fee / International Student Fee
-                                                    </th>
-                                                    <th className="p-3 text-left font-semibold">
-                                                      Additional Fees
-                                                    </th>
-                                                    <th className="p-3 text-left font-semibold">
-                                                      Tuition Fees (Year 1)
-                                                    </th>
-
-                                                    {showYear2 && (
-                                                      <th className="p-3 text-left font-semibold">
-                                                        Tuition Fees (Year 2)
-                                                      </th>
-                                                    )}
-
-                                                    {showYear3 && (
-                                                      <th className="p-3 text-left font-semibold">
-                                                        Tuition Fees (Year 3)
-                                                      </th>
-                                                    )}
-
-                                                    <th className="p-3 text-left font-semibold">Total Fees</th>
+                                                    <th className="p-3 text-left font-semibold">Fee Type</th>
+                                                    <th className="p-3 text-left font-semibold">Amount</th>
                                                   </tr>
                                                 </thead>
-
                                                 <tbody>
                                                   <tr className="border-t">
-                                                    <td className="p-3">{details?.fees?.emgs || "—"}</td>
-                                                    <td className="p-3">
-                                                      {details?.fees?.registrationInternational || "—"}
-                                                    </td>
-                                                    <td className="p-3">
-                                                      {details?.fees?.additionalFees || "—"}
-                                                    </td>
-                                                    <td className="p-3">
-                                                      {details?.fees?.tuition?.year1 || "—"}
-                                                    </td>
-
-                                                    {showYear2 && (
-                                                      <td className="p-3">
-                                                        {details?.fees?.tuition?.year2 || "—"}
-                                                      </td>
-                                                    )}
-
-                                                    {showYear3 && (
-                                                      <td className="p-3">
-                                                        {details?.fees?.tuition?.year3 || "—"}
-                                                      </td>
-                                                    )}
-
-                                                    <td className="p-3 font-semibold">
-                                                      {details?.fees?.total || "—"}
-                                                    </td>
+                                                    <td className="p-3 font-medium">EMGS</td>
+                                                    <td className="p-3">{emgs}</td>
+                                                  </tr>
+                                                  <tr className="border-t">
+                                                    <td className="p-3 font-medium">Registration & Administrative Fee</td>
+                                                    <td className="p-3">{registration}</td>
+                                                  </tr>
+                                                  {additional !== "—" && (
+                                                    <tr className="border-t">
+                                                      <td className="p-3 font-medium">Additional Fees</td>
+                                                      <td className="p-3">{additional}</td>
+                                                    </tr>
+                                                  )}
+                                                  <tr className="border-t">
+                                                    <td className="p-3 font-medium">Post-Arrival Processing Fee</td>
+                                                    <td className="p-3">RM 2,000</td>
+                                                  </tr>
+                                                  <tr className="border-t">
+                                                    <td className="p-3 font-medium">Tuition Fees (Year 1)</td>
+                                                    <td className="p-3">{year1}</td>
+                                                  </tr>
+                                                  {showYear2 && (
+                                                    <tr className="border-t">
+                                                      <td className="p-3 font-medium">Tuition Fees (Year 2)</td>
+                                                      <td className="p-3">{details?.fees?.tuition?.year2}</td>
+                                                    </tr>
+                                                  )}
+                                                  {showYear3 && (
+                                                    <tr className="border-t">
+                                                      <td className="p-3 font-medium">Tuition Fees (Year 3)</td>
+                                                      <td className="p-3">{details?.fees?.tuition?.year3}</td>
+                                                    </tr>
+                                                  )}
+                                                  <tr className="border-t">
+                                                    <td className="p-3 font-medium">Library Deposit <span className="text-xs text-muted-foreground">(Refundable)</span></td>
+                                                    <td className="p-3">RM 500 <span className="text-xs text-muted-foreground">(Based on course)</span></td>
+                                                  </tr>
+                                                  <tr className="border-t">
+                                                    <td className="p-3 font-medium">Personal Bond <span className="text-xs text-muted-foreground">(Refundable)</span></td>
+                                                    <td className="p-3">RM 1,000 <span className="text-xs text-muted-foreground">(Based on course)</span></td>
+                                                  </tr>
+                                                  <tr className="border-t bg-muted/30">
+                                                    <td className="p-3 font-semibold">Total Fees</td>
+                                                    <td className="p-3 font-semibold">{total}</td>
                                                   </tr>
                                                 </tbody>
                                               </table>
                                             </div>
                                           );
                                         })()}
-
-                                        {!details && (
-                                          <p className="mt-3 text-xs text-muted-foreground">
-                                            No extra details found for this program yet. Add it in:{" "}
-                                            <span className="font-medium">src/data/programDetails.ts</span>{" "}
-                                            using key:{" "}
-                                            <span className="font-medium">{key}</span>
-                                          </p>
-                                        )}
                                       </div>
                                     </div>
                                   </AccordionContent>
