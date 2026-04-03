@@ -1754,7 +1754,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   //  APU DIPLOMA PROGRAMMES
   // ═══════════════════════════════════════════════════════════
 
-  "diploma-in-information-communication-technology": {
+  "apu--diploma-in-information-communication-technology": {
     overview:
       "APU presents this diploma as a computing pathway that builds core knowledge in ICT and supports progression into related degree programmes in information technology, software engineering, computer science, cyber security, digital forensics, artificial intelligence, and other computing specialisms.",
     studyMode: "Full Time",
@@ -1786,7 +1786,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "diploma-in-information-communication-technology-software-engineering": {
+  "apu--diploma-in-information-communication-technology-software-engineering": {
     overview:
       "APU offers this as an ICT diploma with a software engineering specialism, aimed at students who want a stronger pathway toward software development and related computing degree progression.",
     studyMode: "Full Time",
@@ -1818,7 +1818,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "diploma-in-information-communication-technology-data-informatics": {
+  "apu--diploma-in-information-communication-technology-data-informatics": {
     overview:
       "APU offers this as an ICT diploma with a data informatics specialism, giving students a diploma route focused on computing with stronger exposure toward data-oriented study progression.",
     studyMode: "Full Time",
@@ -1850,7 +1850,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "diploma-in-information-communication-technology-interactive-technology": {
+  "apu--diploma-in-information-communication-technology-interactive-technology": {
     overview:
       "APU offers this as an ICT diploma with an interactive technology specialism, designed for students who want a diploma pathway that connects computing study with interactive technology progression.",
     studyMode: "Full Time",
@@ -1882,7 +1882,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "diploma-in-business-information-technology": {
+  "apu--diploma-in-business-information-technology": {
     overview:
       "APU positions this diploma at the intersection of business and IT, and says graduates may progress into business, management, marketing, HR, tourism, and selected IT-related degree pathways subject to requirements.",
     studyMode: "Full Time",
@@ -1978,7 +1978,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "diploma-in-mechatronic-engineering": {
+"apu--diploma-in-mechatronic-engineering": {
     overview:
       "APU offers this diploma as an engineering pathway in mechatronics, and its engineering materials describe it as a practical route for school leavers who want industry-relevant technical skills and progression opportunities in engineering.",
     studyMode: "Full Time",
@@ -2011,7 +2011,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "diploma-in-design-media": {
+"apu--diploma-in-design-and-media": {
     overview:
       "APU says this diploma is designed to cover both the academic and vocational aspects of design and media, prepare students for careers in the design and media environment, and build academic, professional, critical, and independent learning skills.",
     studyMode: "Full Time",
@@ -2043,7 +2043,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "diploma-in-international-studies": {
+"apu--diploma-in-international-studies": {
     overview:
       "APU lists this as a diploma pathway in international studies for students seeking progression into related higher education study areas.",
     studyMode: "Full Time",
@@ -2107,7 +2107,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "diploma-in-events-management": {
+"apu--diploma-in-events-management": {
     overview:
       "APU lists this as a diploma in events management under its hospitality and tourism study area, and the intake calendar places it under the APU-HTMi Dual Diploma Scheme for Hospitality & Tourism.",
     studyMode: "Full Time",
