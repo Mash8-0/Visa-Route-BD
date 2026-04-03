@@ -2139,6 +2139,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 };
+/**
  * ✅ KEY ALIASES (Fixes "No extra details found...")
  * Your UI is sometimes using a SHORT slug (example: diploma-in-early-childhood)
  * but your data is stored in a LONG slug (example: diploma-in-early-childhood-education).
