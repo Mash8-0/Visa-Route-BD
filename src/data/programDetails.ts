@@ -1749,9 +1749,396 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       total: "RM 24,680",
     },
   },
-};
 
-/**
+  // ═══════════════════════════════════════════════════════════
+  //  APU DIPLOMA PROGRAMMES
+  // ═══════════════════════════════════════════════════════════
+
+  "diploma-in-information-communication-technology": {
+    overview:
+      "APU presents this diploma as a computing pathway that builds core knowledge in ICT and supports progression into related degree programmes in information technology, software engineering, computer science, cyber security, digital forensics, artificial intelligence, and other computing specialisms.",
+    studyMode: "Full Time",
+    durationOfStudy: "2+ years",
+    intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "IT Support Specialist",
+      "Network Administrator",
+      "Systems Analyst",
+      "Software Developer",
+      "Database Administrator",
+      "Cyber Security Analyst",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 8,330",
+        semester3: "RM 8,330",
+        semester4: "RM 8,330",
+        semester5: "RM 8,330",
+        semester6: "RM 8,330",
+      },
+      total: "RM 66,100",
+    },
+  },
+
+  "diploma-in-information-communication-technology-software-engineering": {
+    overview:
+      "APU offers this as an ICT diploma with a software engineering specialism, aimed at students who want a stronger pathway toward software development and related computing degree progression.",
+    studyMode: "Full Time",
+    durationOfStudy: "2+ years",
+    intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Software Engineer",
+      "Application Developer",
+      "QA Engineer",
+      "Systems Analyst",
+      "DevOps Engineer",
+      "Full-Stack Developer",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 8,330",
+        semester3: "RM 8,330",
+        semester4: "RM 8,330",
+        semester5: "RM 8,330",
+        semester6: "RM 8,330",
+      },
+      total: "RM 66,100",
+    },
+  },
+
+  "diploma-in-information-communication-technology-data-informatics": {
+    overview:
+      "APU offers this as an ICT diploma with a data informatics specialism, giving students a diploma route focused on computing with stronger exposure toward data-oriented study progression.",
+    studyMode: "Full Time",
+    durationOfStudy: "2+ years",
+    intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Data Analyst",
+      "Database Administrator",
+      "Business Intelligence Analyst",
+      "Data Engineer",
+      "IT Consultant",
+      "Systems Analyst",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 8,330",
+        semester3: "RM 8,330",
+        semester4: "RM 8,330",
+        semester5: "RM 8,330",
+        semester6: "RM 8,330",
+      },
+      total: "RM 66,100",
+    },
+  },
+
+  "diploma-in-information-communication-technology-interactive-technology": {
+    overview:
+      "APU offers this as an ICT diploma with an interactive technology specialism, designed for students who want a diploma pathway that connects computing study with interactive technology progression.",
+    studyMode: "Full Time",
+    durationOfStudy: "2+ years",
+    intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "UI/UX Designer",
+      "Interactive Media Developer",
+      "Game Developer",
+      "Web Developer",
+      "Multimedia Designer",
+      "AR/VR Developer",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 8,330",
+        semester3: "RM 8,330",
+        semester4: "RM 8,330",
+        semester5: "RM 8,330",
+        semester6: "RM 8,330",
+      },
+      total: "RM 66,100",
+    },
+  },
+
+  "diploma-in-business-information-technology": {
+    overview:
+      "APU positions this diploma at the intersection of business and IT, and says graduates may progress into business, management, marketing, HR, tourism, and selected IT-related degree pathways subject to requirements.",
+    studyMode: "Full Time",
+    durationOfStudy: "2+ years",
+    intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Business Analyst",
+      "IT Project Coordinator",
+      "Systems Administrator",
+      "E-Commerce Executive",
+      "IT Consultant",
+      "Digital Marketing Specialist",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 8,330",
+        semester3: "RM 8,330",
+        semester4: "RM 8,330",
+        semester5: "RM 8,330",
+        semester6: "RM 8,330",
+      },
+      total: "RM 66,100",
+    },
+  },
+
+  "diploma-in-business-administration": {
+    overview:
+      "APU presents this diploma as a business pathway that prepares students for further study in business management, international business, marketing, digital marketing, human resource management, and related areas.",
+    studyMode: "Full Time",
+    durationOfStudy: "2 years",
+    intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Business Executive",
+      "Administrative Manager",
+      "Marketing Coordinator",
+      "HR Assistant",
+      "Operations Executive",
+      "Entrepreneur",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 8,330",
+        semester3: "RM 8,330",
+        semester4: "RM 8,330",
+        semester5: "RM 8,330",
+        semester6: "RM 8,330",
+      },
+      total: "RM 66,100",
+    },
+  },
+
+  "diploma-in-accounting": {
+    overview:
+      "APU lists this as a diploma pathway in accounting for students seeking a pre-university route into accounting-related study.",
+    studyMode: "Full Time",
+    durationOfStudy: "2 years",
+    intakes: ["02 July 2026", "24 September 2026"],
+    careers: [
+      "Accounts Assistant",
+      "Audit Associate",
+      "Tax Assistant",
+      "Bookkeeper",
+      "Finance Executive",
+      "Payroll Officer",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 8,330",
+        semester3: "RM 8,330",
+        semester4: "RM 8,330",
+        semester5: "RM 8,330",
+        semester6: "RM 8,330",
+      },
+      total: "RM 66,100",
+    },
+  },
+
+  "diploma-in-mechatronic-engineering": {
+    overview:
+      "APU offers this diploma as an engineering pathway in mechatronics, and its engineering materials describe it as a practical route for school leavers who want industry-relevant technical skills and progression opportunities in engineering.",
+    studyMode: "Full Time",
+    durationOfStudy: "2+ years",
+    intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Mechatronics Technician",
+      "Automation Engineer",
+      "Robotics Technician",
+      "Manufacturing Engineer",
+      "Maintenance Engineer",
+      "Control Systems Technician",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      engineeringLabDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 8,330",
+        semester3: "RM 8,330",
+        semester4: "RM 8,330",
+        semester5: "RM 8,330",
+        semester6: "RM 8,330",
+      },
+      total: "RM 66,600",
+    },
+  },
+
+  "diploma-in-design-media": {
+    overview:
+      "APU says this diploma is designed to cover both the academic and vocational aspects of design and media, prepare students for careers in the design and media environment, and build academic, professional, critical, and independent learning skills.",
+    studyMode: "Full Time",
+    durationOfStudy: "2+ years",
+    intakes: ["02 July 2026", "24 September 2026"],
+    careers: [
+      "Graphic Designer",
+      "Multimedia Designer",
+      "Motion Graphics Artist",
+      "UI/UX Designer",
+      "Video Editor",
+      "Creative Director",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 8,330",
+        semester3: "RM 8,330",
+        semester4: "RM 8,330",
+        semester5: "RM 8,330",
+        semester6: "RM 8,330",
+      },
+      total: "RM 66,100",
+    },
+  },
+
+  "diploma-in-international-studies": {
+    overview:
+      "APU lists this as a diploma pathway in international studies for students seeking progression into related higher education study areas.",
+    studyMode: "Full Time",
+    durationOfStudy: "2+ years",
+    intakes: ["02 July 2026", "24 September 2026"],
+    careers: [
+      "Diplomat",
+      "International Relations Officer",
+      "Policy Analyst",
+      "NGO Coordinator",
+      "Research Analyst",
+      "Public Affairs Officer",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 8,330",
+        semester3: "RM 8,330",
+        semester4: "RM 8,330",
+        semester5: "RM 8,330",
+        semester6: "RM 8,330",
+      },
+      total: "RM 66,100",
+    },
+  },
+
+  "diploma-in-hotel-management": {
+    overview:
+      "APU lists this as a diploma in hotel management under its hospitality and tourism study area, with the intake calendar noting it under the APU-HTMi Dual Diploma Scheme for Hospitality & Tourism.",
+    studyMode: "Full Time",
+    durationOfStudy: "2 years",
+    intakes: ["02 July 2026", "24 September 2026"],
+    careers: [
+      "Hotel Manager",
+      "Front Office Manager",
+      "Food & Beverage Manager",
+      "Hospitality Coordinator",
+      "Guest Relations Executive",
+      "Resort Manager",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      hospitalityResourceFees: "RM 4,200",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 10,400",
+        semester3: "RM 10,400",
+        semester4: "RM 10,400",
+        semester5: "RM 10,400",
+      },
+      total: "RM 70,300",
+    },
+  },
+
+  "diploma-in-events-management": {
+    overview:
+      "APU lists this as a diploma in events management under its hospitality and tourism study area, and the intake calendar places it under the APU-HTMi Dual Diploma Scheme for Hospitality & Tourism.",
+    studyMode: "Full Time",
+    durationOfStudy: "2+ years",
+    intakes: ["02 July 2026", "24 September 2026"],
+    careers: [
+      "Event Planner",
+      "Event Coordinator",
+      "Conference Manager",
+      "Exhibition Organiser",
+      "Wedding Planner",
+      "Corporate Events Executive",
+    ],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      eventsResourceFees: "RM 2,600",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 10,400",
+        semester3: "RM 10,400",
+        semester4: "RM 10,400",
+        semester5: "RM 10,400",
+      },
+      total: "RM 68,700",
+    },
+  },
+};
  * ✅ KEY ALIASES (Fixes "No extra details found...")
  * Your UI is sometimes using a SHORT slug (example: diploma-in-early-childhood)
  * but your data is stored in a LONG slug (example: diploma-in-early-childhood-education).
