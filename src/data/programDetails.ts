@@ -2,12 +2,20 @@ export type ProgramTuition = {
   year1?: string;
   year2?: string;
   year3?: string;
+  semester1?: string;
+  semester2?: string;
+  semester3?: string;
 };
 
 export type ProgramFees = {
-  emgs: string;
-  registrationInternational: string;
-  additionalFees: string;
+  emgs?: string;
+  registrationInternational?: string;
+  additionalFees?: string;
+  odlEnrolmentFee?: string;
+  engineeringLabDeposit?: string;
+  libraryDeposit?: string;
+  personalBond?: string;
+  postArrivalFee?: string;
   tuition: ProgramTuition;
   total: string;
 };
@@ -1555,6 +1563,109 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       total: "RM 45,000",
     },
   },
+
+  // ── APU Foundation Programmes ──────────────────────────────────────
+  "apu-foundation-programme-computing-technology-pathway": {
+    overview:
+      "This 12-month foundation route is designed for students with SPM, IGCSE, O-Levels or similar qualifications, helping them build the knowledge and skills to progress into the first year of a degree of their choice. APU says the route supports progression into computing, technology, immersive technology, and game development related pathways.",
+    studyMode: "Full Time",
+    durationOfStudy: "1 year",
+    intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 7,100",
+        semester3: "RM 7,100",
+      },
+      total: "RM 41,600",
+    },
+  },
+
+  "apu-foundation-programme-business-finance-social-sciences-pathway": {
+    overview:
+      "This 12-month foundation route prepares students to move into undergraduate study after SPM, IGCSE, O-Levels or equivalent. Based on APU's official pathway information, this route supports progression into business, management, marketing, tourism, accounting, banking and finance, actuarial studies, international relations, hospitality and tourism, media and communication, and psychology-related degree pathways.",
+    studyMode: "Full Time",
+    durationOfStudy: "1 year",
+    intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 7,100",
+        semester3: "RM 7,100",
+      },
+      total: "RM 41,600",
+    },
+  },
+
+  "apu-foundation-programme-architecture-design-pathway": {
+    overview:
+      "APU describes this foundation route as an opportunity for students to sample their future areas of study before choosing a degree pathway. Based on APU's official architecture and design pathway information, it leads mainly into Architecture, Industrial Design, Visual Effects, Animation, and Digital Advertising related degrees.",
+    studyMode: "Full Time",
+    durationOfStudy: "1 year",
+    intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 7,100",
+        semester3: "RM 7,100",
+      },
+      total: "RM 41,600",
+    },
+  },
+
+  "apu-foundation-programme-engineering-pathway": {
+    overview:
+      "APU describes this route as a foundation that lets students explore future study areas before choosing their degree. It is intended for progression into engineering-related undergraduate study, and APU's engineering study area highlights technology relevance, leadership, communication skills, and strong employability outcomes.",
+    studyMode: "Full Time",
+    durationOfStudy: "1 year",
+    intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    fees: {
+      emgs: "RM 3,400",
+      registrationInternational: "RM 5,000",
+      postArrivalFee: "RM 2,000",
+      libraryDeposit: "RM 500",
+      engineeringLabDeposit: "RM 500",
+      personalBond: "RM 1,000",
+      tuition: {
+        semester1: "RM 15,500",
+        semester2: "RM 7,500",
+        semester3: "RM 7,500",
+      },
+      total: "RM 42,900",
+    },
+  },
+
+  "apu-foundation-in-computing-odl": {
+    overview:
+      "APU says this programme is designed to let students gain a solid pre-university qualification from the comfort of their home or country through flexible online learning. The university describes it as a high-quality and flexible learning experience using Open Distance Learning with synchronous and asynchronous learning, and it leads into various APU degree pathways in computing.",
+    studyMode: "Open & Distance Learning (ODL)",
+    durationOfStudy: "1 year",
+    intakes: ["14 May 2026", "24 September 2026"],
+    fees: {
+      odlEnrolmentFee: "RM 2,580",
+      tuition: {
+        semester1: "RM 12,500",
+        semester2: "RM 4,800",
+        semester3: "RM 4,800",
+      },
+      total: "RM 24,680",
+    },
+  },
 };
 
 /**
@@ -1666,6 +1777,11 @@ export const programDetailsAliases: Record<string, string> = {
   // DB name "TESL" full slug
   "master-of-education-in-teaching-of-english-as-a-second-language-tesl-by-research": "master-of-education-in-tesl",
   "master-of-education-in-teaching-of-english-as-a-second-language-tesl": "master-of-education-in-tesl",
+
+  // APU Foundation Programme slugs (DB uses em-dash "–")
+  "apu-foundation-programme-computing-and-technology-pathway": "apu-foundation-programme-computing-technology-pathway",
+  "apu-foundation-programme-business-finance-and-social-sciences-pathway": "apu-foundation-programme-business-finance-social-sciences-pathway",
+  "apu-foundation-programme-architecture-and-design-pathway": "apu-foundation-programme-architecture-design-pathway",
 };
 
 export const resolveProgramDetailsKey = (key: string) =>

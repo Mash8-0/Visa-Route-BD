@@ -384,6 +384,11 @@ const UniversityDetail = () => {
                                         {(() => {
                                           const showYear2 = !!details?.fees?.tuition?.year2;
                                           const showYear3 = !!details?.fees?.tuition?.year3;
+                                          const showSem1 = !!details?.fees?.tuition?.semester1;
+                                          const showSem2 = !!details?.fees?.tuition?.semester2;
+                                          const showSem3 = !!details?.fees?.tuition?.semester3;
+                                          const isSemesterBased = showSem1 || showSem2 || showSem3;
+                                          const isODL = !!details?.fees?.odlEnrolmentFee;
 
                                           const fmtRM = (v: number | undefined) =>
                                             v ? `RM ${v.toLocaleString()}` : null;
@@ -393,6 +398,9 @@ const UniversityDetail = () => {
                                           const additional = details?.fees?.additionalFees || "—";
                                           const year1 = details?.fees?.tuition?.year1 || fmtRM(program.tuitionFee) || "—";
                                           const total = details?.fees?.total || fmtRM(program.totalFees) || "—";
+                                          const postArrival = details?.fees?.postArrivalFee || "RM 2,000";
+                                          const libraryDeposit = details?.fees?.libraryDeposit || "RM 500";
+                                          const personalBond = details?.fees?.personalBond || "RM 1,000";
 
                                           return (
                                             <div className="overflow-x-auto border rounded-sm">
@@ -404,48 +412,97 @@ const UniversityDetail = () => {
                                                   </tr>
                                                 </thead>
                                                 <tbody>
-                                                  <tr className="border-t">
-                                                    <td className="p-3 font-medium">EMGS</td>
-                                                    <td className="p-3">{emgs}</td>
-                                                  </tr>
-                                                  <tr className="border-t">
-                                                    <td className="p-3 font-medium">Registration & Administrative Fee</td>
-                                                    <td className="p-3">{registration}</td>
-                                                  </tr>
-                                                  {additional !== "—" && (
-                                                    <tr className="border-t">
-                                                      <td className="p-3 font-medium">Additional Fees</td>
-                                                      <td className="p-3">{additional}</td>
-                                                    </tr>
+                                                  {isODL ? (
+                                                    <>
+                                                      <tr className="border-t">
+                                                        <td className="p-3 font-medium">ODL Enrolment Fee</td>
+                                                        <td className="p-3">{details?.fees?.odlEnrolmentFee}</td>
+                                                      </tr>
+                                                    </>
+                                                  ) : (
+                                                    <>
+                                                      <tr className="border-t">
+                                                        <td className="p-3 font-medium">EMGS</td>
+                                                        <td className="p-3">{emgs}</td>
+                                                      </tr>
+                                                      <tr className="border-t">
+                                                        <td className="p-3 font-medium">Registration & Administrative Fee</td>
+                                                        <td className="p-3">{registration}</td>
+                                                      </tr>
+                                                      {additional !== "—" && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Additional Fees</td>
+                                                          <td className="p-3">{additional}</td>
+                                                        </tr>
+                                                      )}
+                                                      <tr className="border-t">
+                                                        <td className="p-3 font-medium">Post-Arrival Processing Fee</td>
+                                                        <td className="p-3">{postArrival}</td>
+                                                      </tr>
+                                                    </>
                                                   )}
-                                                  <tr className="border-t">
-                                                    <td className="p-3 font-medium">Post-Arrival Processing Fee</td>
-                                                    <td className="p-3">RM 2,000</td>
-                                                  </tr>
-                                                  <tr className="border-t">
-                                                    <td className="p-3 font-medium">Tuition Fees (Year 1)</td>
-                                                    <td className="p-3">{year1}</td>
-                                                  </tr>
-                                                  {showYear2 && (
-                                                    <tr className="border-t">
-                                                      <td className="p-3 font-medium">Tuition Fees (Year 2)</td>
-                                                      <td className="p-3">{details?.fees?.tuition?.year2}</td>
-                                                    </tr>
+
+                                                  {isSemesterBased ? (
+                                                    <>
+                                                      {showSem1 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Semester 1</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.semester1}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showSem2 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Semester 2</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.semester2}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showSem3 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Semester 3</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.semester3}</td>
+                                                        </tr>
+                                                      )}
+                                                    </>
+                                                  ) : (
+                                                    <>
+                                                      <tr className="border-t">
+                                                        <td className="p-3 font-medium">Tuition Fees (Year 1)</td>
+                                                        <td className="p-3">{year1}</td>
+                                                      </tr>
+                                                      {showYear2 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Tuition Fees (Year 2)</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.year2}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showYear3 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Tuition Fees (Year 3)</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.year3}</td>
+                                                        </tr>
+                                                      )}
+                                                    </>
                                                   )}
-                                                  {showYear3 && (
-                                                    <tr className="border-t">
-                                                      <td className="p-3 font-medium">Tuition Fees (Year 3)</td>
-                                                      <td className="p-3">{details?.fees?.tuition?.year3}</td>
-                                                    </tr>
+
+                                                  {!isODL && (
+                                                    <>
+                                                      <tr className="border-t">
+                                                        <td className="p-3 font-medium">Library Deposit <span className="text-xs text-muted-foreground">(Refundable)</span></td>
+                                                        <td className="p-3">{libraryDeposit} <span className="text-xs text-muted-foreground">(Based on course)</span></td>
+                                                      </tr>
+                                                      {details?.fees?.engineeringLabDeposit && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Engineering Laboratory Deposit <span className="text-xs text-muted-foreground">(Refundable)</span></td>
+                                                          <td className="p-3">{details.fees.engineeringLabDeposit}</td>
+                                                        </tr>
+                                                      )}
+                                                      <tr className="border-t">
+                                                        <td className="p-3 font-medium">Personal Bond <span className="text-xs text-muted-foreground">(Refundable)</span></td>
+                                                        <td className="p-3">{personalBond} <span className="text-xs text-muted-foreground">(Based on course)</span></td>
+                                                      </tr>
+                                                    </>
                                                   )}
-                                                  <tr className="border-t">
-                                                    <td className="p-3 font-medium">Library Deposit <span className="text-xs text-muted-foreground">(Refundable)</span></td>
-                                                    <td className="p-3">RM 500 <span className="text-xs text-muted-foreground">(Based on course)</span></td>
-                                                  </tr>
-                                                  <tr className="border-t">
-                                                    <td className="p-3 font-medium">Personal Bond <span className="text-xs text-muted-foreground">(Refundable)</span></td>
-                                                    <td className="p-3">RM 1,000 <span className="text-xs text-muted-foreground">(Based on course)</span></td>
-                                                  </tr>
+
                                                   <tr className="border-t bg-muted/30">
                                                     <td className="p-3 font-semibold">Total Fees</td>
                                                     <td className="p-3 font-semibold">{total}</td>
