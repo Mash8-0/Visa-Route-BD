@@ -435,10 +435,12 @@ const UniversityDetail = () => {
                                                           <td className="p-3">{additional}</td>
                                                         </tr>
                                                       )}
-                                                      <tr className="border-t">
-                                                        <td className="p-3 font-medium">Post-Arrival Processing Fee</td>
-                                                        <td className="p-3">{postArrival}</td>
-                                                      </tr>
+                                                      {details?.fees?.postArrivalFee && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Post-Arrival Processing Fee</td>
+                                                          <td className="p-3">{details.fees.postArrivalFee}</td>
+                                                        </tr>
+                                                      )}
                                                     </>
                                                   )}
 
@@ -484,23 +486,23 @@ const UniversityDetail = () => {
                                                     </>
                                                   )}
 
-                                                  {!isODL && (
-                                                    <>
-                                                      <tr className="border-t">
-                                                        <td className="p-3 font-medium">Library Deposit <span className="text-xs text-muted-foreground">(Refundable)</span></td>
-                                                        <td className="p-3">{libraryDeposit} <span className="text-xs text-muted-foreground">(Based on course)</span></td>
-                                                      </tr>
-                                                      {details?.fees?.engineeringLabDeposit && (
-                                                        <tr className="border-t">
-                                                          <td className="p-3 font-medium">Engineering Laboratory Deposit <span className="text-xs text-muted-foreground">(Refundable)</span></td>
-                                                          <td className="p-3">{details.fees.engineeringLabDeposit}</td>
-                                                        </tr>
-                                                      )}
-                                                      <tr className="border-t">
-                                                        <td className="p-3 font-medium">Personal Bond <span className="text-xs text-muted-foreground">(Refundable)</span></td>
-                                                        <td className="p-3">{personalBond} <span className="text-xs text-muted-foreground">(Based on course)</span></td>
-                                                      </tr>
-                                                    </>
+                                                  {details?.fees?.libraryDeposit && (
+                                                    <tr className="border-t">
+                                                      <td className="p-3 font-medium">Library Deposit <span className="text-xs text-muted-foreground">(Refundable)</span></td>
+                                                      <td className="p-3">{details.fees.libraryDeposit} <span className="text-xs text-muted-foreground">(Based on course)</span></td>
+                                                    </tr>
+                                                  )}
+                                                  {details?.fees?.engineeringLabDeposit && (
+                                                    <tr className="border-t">
+                                                      <td className="p-3 font-medium">Engineering Laboratory Deposit <span className="text-xs text-muted-foreground">(Refundable)</span></td>
+                                                      <td className="p-3">{details.fees.engineeringLabDeposit}</td>
+                                                    </tr>
+                                                  )}
+                                                  {details?.fees?.personalBond && (
+                                                    <tr className="border-t">
+                                                      <td className="p-3 font-medium">Personal Bond <span className="text-xs text-muted-foreground">(Refundable)</span></td>
+                                                      <td className="p-3">{details.fees.personalBond} <span className="text-xs text-muted-foreground">(Based on course)</span></td>
+                                                    </tr>
                                                   )}
 
                                                   <tr className="border-t bg-muted/30">
