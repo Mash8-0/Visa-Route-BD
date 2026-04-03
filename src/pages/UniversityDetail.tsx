@@ -353,11 +353,13 @@ const UniversityDetail = () => {
 
                                         <div>
                                           <p className="font-semibold text-sm">Intakes:</p>
-                                          <p className="text-sm text-muted-foreground">
+                                          <div className="text-sm text-muted-foreground">
                                             {details?.intakes?.length
-                                              ? details.intakes.join(", ")
-                                              : "—"}
-                                          </p>
+                                              ? details.intakes.map((intake, i) => (
+                                                  <p key={i}>{intake}</p>
+                                                ))
+                                              : <p>—</p>}
+                                          </div>
                                         </div>
 
                                         {/* ✅ Duration removed (no need to show) */}
