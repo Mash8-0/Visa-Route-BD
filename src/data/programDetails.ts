@@ -1602,6 +1602,16 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     studyMode: "Full Time",
     durationOfStudy: "1 year",
     intakes: ["14 May 2026", "02 July 2026", "24 September 2026"],
+    careers: [
+      "Business Analyst",
+      "Marketing Executive",
+      "Financial Planner",
+      "Accountant",
+      "Human Resource Manager",
+      "Tourism & Hospitality Manager",
+      "Public Relations Specialist",
+      "Media & Communications Officer",
+    ],
     fees: {
       emgs: "RM 3,400",
       registrationInternational: "RM 5,000",
