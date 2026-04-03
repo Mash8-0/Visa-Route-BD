@@ -2,12 +2,20 @@ export type ProgramTuition = {
   year1?: string;
   year2?: string;
   year3?: string;
+  semester1?: string;
+  semester2?: string;
+  semester3?: string;
 };
 
 export type ProgramFees = {
-  emgs: string;
-  registrationInternational: string;
-  additionalFees: string;
+  emgs?: string;
+  registrationInternational?: string;
+  additionalFees?: string;
+  odlEnrolmentFee?: string;
+  engineeringLabDeposit?: string;
+  libraryDeposit?: string;
+  personalBond?: string;
+  postArrivalFee?: string;
   tuition: ProgramTuition;
   total: string;
 };
