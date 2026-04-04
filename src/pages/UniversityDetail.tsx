@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import {
   ArrowLeft,
@@ -10,6 +11,9 @@ import {
   Clock,
   BookOpen,
   Users,
+  X,
+  Gift,
+  Sparkles,
   Loader2,
 } from "lucide-react";
 
@@ -89,6 +93,24 @@ const slugify = (text: string) =>
 const UniversityDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { data: university, isLoading, error } = useUniversity(id);
+  const [showPromo, setShowPromo] = useState(true);
+
+  const promoConfig: Record<string, { icon: typeof Gift; gradient: string; title: string; description: string }> = {
+    apu: {
+      icon: Sparkles,
+      gradient: "from-amber-500 via-orange-500 to-red-500",
+      title: "🎓 Up to 40% Scholarship!",
+      description: "APU is offering up to 40% scholarship on tuition fees for eligible international students. Contact us to check your eligibility!",
+    },
+    "alfa-university-college": {
+      icon: Gift,
+      gradient: "from-emerald-500 via-teal-500 to-cyan-500",
+      title: "🎉 RM 2,000 Tuition Fee Waiver!",
+      description: "ALFA University College offers RM 2,000 tuition fee waiver for students who apply through Visa Route BD. Don't miss this exclusive offer!",
+    },
+  };
+
+  const promo = id ? promoConfig[id] : null;
 
   // ✅ Loading state
   if (isLoading) {
@@ -140,6 +162,27 @@ const UniversityDetail = () => {
       <Navbar />
 
       <main className="flex-grow">
+        {/* Promo Banner */}
+        {promo && showPromo && (
+          <div className={`relative bg-gradient-to-r ${promo.gradient} text-white`}>
+            <div className="container mx-auto px-4 py-4 flex items-center gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                <promo.icon className="w-5 h-5 text-white" />
+              </div>
+              <div className="flex-grow min-w-0">
+                <p className="font-bold text-sm sm:text-base">{promo.title}</p>
+                <p className="text-xs sm:text-sm text-white/90 line-clamp-2">{promo.description}</p>
+              </div>
+              <button
+                onClick={() => setShowPromo(false)}
+                className="flex-shrink-0 p-1 rounded-full hover:bg-white/20 transition-colors"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* ✅ Hero Section */}
         <section className="bg-white py-12 sm:py-16 lg:py-20 border-b border-border">
           <div className="container mx-auto px-4">
