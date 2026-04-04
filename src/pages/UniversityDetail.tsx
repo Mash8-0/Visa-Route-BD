@@ -93,6 +93,24 @@ const slugify = (text: string) =>
 const UniversityDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { data: university, isLoading, error } = useUniversity(id);
+  const [showPromo, setShowPromo] = useState(true);
+
+  const promoConfig: Record<string, { icon: typeof Gift; gradient: string; title: string; description: string }> = {
+    apu: {
+      icon: Sparkles,
+      gradient: "from-amber-500 via-orange-500 to-red-500",
+      title: "🎓 Up to 40% Scholarship!",
+      description: "APU is offering up to 40% scholarship on tuition fees for eligible international students. Contact us to check your eligibility!",
+    },
+    "alfa-university-college": {
+      icon: Gift,
+      gradient: "from-emerald-500 via-teal-500 to-cyan-500",
+      title: "🎉 RM 2,000 Tuition Fee Waiver!",
+      description: "ALFA University College offers RM 2,000 tuition fee waiver for students who apply through Visa Route BD. Don't miss this exclusive offer!",
+    },
+  };
+
+  const promo = id ? promoConfig[id] : null;
 
   // ✅ Loading state
   if (isLoading) {
