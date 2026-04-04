@@ -100,7 +100,17 @@ const slugify = (text: string) =>
 const UniversityDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { data: university, isLoading, error } = useUniversity(id);
-  const [showPromo, setShowPromo] = useState(true);
+  const [showPromo, setShowPromo] = useState(false);
+
+  useEffect(() => {
+    if (id) {
+      const promoKeys = Object.keys(promoConfig);
+      if (promoKeys.includes(id)) {
+        const timer = setTimeout(() => setShowPromo(true), 1000);
+        return () => clearTimeout(timer);
+      }
+    }
+  }, [id]);
 
   const promoConfig: Record<string, { icon: typeof Gift; gradient: string; title: string; description: string }> = {
     apu: {
