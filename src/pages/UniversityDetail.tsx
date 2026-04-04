@@ -428,6 +428,30 @@ const UniversityDetail = () => {
                                                         <td className="p-3 font-medium">ODL Enrolment Fee</td>
                                                         <td className="p-3">{details?.fees?.odlEnrolmentFee}</td>
                                                       </tr>
+                                                      {details?.fees?.fullPayment && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Full Payment</td>
+                                                          <td className="p-3">{details.fees.fullPayment}</td>
+                                                        </tr>
+                                                      )}
+                                                      {details?.fees?.yearlyPayments && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Yearly Payments</td>
+                                                          <td className="p-3">{details.fees.yearlyPayments}</td>
+                                                        </tr>
+                                                      )}
+                                                      {details?.fees?.firstInstallment && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">1st Installment</td>
+                                                          <td className="p-3">{details.fees.firstInstallment}</td>
+                                                        </tr>
+                                                      )}
+                                                      {details?.fees?.installmentPayments && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Subsequent Installments</td>
+                                                          <td className="p-3">{details.fees.installmentPayments}</td>
+                                                        </tr>
+                                                      )}
                                                     </>
                                                   ) : (
                                                     <>
