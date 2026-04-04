@@ -176,30 +176,36 @@ const UniversityDetail = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      {/* Promo Banner - Fixed at top */}
-      {promo && showPromo && (
-        <div className={`fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r ${promo.gradient} text-white shadow-lg`}>
-          <div className="container mx-auto px-4 py-3 flex items-center gap-3 sm:gap-4">
-            <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
-              <promo.icon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+      {/* Promo Popup Dialog */}
+      {promo && (
+        <Dialog open={showPromo} onOpenChange={setShowPromo}>
+          <DialogContent className={`sm:max-w-md border-0 bg-gradient-to-br ${promo.gradient} text-white overflow-hidden`}>
+            <DialogHeader className="text-center items-center gap-3">
+              <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm mx-auto">
+                <promo.icon className="w-8 h-8 text-white" />
+              </div>
+              <DialogTitle className="text-2xl font-bold text-white">
+                {promo.title}
+              </DialogTitle>
+              <DialogDescription className="text-white/90 text-base leading-relaxed">
+                {promo.description}
+              </DialogDescription>
+            </DialogHeader>
+            <div className="flex justify-center mt-4">
+              <a
+                href="https://wa.me/601161516515"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-white/90 transition-colors shadow-lg"
+              >
+                Contact Us Now
+              </a>
             </div>
-            <div className="flex-grow min-w-0">
-              <p className="font-bold text-xs sm:text-sm">{promo.title}</p>
-              <p className="text-[10px] sm:text-xs text-white/90 line-clamp-1">{promo.description}</p>
-            </div>
-            <button
-              onClick={() => setShowPromo(false)}
-              className="flex-shrink-0 p-1 rounded-full hover:bg-white/20 transition-colors"
-            >
-              <X className="w-4 h-4" />
-            </button>
-          </div>
-        </div>
+          </DialogContent>
+        </Dialog>
       )}
 
-      <div className={promo && showPromo ? "pt-[52px] sm:pt-[56px]" : ""}>
-        <Navbar />
-      </div>
+      <Navbar />
 
       <main className="flex-grow">
 
