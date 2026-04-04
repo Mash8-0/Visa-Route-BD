@@ -102,7 +102,7 @@ const UniversityDetail = () => {
       title: "🎓 Up to 40% Scholarship!",
       description: "APU is offering up to 40% scholarship on tuition fees for eligible international students. Contact us to check your eligibility!",
     },
-    "alfa-university-college": {
+    alfa: {
       icon: Gift,
       gradient: "from-emerald-500 via-teal-500 to-cyan-500",
       title: "🎉 RM 2,000 Tuition Fee Waiver!",
@@ -159,29 +159,32 @@ const UniversityDetail = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      <Navbar />
+      {/* Promo Banner - Fixed at top */}
+      {promo && showPromo && (
+        <div className={`fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r ${promo.gradient} text-white shadow-lg`}>
+          <div className="container mx-auto px-4 py-3 flex items-center gap-3 sm:gap-4">
+            <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+              <promo.icon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+            </div>
+            <div className="flex-grow min-w-0">
+              <p className="font-bold text-xs sm:text-sm">{promo.title}</p>
+              <p className="text-[10px] sm:text-xs text-white/90 line-clamp-1">{promo.description}</p>
+            </div>
+            <button
+              onClick={() => setShowPromo(false)}
+              className="flex-shrink-0 p-1 rounded-full hover:bg-white/20 transition-colors"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      )}
+
+      <div className={promo && showPromo ? "pt-[52px] sm:pt-[56px]" : ""}>
+        <Navbar />
+      </div>
 
       <main className="flex-grow">
-        {/* Promo Banner */}
-        {promo && showPromo && (
-          <div className={`relative bg-gradient-to-r ${promo.gradient} text-white`}>
-            <div className="container mx-auto px-4 py-4 flex items-center gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
-                <promo.icon className="w-5 h-5 text-white" />
-              </div>
-              <div className="flex-grow min-w-0">
-                <p className="font-bold text-sm sm:text-base">{promo.title}</p>
-                <p className="text-xs sm:text-sm text-white/90 line-clamp-2">{promo.description}</p>
-              </div>
-              <button
-                onClick={() => setShowPromo(false)}
-                className="flex-shrink-0 p-1 rounded-full hover:bg-white/20 transition-colors"
-              >
-                <X className="w-4 h-4" />
-              </button>
-            </div>
-          </div>
-        )}
 
         {/* ✅ Hero Section */}
         <section className="bg-white py-12 sm:py-16 lg:py-20 border-b border-border">
