@@ -572,6 +572,13 @@ const UniversityDetail = () => {
                                                     </tr>
                                                   )}
 
+                                                  {details?.fees?.fullPayment && (
+                                                    <tr className="border-t">
+                                                      <td className="p-3 font-medium">Full Payment</td>
+                                                      <td className="p-3">{details.fees.fullPayment}</td>
+                                                    </tr>
+                                                  )}
+
                                                   <tr className="border-t bg-muted/30">
                                                     <td className="p-3 font-semibold">Total Fees</td>
                                                     <td className="p-3 font-semibold">{total}</td>

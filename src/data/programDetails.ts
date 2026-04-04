@@ -25,6 +25,7 @@ export type ProgramFees = {
   postArrivalFee?: string;
   hospitalityResourceFees?: string;
   eventsResourceFees?: string;
+  fullPayment?: string;
   tuition: ProgramTuition;
   total: string;
 };
