@@ -478,6 +478,8 @@ const UniversityDetail = () => {
                                                     </>
                                                   )}
 
+                                                  {!isODL && (
+                                                    <>
                                                   {isDegreeLevelBased ? (
                                                     <>
                                                       {showDL1 && (
@@ -601,6 +603,8 @@ const UniversityDetail = () => {
                                                       <td className="p-3 font-medium">Full Payment</td>
                                                       <td className="p-3">{details.fees.fullPayment}</td>
                                                     </tr>
+                                                  )}
+                                                    </>
                                                   )}
 
                                                   <tr className="border-t bg-muted/30">
