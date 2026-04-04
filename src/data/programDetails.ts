@@ -2732,12 +2732,300 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       total: "RM 149,600",
     },
   },
+
+  // ═══════════════════════════════════════════════════════════════
+  // APU — MASTER PROGRAMMES
+  // ═══════════════════════════════════════════════════════════════
+
+  "apu--master-of-technology-management": {
+    overview: "APU describes this programme as being geared towards graduates from technical programmes such as engineering and computer science who want to build managerial skills relevant to technical environments.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["IT Manager", "Technology Consultant", "Project Manager", "Systems Manager", "Operations Manager"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--msc-in-information-technology-management": {
+    overview: "APU says this programme is geared towards industry or business professionals seeking to develop careers in the management of technological systems and technology-driven operations.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["IT Operations Manager", "Technology Strategist", "Business Systems Manager", "IT Consultant", "Chief Technology Officer"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-science-in-digital-transformation": {
+    overview: "APU lists this as one of its postgraduate master's programmes focused on digital transformation and management-related postgraduate study.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Digital Transformation Lead", "Change Management Consultant", "Innovation Manager", "Digital Strategy Analyst", "Technology Adoption Specialist"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--msc-in-software-engineering": {
+    overview: "APU lists this as one of its postgraduate computing and technology master's programmes.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Senior Software Engineer", "Software Architect", "Technical Lead", "DevOps Engineer", "R&D Engineer"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-project-management": {
+    overview: "APU includes this as one of its postgraduate master's programmes under its business and management offerings.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Project Manager", "Programme Manager", "PMO Director", "Construction Manager", "Agile Coach"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-business-administration": {
+    overview: "APU offers this MBA for managers and professionals, with official course details listed on its MBA page.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["General Manager", "Business Consultant", "Operations Director", "Entrepreneur", "Chief Executive Officer"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-business-administration-digital-leadership": {
+    overview: "APU says this programme is geared towards managers who want to enhance their skills for the challenges of digital transformation and digital leadership.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Digital Transformation Leader", "Chief Digital Officer", "Innovation Director", "Digital Strategy Consultant", "Technology Executive"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-business-administration-business-analytics": {
+    overview: "APU says this specialism is designed for managers and professionals who want to use data analytics to make more informed business decisions and improve organisational performance.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Business Analytics Manager", "Data-Driven Decision Maker", "Business Intelligence Director", "Analytics Consultant", "Strategy Analyst"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-business-administration-artificial-intelligence-mbai": {
+    overview: "APU offers this MBA specialism for professionals interested in combining business leadership with artificial intelligence-related management capability.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["AI Strategy Manager", "AI Product Manager", "Chief AI Officer", "Machine Learning Business Lead", "Innovation Manager"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-business-administration-oil-and-gas-management": {
+    overview: "APU lists this as one of its MBA specialisms in the postgraduate master's portfolio.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Oil & Gas Operations Manager", "Energy Consultant", "Petroleum Business Manager", "Supply Chain Director (Energy)", "HSE Manager"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-business-administration-supply-chain-management": {
+    overview: "APU says this specialism is designed for managers and professionals who want to deepen expertise in supply chain and business management, including procurement, sourcing, vendor management, and supply chain decision-making.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Supply Chain Manager", "Procurement Director", "Logistics Manager", "Operations Analyst", "Vendor Management Specialist"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-business-administration-hospitality-and-tourism": {
+    overview: "APU lists this as one of the MBA specialisms in its postgraduate studies portfolio.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Hospitality Director", "Tourism Development Manager", "Hotel General Manager", "Events Director", "Travel & Tourism Consultant"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-science-in-international-business-communications": {
+    overview: "APU lists this as one of its postgraduate business and management master's programmes.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Corporate Communications Manager", "International Business Consultant", "Public Relations Director", "Media Strategist", "Brand Communications Lead"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-science-in-digital-marketing": {
+    overview: "APU lists this as one of its postgraduate business-focused master's programmes.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Digital Marketing Director", "SEO/SEM Strategist", "Social Media Manager", "E-Commerce Manager", "Content Strategy Lead"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-finance": {
+    overview: "APU lists this as one of its postgraduate finance-related master's programmes.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Finance Manager", "Financial Analyst", "Investment Banker", "Treasury Manager", "Corporate Finance Director"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-finance-with-a-specialism-in-fintech": {
+    overview: "APU lists this as a finance-related postgraduate specialism within its master's programme portfolio.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["FinTech Product Manager", "Blockchain Analyst", "Digital Payments Specialist", "Financial Technology Consultant", "RegTech Analyst"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-accounting": {
+    overview: "APU lists this as one of its postgraduate accounting-related master's programmes.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Senior Accountant", "Audit Manager", "Financial Controller", "Tax Consultant", "Chief Financial Officer"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-accounting-in-forensic-analysis": {
+    overview: "APU lists this as one of its postgraduate accounting and forensic-focused master's programmes.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Forensic Accountant", "Fraud Examiner", "Compliance Officer", "Internal Auditor", "Anti-Money Laundering Specialist"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-arts-in-design-innovation-management": {
+    overview: "APU lists this as one of its postgraduate design and innovation-related master's programmes.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Design Director", "Innovation Manager", "Creative Director", "UX Strategy Lead", "Product Design Manager"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-science-in-actuarial-science": {
+    overview: "APU lists this as one of its postgraduate actuarial and quantitative master's programmes.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Actuary", "Risk Analyst", "Insurance Underwriter", "Pension Consultant", "Quantitative Analyst"],
+    fees: {
+      fullPayment: "RM 38,800",
+      tuition: { semester1: "RM 13,480", semester2: "RM 13,480", semester3: "RM 13,480" },
+      total: "RM 38,800",
+    },
+  },
+  "apu--master-of-science-in-artificial-intelligence": {
+    overview: "APU offers this programme as a postgraduate AI degree with official course details on its course page.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["AI Research Scientist", "Machine Learning Engineer", "Data Scientist", "AI Solutions Architect", "NLP Engineer"],
+    fees: {
+      fullPayment: "RM 40,800",
+      tuition: { semester1: "RM 14,180", semester2: "RM 14,180", semester3: "RM 14,180" },
+      total: "RM 40,800",
+    },
+  },
+  "apu--master-of-science-in-cyber-security": {
+    overview: "APU lists this as one of its postgraduate computing and cyber security master's programmes.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Cyber Security Analyst", "Security Architect", "Penetration Tester", "CISO", "Incident Response Manager"],
+    fees: {
+      fullPayment: "RM 40,800",
+      tuition: { semester1: "RM 14,180", semester2: "RM 14,180", semester3: "RM 14,180" },
+      total: "RM 40,800",
+    },
+  },
+  "apu--msc-in-data-science-and-business-analytics": {
+    overview: "APU lists this as one of its postgraduate data and analytics master's programmes.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Data Scientist", "Business Analyst", "Machine Learning Engineer", "Analytics Manager", "Data Engineering Lead"],
+    fees: {
+      fullPayment: "RM 44,800",
+      tuition: { semester1: "RM 15,570", semester2: "RM 15,570", semester3: "RM 15,570" },
+      total: "RM 44,800",
+    },
+  },
+  "apu--master-of-education-in-learning-design-and-technology": {
+    overview: "APU lists this as one of its postgraduate education-related master's programmes.",
+    studyMode: "Full Time / Part Time",
+    durationOfStudy: "1+ year (Full Time) / 2 years 6 months (Part Time)",
+    intakes: ["13 April 2026", "12 June 2026", "03 August 2026", "21 August 2026"],
+    careers: ["Instructional Designer", "Learning Technologist", "E-Learning Developer", "Educational Consultant", "Training & Development Manager"],
+    fees: {
+      fullPayment: "RM 34,000",
+      tuition: { semester1: "RM 11,810", semester2: "RM 11,810", semester3: "RM 11,810" },
+      total: "RM 34,000",
+    },
+  },
 };
-/**
- * ✅ KEY ALIASES (Fixes "No extra details found...")
- * Your UI is sometimes using a SHORT slug (example: diploma-in-early-childhood)
- * but your data is stored in a LONG slug (example: diploma-in-early-childhood-education).
- */
 export const programDetailsAliases: Record<string, string> = {
   // Existing diploma / bachelor aliases
   "diploma-in-early-childhood": "diploma-in-early-childhood-education",
