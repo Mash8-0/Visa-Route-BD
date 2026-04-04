@@ -102,7 +102,7 @@ const UniversityDetail = () => {
       title: "🎓 Up to 40% Scholarship!",
       description: "APU is offering up to 40% scholarship on tuition fees for eligible international students. Contact us to check your eligibility!",
     },
-    "alfa-university-college": {
+    alfa: {
       icon: Gift,
       gradient: "from-emerald-500 via-teal-500 to-cyan-500",
       title: "🎉 RM 2,000 Tuition Fee Waiver!",
