@@ -162,6 +162,27 @@ const UniversityDetail = () => {
       <Navbar />
 
       <main className="flex-grow">
+        {/* Promo Banner */}
+        {promo && showPromo && (
+          <div className={`relative bg-gradient-to-r ${promo.gradient} text-white`}>
+            <div className="container mx-auto px-4 py-4 flex items-center gap-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                <promo.icon className="w-5 h-5 text-white" />
+              </div>
+              <div className="flex-grow min-w-0">
+                <p className="font-bold text-sm sm:text-base">{promo.title}</p>
+                <p className="text-xs sm:text-sm text-white/90 line-clamp-2">{promo.description}</p>
+              </div>
+              <button
+                onClick={() => setShowPromo(false)}
+                className="flex-shrink-0 p-1 rounded-full hover:bg-white/20 transition-colors"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* ✅ Hero Section */}
         <section className="bg-white py-12 sm:py-16 lg:py-20 border-b border-border">
           <div className="container mx-auto px-4">
