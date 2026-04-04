@@ -11,6 +11,9 @@ import {
   Clock,
   BookOpen,
   Users,
+  X,
+  Gift,
+  Sparkles,
   Loader2,
 } from "lucide-react";
 
