@@ -9,6 +9,9 @@ export type ProgramTuition = {
   semester4?: string;
   semester5?: string;
   semester6?: string;
+  semester7?: string;
+  semester8?: string;
+  semester9?: string;
   degreeLevel1?: string;
   degreeLevel2?: string;
   degreeLevel3?: string;
