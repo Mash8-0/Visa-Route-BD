@@ -362,6 +362,12 @@ const UniversityDetail = () => {
                                           <h3 className="font-semibold text-foreground text-sm sm:text-lg">
                                             {program.name}
                                           </h3>
+                                          {details?.campus && (
+                                            <p className="text-xs text-primary/80 mt-0.5 flex items-center gap-1">
+                                              <MapPin className="w-3 h-3" />
+                                              {details.campus}
+                                            </p>
+                                          )}
                                           <p className="text-xs sm:text-sm text-muted-foreground mt-1 flex items-center gap-1">
                                             <Users className="w-3 h-3" />
                                             {program.faculty}
