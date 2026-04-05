@@ -40,6 +40,7 @@ export type ProgramFees = {
 
 export type ProgramDetails = {
   code?: string;
+  campus?: string;
   overview?: string;
   studyMode?: string;
   durationOfStudy?: string;
