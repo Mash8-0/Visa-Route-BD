@@ -573,6 +573,18 @@ const UniversityDetail = () => {
                                                           <td className="p-3">{additional}</td>
                                                         </tr>
                                                       )}
+                                                      {details?.fees?.initialAdminFee && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Initial, Admin & 1st Year Tuition Fee</td>
+                                                          <td className="p-3">{details.fees.initialAdminFee}</td>
+                                                        </tr>
+                                                      )}
+                                                      {details?.fees?.clearanceFee && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Clearance Fee</td>
+                                                          <td className="p-3">{details.fees.clearanceFee}</td>
+                                                        </tr>
+                                                      )}
                                                       {details?.fees?.postArrivalFee && (
                                                         <tr className="border-t">
                                                           <td className="p-3 font-medium">Post-Arrival Processing Fee</td>
