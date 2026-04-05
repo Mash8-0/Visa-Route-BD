@@ -37,6 +37,8 @@ export type ProgramFees = {
   yearlyPayments?: string;
   firstInstallment?: string;
   installmentPayments?: string;
+  initialAdminFee?: string;
+  clearanceFee?: string;
   tuition: ProgramTuition;
   total: string;
 };
