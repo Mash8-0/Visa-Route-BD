@@ -455,6 +455,7 @@ const UniversityDetail = () => {
                                         {(() => {
                                           const showYear2 = !!details?.fees?.tuition?.year2;
                                           const showYear3 = !!details?.fees?.tuition?.year3;
+                                          const showYear4 = !!details?.fees?.tuition?.year4;
                                           const showSem1 = !!details?.fees?.tuition?.semester1;
                                           const showSem2 = !!details?.fees?.tuition?.semester2;
                                           const showSem3 = !!details?.fees?.tuition?.semester3;
@@ -657,6 +658,12 @@ const UniversityDetail = () => {
                                                         <tr className="border-t">
                                                           <td className="p-3 font-medium">Tuition Fees (Year 3)</td>
                                                           <td className="p-3">{details?.fees?.tuition?.year3}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showYear4 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Tuition Fees (Year 4)</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.year4}</td>
                                                         </tr>
                                                       )}
                                                     </>
