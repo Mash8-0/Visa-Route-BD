@@ -468,11 +468,14 @@ const UniversityDetail = () => {
                                           const showSem4 = !!details?.fees?.tuition?.semester4;
                                           const showSem5 = !!details?.fees?.tuition?.semester5;
                                           const showSem6 = !!details?.fees?.tuition?.semester6;
+                                          const showSem7 = !!details?.fees?.tuition?.semester7;
+                                          const showSem8 = !!details?.fees?.tuition?.semester8;
+                                          const showSem9 = !!details?.fees?.tuition?.semester9;
                                           const showDL1 = !!details?.fees?.tuition?.degreeLevel1;
                                           const showDL2 = !!details?.fees?.tuition?.degreeLevel2;
                                           const showDL3 = !!details?.fees?.tuition?.degreeLevel3;
                                           const showDL4 = !!details?.fees?.tuition?.degreeLevel4;
-                                          const isSemesterBased = showSem1 || showSem2 || showSem3 || showSem4 || showSem5 || showSem6;
+                                          const isSemesterBased = showSem1 || showSem2 || showSem3 || showSem4 || showSem5 || showSem6 || showSem7 || showSem8 || showSem9;
                                           const isDegreeLevelBased = showDL1 || showDL2 || showDL3 || showDL4;
                                           const isODL = !!details?.fees?.odlEnrolmentFee;
 
@@ -573,6 +576,18 @@ const UniversityDetail = () => {
                                                           <td className="p-3">{additional}</td>
                                                         </tr>
                                                       )}
+                                                      {details?.fees?.initialAdminFee && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Initial, Admin & 1st Year Tuition Fee</td>
+                                                          <td className="p-3">{details.fees.initialAdminFee}</td>
+                                                        </tr>
+                                                      )}
+                                                      {details?.fees?.clearanceFee && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Clearance Fee</td>
+                                                          <td className="p-3">{details.fees.clearanceFee}</td>
+                                                        </tr>
+                                                      )}
                                                       {details?.fees?.postArrivalFee && (
                                                         <tr className="border-t">
                                                           <td className="p-3 font-medium">Post-Arrival Processing Fee</td>
@@ -647,6 +662,24 @@ const UniversityDetail = () => {
                                                         <tr className="border-t">
                                                           <td className="p-3 font-medium">Semester 6</td>
                                                           <td className="p-3">{details?.fees?.tuition?.semester6}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showSem7 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">7th Semester</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.semester7}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showSem8 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">8th Semester</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.semester8}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showSem9 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">9th Semester</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.semester9}</td>
                                                         </tr>
                                                       )}
                                                     </>

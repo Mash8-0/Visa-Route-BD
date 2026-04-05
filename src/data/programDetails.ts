@@ -9,6 +9,9 @@ export type ProgramTuition = {
   semester4?: string;
   semester5?: string;
   semester6?: string;
+  semester7?: string;
+  semester8?: string;
+  semester9?: string;
   degreeLevel1?: string;
   degreeLevel2?: string;
   degreeLevel3?: string;
@@ -34,6 +37,8 @@ export type ProgramFees = {
   yearlyPayments?: string;
   firstInstallment?: string;
   installmentPayments?: string;
+  initialAdminFee?: string;
+  clearanceFee?: string;
   tuition: ProgramTuition;
   total: string;
 };
@@ -5179,6 +5184,259 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       total: "RM 53,454",
     },
   },
+
+  // ===================== ICMS Programs =====================
+
+  "icms--foundation-in-arts": {
+    overview: "An MQA-accredited pre-university programme designed to prepare SPM, O-Level, and equivalent school leavers for degree studies in Business, Humanities, and Social Sciences. It builds core academic skills such as reading, writing, speaking, and critical thinking, with pathways including Business and Humanities.",
+    studyMode: "Conventional",
+    durationOfStudy: "Full-time — 1 Year",
+    intakes: ["January", "March", "August"],
+    careers: [
+      "Progress to Bachelor's degree in Business, Humanities, or Social Sciences",
+      "Administrative Assistant",
+      "Customer Service Executive",
+      "Junior Research Assistant",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 14,000",
+      clearanceFee: "RM 300",
+      tuition: {},
+      total: "RM 17,300",
+    },
+  },
+
+  "icms--diploma-in-business-administration": {
+    overview: "A diploma programme that equips students with business knowledge and transferable industry skills, offered as part of the School of Business studies pathway at ICMS.",
+    studyMode: "Full Time",
+    durationOfStudy: "Full-time — 2 Years 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Business Executive",
+      "Marketing Coordinator",
+      "Sales Representative",
+      "Administrative Officer",
+      "Entrepreneur / Small Business Owner",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,200",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
+      total: "RM 30,750",
+    },
+  },
+
+  "icms--diploma-in-computer-science": {
+    overview: "This programme develops skills in cybersecurity, network administration, software security policies, and network infrastructure design and monitoring.",
+    studyMode: "Full Time",
+    durationOfStudy: "Full-time — 2 Years 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Network Administrator",
+      "Cybersecurity Analyst",
+      "IT Support Specialist",
+      "System Administrator",
+      "Junior Software Developer",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,200",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
+      total: "RM 30,750",
+    },
+  },
+
+  "icms--diploma-in-football-studies": {
+    overview: "A 2.5-year programme that helps students understand football management through a practical lens, covering football science, management, coaching skills, business, facilities management, sponsorship, and related business skills.",
+    studyMode: "Full Time",
+    durationOfStudy: "Full-time — 2 Years 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Football Coach / Assistant Coach",
+      "Sports Facility Manager",
+      "Football Club Administrator",
+      "Sports Marketing Executive",
+      "Talent Scout / Player Agent",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,200",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
+      total: "RM 30,750",
+    },
+  },
+
+  "icms--diploma-in-sports-science": {
+    overview: "A diploma in sports science aimed at developing sports-related academic and practical skills for coaching and related careers.",
+    studyMode: "Full Time",
+    durationOfStudy: "Full-time — 2 Years 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Sports Coach",
+      "Fitness Trainer",
+      "Sports Rehabilitation Assistant",
+      "Physical Education Instructor",
+      "Sports Event Coordinator",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,200",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
+      total: "RM 30,750",
+    },
+  },
+
+  "icms--diploma-in-criminal-investigation": {
+    overview: "A programme designed to provide knowledge and skills related to policing, investigation, enforcement, and industry practices. Also known as Diploma in Policing & Investigation.",
+    studyMode: "Full Time & Weekend Class",
+    durationOfStudy: "Full-time — 2 Years 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Criminal Investigator",
+      "Law Enforcement Officer",
+      "Private Investigator",
+      "Security Consultant",
+      "Compliance Officer",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,200",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
+      total: "RM 30,750",
+    },
+  },
+
+  "icms--diploma-in-enforcement-management": {
+    overview: "A diploma specially developed to provide students with knowledge and skills in enforcement organisation, law enforcement, and investigation, with input from industry experts.",
+    studyMode: "Full Time & Weekend Class",
+    durationOfStudy: "Full-time — 2 Years 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Enforcement Officer",
+      "Regulatory Compliance Executive",
+      "Public Safety Officer",
+      "Security Operations Manager",
+      "Government Agency Inspector",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,200",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
+      total: "RM 30,750",
+    },
+  },
+
+  "icms--diploma-in-occupational-safety-health": {
+    overview: "This programme develops graduates in occupational health and safety with practical skills, industry-relevant knowledge, and progression opportunities to degree study.",
+    studyMode: "Full Time",
+    durationOfStudy: "Full-time — 2.5 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Safety & Health Officer",
+      "Environmental Health Assistant",
+      "Workplace Safety Inspector",
+      "Risk Assessment Coordinator",
+      "OSH Compliance Executive",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,200",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
+      total: "RM 30,750",
+    },
+  },
+
+  "icms--bachelor-in-law-enforcement": {
+    overview: "An honours programme offering an interdisciplinary curriculum covering governance, security, and public accountability, with applied learning such as investigative simulations and field placements.",
+    studyMode: "Full Time",
+    durationOfStudy: "Full-time — 3 Years",
+    intakes: ["December", "January", "March", "August"],
+    careers: [
+      "Law Enforcement Officer",
+      "Intelligence Analyst",
+      "Public Policy Advisor",
+      "Security Consultant",
+      "Government Affairs Executive",
+      "Forensic Investigator",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,112",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 3,556", semester4: "RM 3,556", semester5: "RM 3,556", semester6: "RM 3,556", semester7: "RM 3,556", semester8: "RM 3,556", semester9: "RM 3,556" },
+      total: "RM 41,304",
+    },
+  },
+
+  "icms--master-in-management-by-research": {
+    overview: "This programme provides advanced knowledge and practical insights into organisational leadership, strategic decision-making, and sustainable business growth, with emphasis on research and innovation.",
+    studyMode: "Research",
+    durationOfStudy: "Full-time: min 2 years, max 3 years | Part-time: min 3 years, max 6 years",
+    intakes: ["January", "April", "July", "September", "November"],
+    careers: [
+      "Management Consultant",
+      "Research Analyst",
+      "Strategic Planning Manager",
+      "Academic Researcher",
+      "Organisational Development Specialist",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 16,000",
+      clearanceFee: "RM 300",
+      tuition: { year2: "RM 10,500" },
+      total: "RM 29,800",
+    },
+  },
+
+  "icms--master-of-education": {
+    overview: "This programme offers two pathways — Instructional Technology or Sustainability in Education — and is aimed at improving educational practice, innovation, and leadership.",
+    studyMode: "Full-time / Part-time",
+    durationOfStudy: "Full-time: 1 Year | Part-time: 2 Years",
+    intakes: ["January", "April", "July", "September", "November"],
+    careers: [
+      "Education Specialist",
+      "Curriculum Developer",
+      "Instructional Designer",
+      "School Administrator",
+      "Education Policy Analyst",
+    ],
+    fees: {
+      initialAdminFee: "RM 15,000",
+      clearanceFee: "RM 3,300",
+      tuition: {},
+      total: "RM 18,300",
+    },
+  },
+
+  "icms--doctor-of-business-administration": {
+    overview: "A coursework-based doctorate designed for high-achieving business professionals who want to advance their careers and move into higher management roles.",
+    studyMode: "Full-time / Part-time",
+    durationOfStudy: "Full-time: 3 Years | Part-time: 4 Years",
+    intakes: ["January", "April", "July", "September", "November"],
+    careers: [
+      "Chief Executive Officer (CEO)",
+      "University Professor / Lecturer",
+      "Senior Management Consultant",
+      "Director of Strategy",
+      "Corporate Researcher",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 16,000",
+      clearanceFee: "RM 300",
+      tuition: { semester2: "RM 5,000", semester3: "RM 5,000", semester4: "RM 5,000", semester5: "RM 5,000", semester6: "RM 0" },
+      total: "RM 39,300",
+    },
+  },
 };
 export const programDetailsAliases: Record<string, string> = {
   // Existing diploma / bachelor aliases
@@ -5289,6 +5547,12 @@ export const programDetailsAliases: Record<string, string> = {
   "apu-foundation-programme-computing-and-technology-pathway": "apu-foundation-programme-computing-technology-pathway",
   "apu-foundation-programme-business-finance-and-social-sciences-pathway": "apu-foundation-programme-business-finance-social-sciences-pathway",
   "apu-foundation-programme-architecture-and-design-pathway": "apu-foundation-programme-architecture-design-pathway",
+
+  // ICMS slug aliases
+  "diploma-in-occupational-safety-and-health": "diploma-in-occupational-safety-health",
+  "bachelor-in-law-enforcement-hons": "bachelor-in-law-enforcement",
+  "bachelor-in-law-enforcement-honours": "bachelor-in-law-enforcement",
+  "master-in-management": "master-in-management-by-research",
 };
 
 export const resolveProgramDetailsKey = (key: string) =>
