@@ -660,6 +660,12 @@ const UniversityDetail = () => {
                                                           <td className="p-3">{details?.fees?.tuition?.year3}</td>
                                                         </tr>
                                                       )}
+                                                      {showYear4 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Tuition Fees (Year 4)</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.year4}</td>
+                                                        </tr>
+                                                      )}
                                                     </>
                                                   )}
 

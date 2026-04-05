@@ -2,6 +2,7 @@ export type ProgramTuition = {
   year1?: string;
   year2?: string;
   year3?: string;
+  year4?: string;
   semester1?: string;
   semester2?: string;
   semester3?: string;
