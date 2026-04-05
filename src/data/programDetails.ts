@@ -18,6 +18,10 @@ export type ProgramFees = {
   emgs?: string;
   registrationInternational?: string;
   additionalFees?: string;
+  applicationProcessingFee?: string;
+  internationalStudentFee?: string;
+  completionProcessingFee?: string;
+  resourceFee?: string;
   odlEnrolmentFee?: string;
   engineeringLabDeposit?: string;
   libraryDeposit?: string;

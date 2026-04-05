@@ -528,11 +528,37 @@ const UniversityDetail = () => {
                                                         <td className="p-3 font-medium">EMGS</td>
                                                         <td className="p-3">{emgs}</td>
                                                       </tr>
-                                                      <tr className="border-t">
-                                                        <td className="p-3 font-medium">Registration & Administrative Fee</td>
-                                                        <td className="p-3">{registration}</td>
-                                                      </tr>
-                                                      {additional !== "—" && (
+                                                      {details?.fees?.applicationProcessingFee && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Application Processing Fee</td>
+                                                          <td className="p-3">{details.fees.applicationProcessingFee}</td>
+                                                        </tr>
+                                                      )}
+                                                      {details?.fees?.internationalStudentFee && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">International Student Fee</td>
+                                                          <td className="p-3">{details.fees.internationalStudentFee}</td>
+                                                        </tr>
+                                                      )}
+                                                      {details?.fees?.completionProcessingFee && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Completion Processing Fee</td>
+                                                          <td className="p-3">{details.fees.completionProcessingFee}</td>
+                                                        </tr>
+                                                      )}
+                                                      {details?.fees?.resourceFee && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Resource Fee</td>
+                                                          <td className="p-3">{details.fees.resourceFee}</td>
+                                                        </tr>
+                                                      )}
+                                                      {!details?.fees?.applicationProcessingFee && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">Registration & Administrative Fee</td>
+                                                          <td className="p-3">{registration}</td>
+                                                        </tr>
+                                                      )}
+                                                      {additional !== "—" && !details?.fees?.applicationProcessingFee && (
                                                         <tr className="border-t">
                                                           <td className="p-3 font-medium">Additional Fees</td>
                                                           <td className="p-3">{additional}</td>
