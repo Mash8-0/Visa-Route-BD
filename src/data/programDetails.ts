@@ -4000,7 +4000,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       internationalStudentFee: "RM 8,000",
       completionProcessingFee: "RM 1,060",
       resourceFee: "RM 300 (Per Semester)",
-      tuition: { year1: "RM 22,990", year2: "RM 17,490", year3: "RM 17,490" },
+      tuition: { year1: "RM 22,990", year2: "RM 17,490", year3: "RM 17,490", year4: "RM 11,130" },
       total: "RM 69,100",
     },
   },
