@@ -664,6 +664,24 @@ const UniversityDetail = () => {
                                                           <td className="p-3">{details?.fees?.tuition?.semester6}</td>
                                                         </tr>
                                                       )}
+                                                      {showSem7 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">7th Semester</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.semester7}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showSem8 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">8th Semester</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.semester8}</td>
+                                                        </tr>
+                                                      )}
+                                                      {showSem9 && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">9th Semester</td>
+                                                          <td className="p-3">{details?.fees?.tuition?.semester9}</td>
+                                                        </tr>
+                                                      )}
                                                     </>
                                                   ) : (
                                                     <>
