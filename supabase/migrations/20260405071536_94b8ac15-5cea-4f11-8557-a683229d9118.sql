@@ -1,0 +1,7 @@
+UPDATE universities SET
+  description = 'City University Malaysia is a private university established in April 1984 by a group of scholars. Originally known as Petaling Jaya Community College, the university attained full university status in 2016. As a research university, it offers five doctoral programs in business (PhD & DBA), information technology (PhD), design (PhD), and education (PhD & EdD). With four campuses across Malaysia located in Petaling Jaya, Cyberjaya, Johor Bahru, and Kota Kinabalu, the university has international students constituting over 47% of the student population from over 70 nations. Under a Sino-Malaysian bilateral agreement in 2009, City University Malaysia degree programmes are acknowledged by the Chinese Ministry of Education.',
+  location = 'Petaling Jaya, Cyberjaya, Johor Bahru, Kota Kinabalu',
+  highlights = ARRAY['4 Campuses Across Malaysia', '47% International Students from 70+ Nations', 'Full University Status Since 2016', '5 Doctoral Programs', 'Recognized by Chinese Ministry of Education'],
+  facilities = ARRAY['Computer Labs', 'Library', 'Student Centre', 'Career Services', 'Research Centre', 'Multi-Campus Network'],
+  updated_at = now()
+WHERE id = 'city';
