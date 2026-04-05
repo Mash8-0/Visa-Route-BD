@@ -3337,10 +3337,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   // ========================
 
   "city--foundation-in-business": {
-    overview: "A pre-university programme designed to prepare students for undergraduate study in business-related fields.",
+    overview: "This foundation programme equips students with essential knowledge in economics, accounting, management, and business communication. It builds a strong academic base for progression into business-related degree programmes. Students develop analytical thinking, teamwork, and presentation skills through structured coursework. The programme is ideal for those aspiring to pursue careers in commerce, finance, or entrepreneurship.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Business Administration Student",
+      "Accounting & Finance Student",
+      "Marketing Student",
+      "Human Resource Management Student",
+      "International Business Student",
+      "Entrepreneurship Student",
+    ],
     fees: {
       resourceFee: "RM 300 (Per Semester)",
       tuition: { year1: "RM 12,969" },
@@ -3348,10 +3356,17 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-arts-communication": {
-    overview: "A pre-university programme that builds academic preparation for communication-related degree study.",
+    overview: "This programme provides a solid grounding in communication theory, media studies, and public relations fundamentals. Students explore the role of communication in society while developing writing, presentation, and critical analysis skills. The curriculum prepares learners for degree-level study in mass communication, corporate communication, or journalism. It is designed for those who are passionate about media, storytelling, and audience engagement.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Mass Communication Student",
+      "Corporate Communication Student",
+      "Journalism Student",
+      "Public Relations Student",
+      "Media Studies Student",
+    ],
     fees: {
       resourceFee: "RM 300 (Per Semester)",
       tuition: { year1: "RM 12,969" },
@@ -3359,10 +3374,17 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-arts-english": {
-    overview: "A pre-university programme designed to prepare students for degree studies with an English and language-related pathway.",
+    overview: "This foundation programme develops proficiency in the English language through literature, linguistics, and academic writing modules. Students strengthen their reading comprehension, critical thinking, and oral communication abilities. The programme serves as a pathway to degree studies in TESL, education, or English-related disciplines. It is suited for learners who enjoy language, literature, and cross-cultural communication.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "TESL Education Student",
+      "English Literature Student",
+      "Linguistics Student",
+      "Education Student",
+      "Applied Language Student",
+    ],
     fees: {
       resourceFee: "RM 300 (Per Semester)",
       tuition: { year1: "RM 12,969" },
@@ -3370,10 +3392,17 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-arts-graphic-design-multimedia": {
-    overview: "A pre-university programme preparing students for design, multimedia, and creative degree pathways.",
+    overview: "This programme introduces students to the principles of graphic design, digital media, and visual storytelling. Coursework covers design software, typography, colour theory, and multimedia production techniques. Students build a creative portfolio while developing technical skills for degree-level design studies. It is ideal for those passionate about visual arts, digital content creation, and creative industries.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Graphic Design Student",
+      "Multimedia Design Student",
+      "Animation Student",
+      "Game Design Student",
+      "Digital Media Student",
+    ],
     fees: {
       resourceFee: "RM 300 (Per Semester)",
       tuition: { year1: "RM 12,969" },
@@ -3381,10 +3410,17 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-arts-build-environment": {
-    overview: "A pre-university programme for students intending to continue into built environment-related degree study.",
+    overview: "This programme provides foundational knowledge in architecture, construction, and environmental design. Students learn about spatial planning, building materials, sustainability, and design principles. The curriculum prepares learners for degree programmes in architecture, interior design, or architectural technology. It suits those with an interest in creating functional and aesthetic built spaces.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Architecture Student",
+      "Interior Design Student",
+      "Architectural Technology Student",
+      "Urban Planning Student",
+      "Built Environment Student",
+    ],
     fees: {
       resourceFee: "RM 300 (Per Semester)",
       tuition: { year1: "RM 12,969" },
@@ -3392,10 +3428,16 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-arts-fashion-design": {
-    overview: "A pre-university programme preparing students for fashion and design-related undergraduate study.",
+    overview: "This foundation programme introduces the fundamentals of fashion illustration, textile knowledge, and design processes. Students explore fashion trends, garment construction basics, and creative ideation techniques. The programme builds a foundation for progression into fashion design degree studies. It is designed for aspiring designers who want to enter the fashion and apparel industry.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Fashion Design Student",
+      "Textile Design Student",
+      "Fashion Merchandising Student",
+      "Apparel Technology Student",
+    ],
     fees: {
       resourceFee: "RM 300 (Per Semester)",
       tuition: { year1: "RM 12,969" },
@@ -3403,10 +3445,17 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-science": {
-    overview: "A pre-university science pathway designed for progression into science-related degree programmes.",
+    overview: "This programme covers core science subjects including biology, chemistry, physics, and mathematics to prepare students for science-related degrees. Students develop laboratory skills, scientific reasoning, and analytical problem-solving abilities. The curriculum is structured to support entry into health sciences, biomedical, engineering, or environmental programmes. It is ideal for students with a strong interest in scientific exploration and discovery.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Biomedical Science Student",
+      "Nursing Student",
+      "Environmental Health Student",
+      "Engineering Student",
+      "Occupational Safety & Health Student",
+    ],
     fees: {
       resourceFee: "RM 300 (Per Semester)",
       tuition: { year1: "RM 12,969" },
@@ -3414,10 +3463,17 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-information-technology": {
-    overview: "A pre-university IT pathway designed to prepare students for undergraduate study in information technology and computing.",
+    overview: "This programme introduces fundamental concepts in computing, programming, databases, and information systems. Students gain hands-on experience with software tools and develop logical thinking and problem-solving skills. The curriculum provides a strong pathway into degree programmes in IT, software engineering, cybersecurity, or artificial intelligence. It is suited for tech-enthusiastic learners aiming for careers in the digital economy.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Information Technology Student",
+      "Software Engineering Student",
+      "Computer Science (AI) Student",
+      "Cybersecurity Student",
+      "Data Science Student",
+    ],
     fees: {
       resourceFee: "RM 300 (Per Semester)",
       tuition: { year1: "RM 12,969" },
@@ -3430,10 +3486,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   // ========================
 
   "city--diploma-in-business": {
-    overview: "A diploma programme designed to provide foundational business knowledge and practical skills for employment or progression to degree study.",
+    overview: "This diploma programme provides a comprehensive understanding of business operations, marketing, and organisational management. Students learn practical skills in financial literacy, business planning, and customer relationship management. The programme prepares graduates for entry-level business roles or further study at degree level. It combines theoretical knowledge with industry-relevant case studies and projects.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Business Executive",
+      "Sales Coordinator",
+      "Marketing Assistant",
+      "Operations Executive",
+      "Customer Service Officer",
+      "Administrative Officer",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3445,10 +3509,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-early-childhood-education": {
-    overview: "A diploma programme focused on early childhood teaching, care, and child development.",
+    overview: "This programme trains students in child development theories, early learning pedagogy, and classroom management for young learners. Students gain practical teaching experience through supervised placements in preschool and kindergarten settings. The curriculum covers child psychology, creative teaching methods, and curriculum planning. Graduates are prepared to nurture and educate children during their most formative years.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Preschool Teacher",
+      "Kindergarten Teacher",
+      "Childcare Centre Supervisor",
+      "Early Childhood Coordinator",
+      "Education Assistant",
+      "Children's Programme Organiser",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3460,10 +3532,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-fashion-design": {
-    overview: "A diploma programme focused on fashion design concepts, creativity, and practical design development.",
+    overview: "This programme develops creativity and technical skills in fashion illustration, pattern making, and garment construction. Students explore current fashion trends, textile science, and the fashion production process from concept to final product. Hands-on studio work and portfolio development are central components of the curriculum. Graduates are equipped to enter the fashion industry as junior designers or production assistants.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Fashion Designer",
+      "Pattern Maker",
+      "Fashion Merchandiser",
+      "Textile Designer",
+      "Fashion Stylist",
+      "Apparel Production Assistant",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3475,10 +3555,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-graphic-design": {
-    overview: "A diploma programme in visual communication, design principles, and creative production.",
+    overview: "This programme covers the fundamentals of visual communication, digital design tools, and print production techniques. Students learn typography, layout design, branding, and image manipulation using industry-standard software. The curriculum emphasises creative problem-solving through real-world design projects and portfolio building. Graduates are ready to work in advertising agencies, publishing houses, or as freelance designers.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Graphic Designer",
+      "Art Director",
+      "Brand Identity Designer",
+      "Publication Designer",
+      "Packaging Designer",
+      "Freelance Designer",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3490,10 +3578,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-mass-communication": {
-    overview: "A diploma programme covering communication, media, and mass communication fundamentals.",
+    overview: "This programme introduces students to media theory, journalism, broadcasting, and digital content creation. Students develop writing, interviewing, and storytelling skills across print, broadcast, and online platforms. The curriculum includes practical sessions in video production, news reporting, and social media management. Graduates are prepared for dynamic careers in the media and communications industry.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Journalist",
+      "News Reporter",
+      "Content Creator",
+      "Media Planner",
+      "Broadcasting Assistant",
+      "Social Media Executive",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3505,10 +3601,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-corporate-communication": {
-    overview: "A diploma programme focused on corporate communication, public messaging, and communication practice.",
+    overview: "This programme focuses on strategic communication, public relations, and corporate messaging within organisations. Students learn to craft press releases, manage stakeholder communications, and handle corporate events. The curriculum blends communication theory with practical skills in media relations and reputation management. Graduates are equipped for roles in corporate affairs, PR agencies, and organisational communication departments.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Corporate Communication Executive",
+      "Public Relations Officer",
+      "Communications Coordinator",
+      "Media Relations Executive",
+      "Event Coordinator",
+      "Internal Communications Assistant",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3520,10 +3624,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-accounting": {
-    overview: "A diploma programme providing core accounting and finance-related knowledge.",
+    overview: "This programme provides essential knowledge in financial accounting, cost accounting, taxation, and auditing principles. Students develop practical skills in bookkeeping, financial statement preparation, and computerised accounting systems. The curriculum is designed to meet industry standards and prepares graduates for professional accounting pathways. It is ideal for those seeking a career in finance, banking, or corporate accounting.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 7 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Accounts Assistant",
+      "Audit Assistant",
+      "Tax Assistant",
+      "Bookkeeper",
+      "Finance Clerk",
+      "Payroll Administrator",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3535,10 +3647,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-business-management": {
-    overview: "A diploma programme covering management, operations, and essential business knowledge.",
+    overview: "This programme covers core management principles including planning, organising, leadership, and business strategy. Students gain knowledge in marketing, human resources, operations management, and business ethics. The curriculum emphasises both theoretical foundations and practical business applications. Graduates are prepared for supervisory roles or further study in business administration.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Management Trainee",
+      "Operations Supervisor",
+      "Business Development Executive",
+      "Project Coordinator",
+      "Office Manager",
+      "Retail Manager",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3550,10 +3670,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-human-resource-management": {
-    overview: "A diploma programme focused on HR functions, people management, and workplace administration.",
+    overview: "This programme equips students with knowledge in recruitment, employee relations, compensation management, and organisational behaviour. Students learn workforce planning, training and development, and employment law fundamentals. The curriculum combines HR theory with real-world case studies and practical exercises. Graduates are ready for entry-level positions in human resource departments across various industries.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "HR Assistant",
+      "Recruitment Coordinator",
+      "Training Coordinator",
+      "Payroll Executive",
+      "Employee Relations Officer",
+      "HR Administrative Officer",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3565,10 +3693,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-office-management": {
-    overview: "A diploma programme focused on office systems, administrative practice, and organisational support.",
+    overview: "This programme trains students in administrative systems, office technology, records management, and organisational support functions. Students develop skills in document management, scheduling, communication, and office workflow coordination. The curriculum prepares graduates for efficient office administration in corporate and public sector environments. It is suited for those who enjoy organisational roles and professional support services.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Office Administrator",
+      "Executive Assistant",
+      "Records Management Officer",
+      "Administrative Coordinator",
+      "Personal Assistant",
+      "Office Operations Executive",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3580,10 +3716,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-islamic-banking": {
-    overview: "A diploma programme covering Islamic banking concepts, finance, and related business practices.",
+    overview: "This programme provides foundational knowledge in Islamic finance principles, Shariah-compliant banking products, and financial management. Students learn about takaful, sukuk, murabahah, and other Islamic financial instruments. The curriculum combines religious scholarship with practical banking and finance applications. Graduates are prepared for careers in the rapidly growing Islamic banking and finance sector.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Islamic Banking Officer",
+      "Shariah Compliance Assistant",
+      "Takaful Executive",
+      "Finance Executive",
+      "Banking Customer Service Officer",
+      "Islamic Finance Analyst",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3595,10 +3739,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-management": {
-    overview: "A diploma programme designed to develop core management knowledge and practical business skills.",
+    overview: "This programme builds a strong foundation in general management, leadership, and decision-making skills for the modern workplace. Students study organisational behaviour, strategic planning, project management, and entrepreneurship. Practical assignments and industry case studies develop real-world problem-solving abilities. Graduates are prepared for management trainee positions or further academic progression.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 7 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Management Trainee",
+      "Administrative Executive",
+      "Operations Assistant",
+      "Project Assistant",
+      "Entrepreneur",
+      "Business Coordinator",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3610,10 +3762,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-information-technology": {
-    overview: "A diploma programme focused on IT systems, digital tools, and computing fundamentals.",
+    overview: "This programme provides a comprehensive grounding in computer systems, networking, programming, and database management. Students gain practical experience in software development, web design, and IT infrastructure support. The curriculum keeps pace with industry trends to ensure graduates are workplace-ready. It is designed for those aiming to build a career in the technology sector.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 7 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "IT Support Technician",
+      "Web Developer",
+      "Junior Programmer",
+      "Network Administrator",
+      "Database Assistant",
+      "System Support Executive",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3625,10 +3785,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-medical-lab-technology": {
-    overview: "A diploma programme focused on laboratory science, testing procedures, and medical lab practice.",
+    overview: "This programme trains students in clinical laboratory techniques, specimen analysis, and diagnostic testing procedures. Students learn haematology, microbiology, biochemistry, and histopathology in both classroom and laboratory settings. The curriculum meets professional standards required for medical laboratory practice. Graduates are equipped to work in hospital laboratories, diagnostic centres, and research facilities.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Medical Laboratory Technician",
+      "Lab Assistant",
+      "Pathology Technician",
+      "Research Laboratory Assistant",
+      "Quality Control Technician",
+      "Diagnostic Lab Executive",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3640,10 +3808,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-nursing": {
-    overview: "A diploma programme designed to prepare students for nursing knowledge and professional healthcare practice.",
+    overview: "This programme prepares students for professional nursing practice through clinical training, patient care techniques, and health science education. Students develop competencies in medical-surgical nursing, community health, and pharmacology. Supervised clinical placements in hospitals provide hands-on patient care experience. Graduates are eligible to register with the Malaysian Nursing Board and begin their nursing careers.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 6 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Staff Nurse",
+      "Community Health Nurse",
+      "Clinical Nurse",
+      "Healthcare Assistant",
+      "Occupational Health Nurse",
+      "Public Health Nurse",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3655,10 +3831,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-occupational-safety-health": {
-    overview: "A diploma programme focused on workplace safety, health regulations, and occupational risk management.",
+    overview: "This programme provides comprehensive training in workplace safety standards, hazard identification, and risk assessment methodologies. Students study occupational health legislation, emergency response planning, and safety management systems. Practical fieldwork and industry visits complement theoretical learning. Graduates are prepared to ensure workplace compliance and promote employee well-being across industries.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Safety & Health Officer",
+      "Safety Inspector",
+      "Risk Assessment Officer",
+      "Environmental Health Assistant",
+      "Compliance Officer",
+      "Industrial Safety Coordinator",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3670,10 +3854,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-environmental-health": {
-    overview: "A diploma programme focused on environmental health, safety, and public health-related practice.",
+    overview: "This programme equips students with knowledge in environmental monitoring, public health protection, and sanitation management. Students learn about water quality, food safety, waste management, and environmental legislation. The curriculum combines scientific principles with practical field assessments and laboratory work. Graduates are prepared to safeguard community health and environmental standards.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Environmental Health Officer",
+      "Public Health Inspector",
+      "Food Safety Officer",
+      "Waste Management Coordinator",
+      "Water Quality Analyst",
+      "Sanitation Officer",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3685,10 +3877,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-culinary-arts": {
-    overview: "A diploma programme focused on culinary techniques, food preparation, and hospitality kitchen practice.",
+    overview: "This programme develops professional culinary skills in food preparation, kitchen management, and gastronomic presentation. Students train in fully equipped kitchens, learning international and Asian cuisines, pastry arts, and food safety standards. The curriculum includes industry placements that provide real-world kitchen experience. Graduates are prepared for careers in restaurants, hotels, catering companies, and food entrepreneurship.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Commis Chef",
+      "Pastry Chef",
+      "Sous Chef",
+      "Kitchen Supervisor",
+      "Catering Manager",
+      "Food & Beverage Executive",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3700,10 +3900,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-hotel-management": {
-    overview: "A diploma programme covering hotel operations, service management, and hospitality practice.",
+    overview: "This programme provides comprehensive training in hotel operations, front office management, housekeeping, and guest services. Students learn revenue management, food and beverage operations, and hospitality marketing strategies. Industry attachments at hotels give students hands-on exposure to the hospitality sector. Graduates are well-equipped for supervisory and management roles in the hotel and tourism industry.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Front Office Executive",
+      "Guest Relations Officer",
+      "Housekeeping Supervisor",
+      "F&B Supervisor",
+      "Reservations Executive",
+      "Hotel Operations Trainee",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3715,10 +3923,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-civil-engineering": {
-    overview: "A diploma programme focused on civil engineering fundamentals, structures, and construction-related knowledge.",
+    overview: "This programme covers fundamental civil engineering principles including structural analysis, construction materials, surveying, and geotechnical engineering. Students gain practical skills through laboratory experiments, site visits, and design projects. The curriculum prepares graduates for technical roles in construction, infrastructure development, and project management. It is ideal for those interested in building roads, bridges, and structures.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Site Supervisor",
+      "Civil Engineering Technician",
+      "Construction Coordinator",
+      "Quantity Surveying Assistant",
+      "Draughtsperson",
+      "Project Technician",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3730,10 +3946,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-mechanical-engineering": {
-    overview: "A diploma programme focused on mechanical systems, engineering fundamentals, and technical problem-solving.",
+    overview: "This programme provides foundational knowledge in mechanical systems, thermodynamics, manufacturing processes, and machine design. Students develop technical competencies through workshop practice, CAD modelling, and engineering laboratory experiments. The curriculum balances theory with hands-on application to produce industry-ready graduates. It is suited for those passionate about machinery, manufacturing, and mechanical systems.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Mechanical Technician",
+      "Maintenance Technician",
+      "Manufacturing Supervisor",
+      "Quality Control Inspector",
+      "CAD Technician",
+      "Production Coordinator",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3745,10 +3969,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-architectural-technology": {
-    overview: "A diploma programme focused on architectural technology, design support, and built environment fundamentals.",
+    overview: "This programme trains students in building technology, architectural drafting, construction documentation, and CAD-based design. Students learn to produce technical drawings, understand building codes, and support architectural project delivery. The curriculum includes studio-based assignments and site visit exposure. Graduates are prepared for technical roles in architectural firms, construction companies, and property development.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Architectural Technician",
+      "CAD Draughtsperson",
+      "Building Inspector Assistant",
+      "Construction Document Controller",
+      "Technical Assistant",
+      "Project Support Officer",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3760,10 +3992,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-interior-design": {
-    overview: "A diploma programme focused on interior space planning, design concepts, and creative application.",
+    overview: "This programme develops skills in interior space planning, material selection, 3D visualisation, and design presentation. Students explore residential and commercial design concepts while learning industry-standard software tools. The curriculum encourages creativity through studio projects, model-making, and design critiques. Graduates are equipped for roles in interior design studios, property development firms, and freelance practice.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Interior Designer",
+      "Space Planner",
+      "Design Consultant",
+      "Visual Merchandiser",
+      "Furniture Designer",
+      "Freelance Interior Stylist",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3780,10 +4020,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   // ========================
 
   "city--bachelor-of-business-administration-honours": {
-    overview: "An undergraduate business degree focused on management, leadership, and business operations.",
+    overview: "This honours degree provides in-depth knowledge of business strategy, organisational management, marketing, and financial decision-making. Students develop leadership skills through case studies, group projects, and industry engagement activities. The programme covers contemporary business challenges including digital transformation and global market dynamics. Graduates are prepared for management positions across diverse sectors.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Business Manager",
+      "Operations Manager",
+      "Marketing Manager",
+      "Business Development Manager",
+      "Project Manager",
+      "Entrepreneur",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3795,10 +4043,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-education-early-childhood-education-honours": {
-    overview: "An undergraduate education degree focused on early childhood teaching and learning.",
+    overview: "This honours degree prepares educators to teach and manage early childhood learning environments with expertise in child psychology and pedagogy. Students study curriculum design, inclusive education, classroom management, and child assessment methods. The programme includes teaching practicum in preschools and kindergartens for real-world classroom experience. Graduates are qualified to lead educational programmes for children aged 0-8 years.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Early Childhood Educator",
+      "Kindergarten Principal",
+      "Curriculum Developer",
+      "Education Consultant",
+      "Childcare Centre Manager",
+      "Special Needs Education Assistant",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3810,10 +4066,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-fashion-design-technology-honours": {
-    overview: "An undergraduate degree focused on fashion design, technology, and industry practice.",
+    overview: "This honours programme combines creative fashion design with technical garment technology and production processes. Students master pattern engineering, textile innovation, fashion CAD, and sustainable fashion practices. The curriculum includes industry projects, fashion shows, and portfolio development for professional readiness. Graduates are equipped for careers in fashion houses, garment manufacturing, and independent design practice.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Fashion Designer",
+      "Garment Technologist",
+      "Pattern Engineer",
+      "Fashion Buyer",
+      "Textile Product Developer",
+      "Fashion Brand Manager",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3825,10 +4089,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-information-technology-honours": {
-    overview: "An undergraduate IT degree focused on information systems, digital tools, and computing knowledge.",
+    overview: "This honours degree provides comprehensive training in software development, systems analysis, networking, and database management. Students explore emerging technologies including cloud computing, IoT, and data analytics through project-based learning. The programme emphasises both technical proficiency and professional skills for the IT industry. Graduates are ready for diverse roles in the technology sector across public and private organisations.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "IT Executive",
+      "Systems Analyst",
+      "Software Developer",
+      "Network Administrator",
+      "Database Administrator",
+      "IT Project Coordinator",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3840,10 +4112,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-graphic-design-hons": {
-    overview: "An undergraduate design degree focused on visual communication, graphics, and creative design development.",
+    overview: "This honours programme develops advanced skills in visual communication, branding, digital illustration, and print design. Students work on real-world briefs covering advertising campaigns, packaging design, and corporate identity systems. The curriculum integrates design thinking, typography mastery, and digital production workflows. Graduates are prepared for creative leadership roles in design agencies, media companies, and corporate marketing departments.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Senior Graphic Designer",
+      "Art Director",
+      "Creative Director",
+      "Brand Identity Specialist",
+      "UI/UX Designer",
+      "Advertising Designer",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3855,10 +4135,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-fashion-design-hons": {
-    overview: "An undergraduate degree focused on fashion creativity, design development, and professional practice.",
+    overview: "This honours programme nurtures creative vision in fashion design through advanced studies in garment construction, fashion illustration, and trend forecasting. Students develop collections from concept to runway, exploring sustainable fashion and cultural influences on design. Industry partnerships provide real-world exposure through internships and fashion showcases. Graduates are prepared to lead in fashion design, retail buying, and brand development.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Fashion Designer",
+      "Creative Director",
+      "Fashion Stylist",
+      "Retail Buyer",
+      "Trend Forecaster",
+      "Fashion Entrepreneur",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3870,10 +4158,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-multimedia-hons": {
-    overview: "An undergraduate programme in multimedia, digital media, and creative production.",
+    overview: "This honours programme covers digital media production, interactive design, motion graphics, and multimedia content creation. Students learn video editing, 3D modelling, web development, and user experience design through project-based coursework. The curriculum bridges creative expression with technical production skills for the digital age. Graduates are prepared for careers in media production, digital marketing, and creative technology companies.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Multimedia Designer",
+      "Motion Graphics Artist",
+      "Video Editor",
+      "3D Visualiser",
+      "Digital Content Producer",
+      "Interactive Media Developer",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3885,10 +4181,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-communication-hons-corporate-communication": {
-    overview: "An undergraduate communication degree focused on corporate communication strategy and practice.",
+    overview: "This honours degree develops expertise in strategic corporate messaging, stakeholder engagement, and organisational reputation management. Students study crisis communication, internal communications, CSR strategy, and media relations at an advanced level. The programme includes industry projects and internships with corporate communication departments. Graduates are prepared for senior communication roles in corporations, government agencies, and consultancies.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Corporate Communications Manager",
+      "Public Relations Manager",
+      "Media Relations Specialist",
+      "CSR Manager",
+      "Stakeholder Engagement Officer",
+      "Communications Consultant",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3900,10 +4204,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-communication-hons-mass-communication": {
-    overview: "An undergraduate communication degree focused on mass media, communication theory, and industry practice.",
+    overview: "This honours programme provides advanced training in journalism, broadcasting, digital media, and communication research. Students develop professional skills in news writing, documentary production, media ethics, and audience analysis. The curriculum includes newsroom simulations and media industry attachments for practical experience. Graduates are prepared for careers in broadcast media, digital publishing, and communication agencies.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Broadcast Journalist",
+      "Media Producer",
+      "Digital Content Strategist",
+      "News Editor",
+      "Documentary Filmmaker",
+      "Media Research Analyst",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3915,10 +4227,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-communication-hons-journalism": {
-    overview: "An undergraduate programme focused on journalism, reporting, and media communication.",
+    overview: "This honours programme trains students in investigative reporting, news writing, photojournalism, and digital journalism practices. Students learn editorial decision-making, media law, and ethical journalism standards through hands-on newsroom experience. The curriculum covers both traditional and new media platforms for comprehensive journalism education. Graduates are prepared for careers as reporters, editors, and media professionals.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "News Reporter",
+      "Investigative Journalist",
+      "Editor",
+      "Photojournalist",
+      "Digital Journalist",
+      "Media Correspondent",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3930,10 +4250,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-animation": {
-    overview: "An undergraduate programme focused on animation, creative storytelling, and digital visual production.",
+    overview: "This programme develops advanced skills in 2D and 3D animation, character design, storyboarding, and visual effects production. Students learn industry-standard animation software while exploring narrative techniques and cinematic storytelling. The curriculum includes collaborative projects that simulate real animation studio workflows. Graduates are prepared for careers in animation studios, game companies, and film production houses.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "2D/3D Animator",
+      "Character Designer",
+      "Storyboard Artist",
+      "Visual Effects Artist",
+      "Motion Capture Specialist",
+      "Animation Director",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3945,10 +4273,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-game-design": {
-    overview: "An undergraduate programme focused on game design, interactive media, and creative development.",
+    overview: "This programme covers game mechanics, level design, interactive storytelling, and game engine development using industry tools like Unity and Unreal Engine. Students learn programming, game art, UI/UX for games, and playtesting methodologies through project-based learning. The curriculum encourages innovation in both mobile and console game development. Graduates are ready for careers in game studios, interactive media companies, and independent game development.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Game Designer",
+      "Game Developer",
+      "Level Designer",
+      "Game Artist",
+      "Game QA Tester",
+      "Interactive Media Designer",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3960,10 +4296,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-business-administration-hons": {
-    overview: "An undergraduate business degree focused on management, operations, and strategic business knowledge.",
+    overview: "This honours degree provides comprehensive training in strategic management, international business, finance, and organisational leadership. Students develop analytical and decision-making capabilities through business simulations, industry case studies, and capstone projects. The programme addresses contemporary business trends including digital commerce, sustainability, and innovation management. Graduates are prepared for management and leadership roles in multinational and local enterprises.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Business Manager",
+      "Strategy Analyst",
+      "Marketing Director",
+      "Financial Planner",
+      "Operations Director",
+      "Management Consultant",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3975,10 +4319,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-engineering-management-hons": {
-    overview: "An undergraduate degree combining engineering knowledge with management skills.",
+    overview: "This honours programme bridges engineering principles with business management skills for technology-driven organisations. Students study project management, operations research, quality engineering, and innovation management alongside core engineering subjects. The curriculum prepares graduates to lead engineering teams and manage technical projects effectively. It is ideal for those seeking leadership roles at the intersection of engineering and business.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Engineering Manager",
+      "Project Manager",
+      "Operations Manager",
+      "Quality Assurance Manager",
+      "Technical Consultant",
+      "Production Manager",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -3990,10 +4342,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-accounting-hons": {
-    overview: "An undergraduate accounting degree focused on financial reporting, accounting practice, and analysis.",
+    overview: "This honours programme provides rigorous training in financial reporting, auditing, taxation, management accounting, and corporate governance. Students develop analytical skills using accounting software and learn to interpret complex financial data for business decision-making. The curriculum aligns with professional accounting body requirements including ACCA and MIA exemptions. Graduates are prepared for careers in public practice, corporate finance, and regulatory compliance.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years 6 Months / 10 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Accountant",
+      "Auditor",
+      "Tax Consultant",
+      "Financial Analyst",
+      "Management Accountant",
+      "Corporate Finance Executive",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4005,10 +4365,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-science-hons-accounting-finance": {
-    overview: "An undergraduate degree integrating accounting and finance knowledge for professional and business use.",
+    overview: "This honours programme integrates accounting expertise with financial analysis, investment management, and economic theory. Students learn financial modelling, risk assessment, corporate finance, and banking operations alongside core accounting modules. The curriculum provides dual competency in both accounting and finance for versatile career options. Graduates are prepared for roles in banking, investment firms, corporate treasury, and financial consulting.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Risk Analyst",
+      "Corporate Treasurer",
+      "Banking Executive",
+      "Financial Consultant",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4020,10 +4388,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-information-technology-hons": {
-    overview: "An undergraduate IT degree focused on digital systems, computing, and technology applications.",
+    overview: "This honours programme provides advanced training in software engineering, database systems, network security, and emerging technologies. Students develop solutions through capstone projects, hackathons, and industry-partnered assignments covering cloud computing and data science. The programme emphasises both technical depth and professional readiness for the IT workforce. Graduates are highly sought after in Malaysia's growing digital economy.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Software Engineer",
+      "Systems Analyst",
+      "IT Consultant",
+      "Cloud Solutions Architect",
+      "Data Analyst",
+      "IT Manager",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4035,10 +4411,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-in-software-engineering": {
-    overview: "An undergraduate degree focused on software design, development, and engineering practices.",
+    overview: "This programme focuses on the complete software development lifecycle including requirements analysis, system design, coding, testing, and deployment. Students learn agile methodologies, DevOps practices, and work with modern programming languages and frameworks. The curriculum includes collaborative software projects that simulate professional development environments. Graduates are prepared for high-demand roles in software companies, tech startups, and enterprise IT departments.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Software Engineer",
+      "Full-Stack Developer",
+      "DevOps Engineer",
+      "QA Engineer",
+      "Mobile App Developer",
+      "Technical Lead",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4050,10 +4434,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-computer-science-artificial-intelligence-hons": {
-    overview: "An undergraduate computer science degree focused on AI, intelligent systems, and advanced computing.",
+    overview: "This honours programme provides specialised training in machine learning, deep learning, natural language processing, and computer vision. Students develop AI models and intelligent systems through hands-on projects using Python, TensorFlow, and other AI frameworks. The curriculum covers ethical AI, robotics integration, and data-driven decision-making. Graduates are prepared for cutting-edge careers in AI research, data science, and intelligent systems development.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "AI Engineer",
+      "Machine Learning Engineer",
+      "Data Scientist",
+      "NLP Specialist",
+      "Computer Vision Engineer",
+      "AI Research Analyst",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4065,10 +4457,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-computer-science-cyber-security-hons": {
-    overview: "An undergraduate computer science degree focused on cybersecurity, digital protection, and cyber defence.",
+    overview: "This honours programme specialises in network security, ethical hacking, digital forensics, and security governance frameworks. Students learn threat detection, penetration testing, encryption technologies, and incident response through practical lab exercises. The curriculum aligns with industry certifications and real-world cybersecurity challenges. Graduates are prepared for critical roles protecting organisations from cyber threats and ensuring data security.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Cybersecurity Analyst",
+      "Penetration Tester",
+      "Security Consultant",
+      "Digital Forensics Investigator",
+      "Information Security Officer",
+      "SOC Analyst",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4080,10 +4480,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-occupational-safety-health-hons": {
-    overview: "An undergraduate degree focused on occupational safety, workplace health, and regulatory compliance.",
+    overview: "This four-year honours programme provides comprehensive training in workplace safety management, hazard control, and occupational health legislation. Students learn risk assessment, safety auditing, ergonomics, and emergency preparedness through fieldwork and industry placements. The curriculum meets DOSH requirements and professional OSH standards. Graduates are qualified to serve as registered Safety and Health Officers in various industries.",
     studyMode: "Full Time",
     durationOfStudy: "4 Years / 11 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Safety & Health Officer (SHO)",
+      "OSH Manager",
+      "Risk Manager",
+      "Compliance Manager",
+      "HSE Consultant",
+      "Industrial Hygienist",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4095,10 +4503,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-biomedical-sciences-hons": {
-    overview: "An undergraduate biomedical science degree focused on life sciences, health science, and laboratory-based knowledge.",
+    overview: "This four-year honours programme provides in-depth study of human biology, pathology, pharmacology, and clinical laboratory sciences. Students gain extensive laboratory experience in haematology, microbiology, biochemistry, and molecular diagnostics. The curriculum prepares graduates for roles in healthcare, pharmaceutical research, and clinical diagnostics. It is ideal for those passionate about understanding disease mechanisms and advancing medical science.",
     studyMode: "Full Time",
     durationOfStudy: "4 Years / 11 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Biomedical Scientist",
+      "Clinical Research Associate",
+      "Medical Laboratory Scientist",
+      "Pharmaceutical Executive",
+      "Quality Assurance Officer",
+      "Healthcare Consultant",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4110,10 +4526,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-environmental-health-hons": {
-    overview: "An undergraduate degree focused on environmental health, safety, and public health practice.",
+    overview: "This four-year honours programme trains professionals in environmental monitoring, public health protection, and regulatory compliance. Students study water and air quality assessment, food safety management, vector control, and environmental impact analysis. The curriculum combines laboratory skills with field investigations and policy analysis. Graduates are prepared to protect communities by ensuring environmental and public health standards are maintained.",
     studyMode: "Full Time",
     durationOfStudy: "4 Years / 11 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Environmental Health Officer",
+      "Public Health Specialist",
+      "Food Safety Auditor",
+      "Environmental Consultant",
+      "Regulatory Affairs Officer",
+      "Occupational Health Specialist",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4125,10 +4549,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-nursing": {
-    overview: "An undergraduate nursing degree focused on clinical knowledge, healthcare practice, and patient care.",
+    overview: "This four-year nursing degree provides comprehensive clinical education in medical-surgical, paediatric, obstetric, and community health nursing. Students undergo extensive hospital-based clinical placements alongside theoretical coursework in anatomy, physiology, and pharmacology. The programme meets Malaysian Nursing Board standards and prepares graduates for professional registration. Graduates are equipped to provide compassionate, evidence-based patient care in diverse healthcare settings.",
     studyMode: "Full Time",
     durationOfStudy: "4 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Registered Nurse",
+      "Staff Nurse",
+      "Clinical Nurse Specialist",
+      "Community Health Nurse",
+      "Nurse Educator",
+      "Healthcare Administrator",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4140,10 +4572,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-hospitality-management-hons-single-award": {
-    overview: "An undergraduate hospitality degree focused on hotel, service, and hospitality management practice.",
+    overview: "This honours programme provides comprehensive training in hospitality operations, revenue management, and service excellence. Students study hotel management, food and beverage operations, tourism marketing, and event management. Industry internships at leading hotels provide practical exposure to international hospitality standards. Graduates are prepared for management careers in hotels, resorts, cruise lines, and tourism organisations.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Hotel Manager",
+      "F&B Manager",
+      "Revenue Manager",
+      "Event Manager",
+      "Tourism Officer",
+      "Resort Operations Manager",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4155,10 +4595,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-applied-psychology-hons": {
-    overview: "An undergraduate programme focused on psychology, human behaviour, and applied psychological practice.",
+    overview: "This honours programme provides comprehensive training in psychological theories, research methods, counselling techniques, and human behaviour analysis. Students study developmental psychology, abnormal psychology, social psychology, and organisational behaviour through case studies and practicum. The curriculum prepares graduates for professional practice in clinical, educational, and organisational psychology settings. It is ideal for those passionate about understanding and improving human mental health and well-being.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Counsellor",
+      "Clinical Psychologist",
+      "Organisational Psychologist",
+      "Human Resource Specialist",
+      "Rehabilitation Officer",
+      "Research Psychologist",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4170,10 +4618,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-education-hons-in-teaching-english-as-a-second-language-tesl": {
-    overview: "An undergraduate education degree focused on English language teaching and TESL practice.",
+    overview: "This honours programme prepares professional English language teachers with expertise in second language acquisition, TESL methodology, and classroom pedagogy. Students study linguistics, phonetics, curriculum design, and assessment practices for ESL learners. Teaching practicum placements provide supervised classroom experience in schools. Graduates are qualified to teach English at primary, secondary, and language centre levels both locally and internationally.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "English Language Teacher",
+      "TESL Instructor",
+      "Language Centre Coordinator",
+      "Curriculum Developer",
+      "Education Officer",
+      "Academic Writer",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4185,10 +4641,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-civil-engineering-with-honours": {
-    overview: "An undergraduate engineering degree focused on civil engineering, structures, and construction systems.",
+    overview: "This four-year honours programme provides comprehensive training in structural engineering, geotechnical engineering, hydraulics, and construction management. Students gain practical skills through laboratory testing, site visits, and design projects using industry-standard software. The curriculum meets Board of Engineers Malaysia (BEM) accreditation requirements for professional engineering practice. Graduates are prepared to design, build, and maintain infrastructure projects including roads, bridges, and buildings.",
     studyMode: "Full Time",
     durationOfStudy: "4 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Civil Engineer",
+      "Structural Engineer",
+      "Construction Manager",
+      "Project Engineer",
+      "Quantity Surveyor",
+      "Infrastructure Consultant",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4200,10 +4664,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-mechanical-engineering-with-honours": {
-    overview: "An undergraduate engineering degree focused on mechanical engineering and technical systems.",
+    overview: "This four-year honours programme covers thermodynamics, fluid mechanics, machine design, manufacturing processes, and control systems engineering. Students develop engineering competencies through hands-on laboratory work, workshop practice, and capstone design projects. The curriculum is accredited by BEM, enabling graduates to pursue professional engineering registration. Graduates are prepared for careers in manufacturing, automotive, energy, and aerospace industries.",
     studyMode: "Full Time",
     durationOfStudy: "4 Years / 8 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Mechanical Engineer",
+      "Design Engineer",
+      "Manufacturing Engineer",
+      "Maintenance Engineer",
+      "Automotive Engineer",
+      "Energy Systems Engineer",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4215,10 +4687,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-science-hons-architectural-design": {
-    overview: "An undergraduate architecture-related degree focused on design, built environment, and spatial development.",
+    overview: "This honours programme develops competencies in architectural design, urban planning, building technology, and sustainable design principles. Students learn to produce architectural drawings, 3D models, and design proposals through studio-based learning. The curriculum covers building regulations, environmental design, and architectural history. Graduates are prepared for careers in architectural practice, urban design, and property development.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Architectural Designer",
+      "Urban Planner",
+      "Building Designer",
+      "CAD Specialist",
+      "Property Development Executive",
+      "Sustainability Consultant",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
@@ -4230,10 +4710,18 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-interior-design-hons": {
-    overview: "An undergraduate design degree focused on interior spaces, design concepts, and creative application.",
+    overview: "This honours programme provides advanced training in spatial design, furniture design, lighting design, and sustainable interior solutions. Students develop comprehensive design skills through studio projects covering residential, commercial, and hospitality interiors. The curriculum includes professional practice modules, client presentations, and portfolio development. Graduates are prepared for careers as interior designers, design consultants, and creative directors in the built environment industry.",
     studyMode: "Full Time",
     durationOfStudy: "3 1/2 Years / 11 Semesters",
     intakes: ["1st Feb 2026 until 31st Dec 2026"],
+    careers: [
+      "Interior Designer",
+      "Furniture Designer",
+      "Lighting Designer",
+      "Design Consultant",
+      "Exhibition Designer",
+      "Creative Director",
+    ],
     fees: {
       emgs: "RM 2,800",
       applicationProcessingFee: "RM 1,060",
