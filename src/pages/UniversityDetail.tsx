@@ -525,10 +525,12 @@ const UniversityDetail = () => {
                                                     </>
                                                   ) : (
                                                     <>
-                                                      <tr className="border-t">
-                                                        <td className="p-3 font-medium">EMGS</td>
-                                                        <td className="p-3">{emgs}</td>
-                                                      </tr>
+                                                      {(details?.fees?.emgs || program.emgsFee) && (
+                                                        <tr className="border-t">
+                                                          <td className="p-3 font-medium">EMGS</td>
+                                                          <td className="p-3">{emgs}</td>
+                                                        </tr>
+                                                      )}
                                                       {details?.fees?.applicationProcessingFee && (
                                                         <tr className="border-t">
                                                           <td className="p-3 font-medium">Application Processing Fee</td>
@@ -553,7 +555,7 @@ const UniversityDetail = () => {
                                                           <td className="p-3">{details.fees.resourceFee}</td>
                                                         </tr>
                                                       )}
-                                                      {!details?.fees?.applicationProcessingFee && (
+                                                      {!details?.fees?.applicationProcessingFee && (details?.fees?.registrationInternational || program.registrationFee) && (
                                                         <tr className="border-t">
                                                           <td className="p-3 font-medium">Registration & Administrative Fee</td>
                                                           <td className="p-3">{registration}</td>
