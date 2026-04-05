@@ -3372,6 +3372,10 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       "Media Studies Student",
     ],
     fees: {
+      emgs: "RM 2,800",
+      applicationProcessingFee: "RM 1,060",
+      internationalStudentFee: "RM 8,000",
+      completionProcessingFee: "RM 1,060",
       resourceFee: "RM 300 (Per Semester)",
       tuition: { year1: "RM 12,969" },
       total: "RM 25,889",
