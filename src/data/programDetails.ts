@@ -5547,6 +5547,12 @@ export const programDetailsAliases: Record<string, string> = {
   "apu-foundation-programme-computing-and-technology-pathway": "apu-foundation-programme-computing-technology-pathway",
   "apu-foundation-programme-business-finance-and-social-sciences-pathway": "apu-foundation-programme-business-finance-social-sciences-pathway",
   "apu-foundation-programme-architecture-and-design-pathway": "apu-foundation-programme-architecture-design-pathway",
+
+  // ICMS slug aliases
+  "diploma-in-occupational-safety-and-health": "diploma-in-occupational-safety-health",
+  "bachelor-in-law-enforcement-hons": "bachelor-in-law-enforcement",
+  "bachelor-in-law-enforcement-honours": "bachelor-in-law-enforcement",
+  "master-in-management": "master-in-management-by-research",
 };
 
 export const resolveProgramDetailsKey = (key: string) =>
