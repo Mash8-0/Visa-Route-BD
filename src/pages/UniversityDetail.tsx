@@ -685,10 +685,12 @@ const UniversityDetail = () => {
                                                     </>
                                                   ) : (
                                                     <>
+                                                      {(!details?.fees?.initialAdminFee || details?.fees?.tuition?.year1) && (
                                                       <tr className="border-t">
                                                         <td className="p-3 font-medium">Tuition Fees (Year 1)</td>
                                                         <td className="p-3">{year1}</td>
                                                       </tr>
+                                                      )}
                                                       {showYear2 && (
                                                         <tr className="border-t">
                                                           <td className="p-3 font-medium">Tuition Fees (Year 2)</td>
