@@ -3338,6 +3338,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   // ========================
 
   "city--foundation-in-business": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This foundation programme equips students with essential knowledge in economics, accounting, management, and business communication. It builds a strong academic base for progression into business-related degree programmes. Students develop analytical thinking, teamwork, and presentation skills through structured coursework. The programme is ideal for those aspiring to pursue careers in commerce, finance, or entrepreneurship.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -3361,6 +3362,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-arts-communication": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme provides a solid grounding in communication theory, media studies, and public relations fundamentals. Students explore the role of communication in society while developing writing, presentation, and critical analysis skills. The curriculum prepares learners for degree-level study in mass communication, corporate communication, or journalism. It is designed for those who are passionate about media, storytelling, and audience engagement.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -3383,6 +3385,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-arts-english": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This foundation programme develops proficiency in the English language through literature, linguistics, and academic writing modules. Students strengthen their reading comprehension, critical thinking, and oral communication abilities. The programme serves as a pathway to degree studies in TESL, education, or English-related disciplines. It is suited for learners who enjoy language, literature, and cross-cultural communication.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -3405,6 +3408,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-arts-graphic-design-multimedia": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme introduces students to the principles of graphic design, digital media, and visual storytelling. Coursework covers design software, typography, colour theory, and multimedia production techniques. Students build a creative portfolio while developing technical skills for degree-level design studies. It is ideal for those passionate about visual arts, digital content creation, and creative industries.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -3427,6 +3431,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-arts-build-environment": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme provides foundational knowledge in architecture, construction, and environmental design. Students learn about spatial planning, building materials, sustainability, and design principles. The curriculum prepares learners for degree programmes in architecture, interior design, or architectural technology. It suits those with an interest in creating functional and aesthetic built spaces.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -3449,6 +3454,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-arts-fashion-design": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This foundation programme introduces the fundamentals of fashion illustration, textile knowledge, and design processes. Students explore fashion trends, garment construction basics, and creative ideation techniques. The programme builds a foundation for progression into fashion design degree studies. It is designed for aspiring designers who want to enter the fashion and apparel industry.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -3470,6 +3476,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-science": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme covers core science subjects including biology, chemistry, physics, and mathematics to prepare students for science-related degrees. Students develop laboratory skills, scientific reasoning, and analytical problem-solving abilities. The curriculum is structured to support entry into health sciences, biomedical, engineering, or environmental programmes. It is ideal for students with a strong interest in scientific exploration and discovery.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -3492,6 +3499,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--foundation-in-information-technology": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme introduces fundamental concepts in computing, programming, databases, and information systems. Students gain hands-on experience with software tools and develop logical thinking and problem-solving skills. The curriculum provides a strong pathway into degree programmes in IT, software engineering, cybersecurity, or artificial intelligence. It is suited for tech-enthusiastic learners aiming for careers in the digital economy.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -3519,6 +3527,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   // ========================
 
   "city--diploma-in-business": {
+    campus: "Johor Bahru (JB) Campus",
     overview: "This diploma programme provides a comprehensive understanding of business operations, marketing, and organisational management. Students learn practical skills in financial literacy, business planning, and customer relationship management. The programme prepares graduates for entry-level business roles or further study at degree level. It combines theoretical knowledge with industry-relevant case studies and projects.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3542,6 +3551,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-early-childhood-education": {
+    campus: "Johor Bahru (JB) Campus",
     overview: "This programme trains students in child development theories, early learning pedagogy, and classroom management for young learners. Students gain practical teaching experience through supervised placements in preschool and kindergarten settings. The curriculum covers child psychology, creative teaching methods, and curriculum planning. Graduates are prepared to nurture and educate children during their most formative years.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3565,6 +3575,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-fashion-design": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme develops creativity and technical skills in fashion illustration, pattern making, and garment construction. Students explore current fashion trends, textile science, and the fashion production process from concept to final product. Hands-on studio work and portfolio development are central components of the curriculum. Graduates are equipped to enter the fashion industry as junior designers or production assistants.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3588,6 +3599,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-graphic-design": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme covers the fundamentals of visual communication, digital design tools, and print production techniques. Students learn typography, layout design, branding, and image manipulation using industry-standard software. The curriculum emphasises creative problem-solving through real-world design projects and portfolio building. Graduates are ready to work in advertising agencies, publishing houses, or as freelance designers.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3611,6 +3623,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-mass-communication": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme introduces students to media theory, journalism, broadcasting, and digital content creation. Students develop writing, interviewing, and storytelling skills across print, broadcast, and online platforms. The curriculum includes practical sessions in video production, news reporting, and social media management. Graduates are prepared for dynamic careers in the media and communications industry.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3634,6 +3647,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-corporate-communication": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme focuses on strategic communication, public relations, and corporate messaging within organisations. Students learn to craft press releases, manage stakeholder communications, and handle corporate events. The curriculum blends communication theory with practical skills in media relations and reputation management. Graduates are equipped for roles in corporate affairs, PR agencies, and organisational communication departments.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3657,6 +3671,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-accounting": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme provides essential knowledge in financial accounting, cost accounting, taxation, and auditing principles. Students develop practical skills in bookkeeping, financial statement preparation, and computerised accounting systems. The curriculum is designed to meet industry standards and prepares graduates for professional accounting pathways. It is ideal for those seeking a career in finance, banking, or corporate accounting.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 7 Semesters",
@@ -3680,6 +3695,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-business-management": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme covers core management principles including planning, organising, leadership, and business strategy. Students gain knowledge in marketing, human resources, operations management, and business ethics. The curriculum emphasises both theoretical foundations and practical business applications. Graduates are prepared for supervisory roles or further study in business administration.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3703,6 +3719,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-human-resource-management": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme equips students with knowledge in recruitment, employee relations, compensation management, and organisational behaviour. Students learn workforce planning, training and development, and employment law fundamentals. The curriculum combines HR theory with real-world case studies and practical exercises. Graduates are ready for entry-level positions in human resource departments across various industries.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3726,6 +3743,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-office-management": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme trains students in administrative systems, office technology, records management, and organisational support functions. Students develop skills in document management, scheduling, communication, and office workflow coordination. The curriculum prepares graduates for efficient office administration in corporate and public sector environments. It is suited for those who enjoy organisational roles and professional support services.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3749,6 +3767,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-islamic-banking": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme provides foundational knowledge in Islamic finance principles, Shariah-compliant banking products, and financial management. Students learn about takaful, sukuk, murabahah, and other Islamic financial instruments. The curriculum combines religious scholarship with practical banking and finance applications. Graduates are prepared for careers in the rapidly growing Islamic banking and finance sector.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3772,6 +3791,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-management": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme builds a strong foundation in general management, leadership, and decision-making skills for the modern workplace. Students study organisational behaviour, strategic planning, project management, and entrepreneurship. Practical assignments and industry case studies develop real-world problem-solving abilities. Graduates are prepared for management trainee positions or further academic progression.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 7 Semesters",
@@ -3795,6 +3815,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-information-technology": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme provides a comprehensive grounding in computer systems, networking, programming, and database management. Students gain practical experience in software development, web design, and IT infrastructure support. The curriculum keeps pace with industry trends to ensure graduates are workplace-ready. It is designed for those aiming to build a career in the technology sector.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 7 Semesters",
@@ -3818,6 +3839,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-medical-lab-technology": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme trains students in clinical laboratory techniques, specimen analysis, and diagnostic testing procedures. Students learn haematology, microbiology, biochemistry, and histopathology in both classroom and laboratory settings. The curriculum meets professional standards required for medical laboratory practice. Graduates are equipped to work in hospital laboratories, diagnostic centres, and research facilities.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -3841,6 +3863,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-nursing": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme prepares students for professional nursing practice through clinical training, patient care techniques, and health science education. Students develop competencies in medical-surgical nursing, community health, and pharmacology. Supervised clinical placements in hospitals provide hands-on patient care experience. Graduates are eligible to register with the Malaysian Nursing Board and begin their nursing careers.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 6 Semesters",
@@ -3864,6 +3887,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-occupational-safety-health": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme provides comprehensive training in workplace safety standards, hazard identification, and risk assessment methodologies. Students study occupational health legislation, emergency response planning, and safety management systems. Practical fieldwork and industry visits complement theoretical learning. Graduates are prepared to ensure workplace compliance and promote employee well-being across industries.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -3887,6 +3911,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-environmental-health": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme equips students with knowledge in environmental monitoring, public health protection, and sanitation management. Students learn about water quality, food safety, waste management, and environmental legislation. The curriculum combines scientific principles with practical field assessments and laboratory work. Graduates are prepared to safeguard community health and environmental standards.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -3910,6 +3935,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-culinary-arts": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme develops professional culinary skills in food preparation, kitchen management, and gastronomic presentation. Students train in fully equipped kitchens, learning international and Asian cuisines, pastry arts, and food safety standards. The curriculum includes industry placements that provide real-world kitchen experience. Graduates are prepared for careers in restaurants, hotels, catering companies, and food entrepreneurship.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3933,6 +3959,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-hotel-management": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme provides comprehensive training in hotel operations, front office management, housekeeping, and guest services. Students learn revenue management, food and beverage operations, and hospitality marketing strategies. Industry attachments at hotels give students hands-on exposure to the hospitality sector. Graduates are well-equipped for supervisory and management roles in the hotel and tourism industry.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3956,6 +3983,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-civil-engineering": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme covers fundamental civil engineering principles including structural analysis, construction materials, surveying, and geotechnical engineering. Students gain practical skills through laboratory experiments, site visits, and design projects. The curriculum prepares graduates for technical roles in construction, infrastructure development, and project management. It is ideal for those interested in building roads, bridges, and structures.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -3979,6 +4007,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-mechanical-engineering": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme provides foundational knowledge in mechanical systems, thermodynamics, manufacturing processes, and machine design. Students develop technical competencies through workshop practice, CAD modelling, and engineering laboratory experiments. The curriculum balances theory with hands-on application to produce industry-ready graduates. It is suited for those passionate about machinery, manufacturing, and mechanical systems.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -4002,6 +4031,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-architectural-technology": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme trains students in building technology, architectural drafting, construction documentation, and CAD-based design. Students learn to produce technical drawings, understand building codes, and support architectural project delivery. The curriculum includes studio-based assignments and site visit exposure. Graduates are prepared for technical roles in architectural firms, construction companies, and property development.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -4025,6 +4055,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--diploma-in-interior-design": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme develops skills in interior space planning, material selection, 3D visualisation, and design presentation. Students explore residential and commercial design concepts while learning industry-standard software tools. The curriculum encourages creativity through studio projects, model-making, and design critiques. Graduates are equipped for roles in interior design studios, property development firms, and freelance practice.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 8 Semesters",
@@ -4053,6 +4084,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   // ========================
 
   "city--bachelor-of-business-administration-honours": {
+    campus: "Johor Bahru (JB) Campus",
     overview: "This honours degree provides in-depth knowledge of business strategy, organisational management, marketing, and financial decision-making. Students develop leadership skills through case studies, group projects, and industry engagement activities. The programme covers contemporary business challenges including digital transformation and global market dynamics. Graduates are prepared for management positions across diverse sectors.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4076,6 +4108,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-education-early-childhood-education-honours": {
+    campus: "Johor Bahru (JB) Campus",
     overview: "This honours degree prepares educators to teach and manage early childhood learning environments with expertise in child psychology and pedagogy. Students study curriculum design, inclusive education, classroom management, and child assessment methods. The programme includes teaching practicum in preschools and kindergartens for real-world classroom experience. Graduates are qualified to lead educational programmes for children aged 0-8 years.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4099,6 +4132,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-fashion-design-technology-honours": {
+    campus: "Johor Bahru (JB) Campus",
     overview: "This honours programme combines creative fashion design with technical garment technology and production processes. Students master pattern engineering, textile innovation, fashion CAD, and sustainable fashion practices. The curriculum includes industry projects, fashion shows, and portfolio development for professional readiness. Graduates are equipped for careers in fashion houses, garment manufacturing, and independent design practice.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4122,6 +4156,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-information-technology-honours": {
+    campus: "Johor Bahru (JB) Campus",
     overview: "This honours degree provides comprehensive training in software development, systems analysis, networking, and database management. Students explore emerging technologies including cloud computing, IoT, and data analytics through project-based learning. The programme emphasises both technical proficiency and professional skills for the IT industry. Graduates are ready for diverse roles in the technology sector across public and private organisations.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4145,6 +4180,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-graphic-design-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme develops advanced skills in visual communication, branding, digital illustration, and print design. Students work on real-world briefs covering advertising campaigns, packaging design, and corporate identity systems. The curriculum integrates design thinking, typography mastery, and digital production workflows. Graduates are prepared for creative leadership roles in design agencies, media companies, and corporate marketing departments.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4168,6 +4204,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-fashion-design-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme nurtures creative vision in fashion design through advanced studies in garment construction, fashion illustration, and trend forecasting. Students develop collections from concept to runway, exploring sustainable fashion and cultural influences on design. Industry partnerships provide real-world exposure through internships and fashion showcases. Graduates are prepared to lead in fashion design, retail buying, and brand development.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4191,6 +4228,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-multimedia-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme covers digital media production, interactive design, motion graphics, and multimedia content creation. Students learn video editing, 3D modelling, web development, and user experience design through project-based coursework. The curriculum bridges creative expression with technical production skills for the digital age. Graduates are prepared for careers in media production, digital marketing, and creative technology companies.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4214,6 +4252,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-communication-hons-corporate-communication": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours degree develops expertise in strategic corporate messaging, stakeholder engagement, and organisational reputation management. Students study crisis communication, internal communications, CSR strategy, and media relations at an advanced level. The programme includes industry projects and internships with corporate communication departments. Graduates are prepared for senior communication roles in corporations, government agencies, and consultancies.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4237,6 +4276,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-communication-hons-mass-communication": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme provides advanced training in journalism, broadcasting, digital media, and communication research. Students develop professional skills in news writing, documentary production, media ethics, and audience analysis. The curriculum includes newsroom simulations and media industry attachments for practical experience. Graduates are prepared for careers in broadcast media, digital publishing, and communication agencies.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4260,6 +4300,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-communication-hons-journalism": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme trains students in investigative reporting, news writing, photojournalism, and digital journalism practices. Students learn editorial decision-making, media law, and ethical journalism standards through hands-on newsroom experience. The curriculum covers both traditional and new media platforms for comprehensive journalism education. Graduates are prepared for careers as reporters, editors, and media professionals.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4283,6 +4324,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-animation": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme develops advanced skills in 2D and 3D animation, character design, storyboarding, and visual effects production. Students learn industry-standard animation software while exploring narrative techniques and cinematic storytelling. The curriculum includes collaborative projects that simulate real animation studio workflows. Graduates are prepared for careers in animation studios, game companies, and film production houses.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4306,6 +4348,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-game-design": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme covers game mechanics, level design, interactive storytelling, and game engine development using industry tools like Unity and Unreal Engine. Students learn programming, game art, UI/UX for games, and playtesting methodologies through project-based learning. The curriculum encourages innovation in both mobile and console game development. Graduates are ready for careers in game studios, interactive media companies, and independent game development.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4329,6 +4372,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-business-administration-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours degree provides comprehensive training in strategic management, international business, finance, and organisational leadership. Students develop analytical and decision-making capabilities through business simulations, industry case studies, and capstone projects. The programme addresses contemporary business trends including digital commerce, sustainability, and innovation management. Graduates are prepared for management and leadership roles in multinational and local enterprises.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4352,6 +4396,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-engineering-management-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme bridges engineering principles with business management skills for technology-driven organisations. Students study project management, operations research, quality engineering, and innovation management alongside core engineering subjects. The curriculum prepares graduates to lead engineering teams and manage technical projects effectively. It is ideal for those seeking leadership roles at the intersection of engineering and business.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4375,6 +4420,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-accounting-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme provides rigorous training in financial reporting, auditing, taxation, management accounting, and corporate governance. Students develop analytical skills using accounting software and learn to interpret complex financial data for business decision-making. The curriculum aligns with professional accounting body requirements including ACCA and MIA exemptions. Graduates are prepared for careers in public practice, corporate finance, and regulatory compliance.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years 6 Months / 10 Semesters",
@@ -4398,6 +4444,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-science-hons-accounting-finance": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme integrates accounting expertise with financial analysis, investment management, and economic theory. Students learn financial modelling, risk assessment, corporate finance, and banking operations alongside core accounting modules. The curriculum provides dual competency in both accounting and finance for versatile career options. Graduates are prepared for roles in banking, investment firms, corporate treasury, and financial consulting.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4421,6 +4468,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-information-technology-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme provides advanced training in software engineering, database systems, network security, and emerging technologies. Students develop solutions through capstone projects, hackathons, and industry-partnered assignments covering cloud computing and data science. The programme emphasises both technical depth and professional readiness for the IT workforce. Graduates are highly sought after in Malaysia's growing digital economy.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4444,6 +4492,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-in-software-engineering": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This programme focuses on the complete software development lifecycle including requirements analysis, system design, coding, testing, and deployment. Students learn agile methodologies, DevOps practices, and work with modern programming languages and frameworks. The curriculum includes collaborative software projects that simulate professional development environments. Graduates are prepared for high-demand roles in software companies, tech startups, and enterprise IT departments.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4467,6 +4516,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-computer-science-artificial-intelligence-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme provides specialised training in machine learning, deep learning, natural language processing, and computer vision. Students develop AI models and intelligent systems through hands-on projects using Python, TensorFlow, and other AI frameworks. The curriculum covers ethical AI, robotics integration, and data-driven decision-making. Graduates are prepared for cutting-edge careers in AI research, data science, and intelligent systems development.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4490,6 +4540,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-computer-science-cyber-security-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme specialises in network security, ethical hacking, digital forensics, and security governance frameworks. Students learn threat detection, penetration testing, encryption technologies, and incident response through practical lab exercises. The curriculum aligns with industry certifications and real-world cybersecurity challenges. Graduates are prepared for critical roles protecting organisations from cyber threats and ensuring data security.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4513,6 +4564,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-occupational-safety-health-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This four-year honours programme provides comprehensive training in workplace safety management, hazard control, and occupational health legislation. Students learn risk assessment, safety auditing, ergonomics, and emergency preparedness through fieldwork and industry placements. The curriculum meets DOSH requirements and professional OSH standards. Graduates are qualified to serve as registered Safety and Health Officers in various industries.",
     studyMode: "Full Time",
     durationOfStudy: "4 Years / 11 Semesters",
@@ -4536,6 +4588,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-biomedical-sciences-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This four-year honours programme provides in-depth study of human biology, pathology, pharmacology, and clinical laboratory sciences. Students gain extensive laboratory experience in haematology, microbiology, biochemistry, and molecular diagnostics. The curriculum prepares graduates for roles in healthcare, pharmaceutical research, and clinical diagnostics. It is ideal for those passionate about understanding disease mechanisms and advancing medical science.",
     studyMode: "Full Time",
     durationOfStudy: "4 Years / 11 Semesters",
@@ -4559,6 +4612,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-environmental-health-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This four-year honours programme trains professionals in environmental monitoring, public health protection, and regulatory compliance. Students study water and air quality assessment, food safety management, vector control, and environmental impact analysis. The curriculum combines laboratory skills with field investigations and policy analysis. Graduates are prepared to protect communities by ensuring environmental and public health standards are maintained.",
     studyMode: "Full Time",
     durationOfStudy: "4 Years / 11 Semesters",
@@ -4582,6 +4636,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-nursing": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This four-year nursing degree provides comprehensive clinical education in medical-surgical, paediatric, obstetric, and community health nursing. Students undergo extensive hospital-based clinical placements alongside theoretical coursework in anatomy, physiology, and pharmacology. The programme meets Malaysian Nursing Board standards and prepares graduates for professional registration. Graduates are equipped to provide compassionate, evidence-based patient care in diverse healthcare settings.",
     studyMode: "Full Time",
     durationOfStudy: "4 Years / 8 Semesters",
@@ -4605,6 +4660,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-hospitality-management-hons-single-award": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme provides comprehensive training in hospitality operations, revenue management, and service excellence. Students study hotel management, food and beverage operations, tourism marketing, and event management. Industry internships at leading hotels provide practical exposure to international hospitality standards. Graduates are prepared for management careers in hotels, resorts, cruise lines, and tourism organisations.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4628,6 +4684,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-applied-psychology-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme provides comprehensive training in psychological theories, research methods, counselling techniques, and human behaviour analysis. Students study developmental psychology, abnormal psychology, social psychology, and organisational behaviour through case studies and practicum. The curriculum prepares graduates for professional practice in clinical, educational, and organisational psychology settings. It is ideal for those passionate about understanding and improving human mental health and well-being.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4651,6 +4708,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-education-hons-in-teaching-english-as-a-second-language-tesl": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme prepares professional English language teachers with expertise in second language acquisition, TESL methodology, and classroom pedagogy. Students study linguistics, phonetics, curriculum design, and assessment practices for ESL learners. Teaching practicum placements provide supervised classroom experience in schools. Graduates are qualified to teach English at primary, secondary, and language centre levels both locally and internationally.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4674,6 +4732,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-civil-engineering-with-honours": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This four-year honours programme provides comprehensive training in structural engineering, geotechnical engineering, hydraulics, and construction management. Students gain practical skills through laboratory testing, site visits, and design projects using industry-standard software. The curriculum meets Board of Engineers Malaysia (BEM) accreditation requirements for professional engineering practice. Graduates are prepared to design, build, and maintain infrastructure projects including roads, bridges, and buildings.",
     studyMode: "Full Time",
     durationOfStudy: "4 Years / 8 Semesters",
@@ -4697,6 +4756,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-mechanical-engineering-with-honours": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This four-year honours programme covers thermodynamics, fluid mechanics, machine design, manufacturing processes, and control systems engineering. Students develop engineering competencies through hands-on laboratory work, workshop practice, and capstone design projects. The curriculum is accredited by BEM, enabling graduates to pursue professional engineering registration. Graduates are prepared for careers in manufacturing, automotive, energy, and aerospace industries.",
     studyMode: "Full Time",
     durationOfStudy: "4 Years / 8 Semesters",
@@ -4720,6 +4780,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-science-hons-architectural-design": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme develops competencies in architectural design, urban planning, building technology, and sustainable design principles. Students learn to produce architectural drawings, 3D models, and design proposals through studio-based learning. The curriculum covers building regulations, environmental design, and architectural history. Graduates are prepared for careers in architectural practice, urban design, and property development.",
     studyMode: "Full Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4743,6 +4804,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--bachelor-of-interior-design-hons": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "This honours programme provides advanced training in spatial design, furniture design, lighting design, and sustainable interior solutions. Students develop comprehensive design skills through studio projects covering residential, commercial, and hospitality interiors. The curriculum includes professional practice modules, client presentations, and portfolio development. Graduates are prepared for careers as interior designers, design consultants, and creative directors in the built environment industry.",
     studyMode: "Full Time",
     durationOfStudy: "3 1/2 Years / 11 Semesters",
@@ -4771,6 +4833,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   // ========================
 
   "city--master-of-business-administration-mba": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A postgraduate business programme focused on management, leadership, and strategic decision-making.",
     studyMode: "Full & Part Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -4786,6 +4849,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--master-of-science-in-business-administration-by-research-mscba": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A research-based postgraduate business programme for advanced study in business and management.",
     studyMode: "Full & Part Time",
     durationOfStudy: "2 Years / 6 Semesters",
@@ -4801,6 +4865,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--master-of-information-technology-mit": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A postgraduate IT programme focused on advanced computing, systems, and digital technology.",
     studyMode: "Full & Part Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -4816,6 +4881,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--master-of-accounting-macc": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A postgraduate accounting programme for advanced knowledge in accounting and finance-related practice.",
     studyMode: "Full & Part Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -4831,6 +4897,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--master-of-education-med": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A postgraduate education programme aimed at professional and academic development in education.",
     studyMode: "Full & Part Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -4846,6 +4913,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--master-of-architecture-marc": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A postgraduate architecture programme focused on advanced design, architecture, and professional practice.",
     studyMode: "Full Time",
     durationOfStudy: "2 Years / 4 Semesters",
@@ -4861,6 +4929,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--master-of-mechanical-engineering-mme": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A postgraduate engineering programme focused on advanced mechanical engineering knowledge and technical development.",
     studyMode: "Full & Part Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -4876,6 +4945,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--master-of-sport-studies-mss-by-research": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A research-based postgraduate programme in sport studies for advanced academic and professional research.",
     studyMode: "Full & Part Time",
     durationOfStudy: "2 Years / 6 Semesters",
@@ -4891,6 +4961,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--master-of-creative-industries-and-communication-mcic": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A postgraduate programme combining creative industries, media, and communication studies.",
     studyMode: "Full & Part Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -4906,6 +4977,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--master-of-architecture-project-management-mapm": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A postgraduate programme focused on project management in architecture and the built environment.",
     studyMode: "Full & Part Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -4921,6 +4993,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--master-in-artificial-intelligence": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A postgraduate programme focused on artificial intelligence, intelligent systems, and advanced AI applications.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -4936,6 +5009,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--master-in-cybersecurity": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A postgraduate programme focused on cybersecurity, digital protection, and cyber risk management.",
     studyMode: "Full Time",
     durationOfStudy: "1 Year / 3 Semesters",
@@ -4956,6 +5030,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   // ========================
 
   "city--doctor-of-business-administration-dba": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A professional doctorate designed for advanced leadership, business strategy, and applied research.",
     studyMode: "Full & Part Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4970,6 +5045,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--doctor-of-education-de": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A doctoral programme for advanced educational leadership, research, and scholarly development.",
     studyMode: "Full & Part Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4984,6 +5060,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--doctor-of-philosophy-in-business-administration-phdba": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A research doctorate focused on advanced scholarship and original research in business administration.",
     studyMode: "Full & Part Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -4998,6 +5075,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--doctor-of-philosophy-in-design-phd-design": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A research doctorate for advanced study and original research in design and creative practice.",
     studyMode: "Full & Part Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -5012,6 +5090,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--doctor-of-philosophy-in-education-phd-edu": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A research doctorate for advanced academic inquiry and original research in education.",
     studyMode: "Full & Part Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -5026,6 +5105,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--doctor-of-philosophy-in-information-technology-phd-it": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A research doctorate focused on advanced information technology, computing, and digital systems research.",
     studyMode: "Full & Part Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -5040,6 +5120,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--doctor-of-philosophy-in-sport-studies-phd-ss": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A research doctorate for advanced study and scholarly research in sport studies.",
     studyMode: "Full & Part Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -5054,6 +5135,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--doctor-of-philosophy-in-performing-art-phd-pa": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A research doctorate focused on advanced performing arts scholarship and practice-based research.",
     studyMode: "Full & Part Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -5068,6 +5150,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--doctor-of-philosophy-in-built-environment-phd-be": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A research doctorate for advanced study in architecture, design, and built environment fields.",
     studyMode: "Full & Part Time",
     durationOfStudy: "3 Years / 9 Semesters",
@@ -5082,6 +5165,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
   "city--doctor-of-philosophy-in-engineering": {
+    campus: "Petaling Jaya (PJ) & Cyberjaya Campus",
     overview: "A research doctorate focused on advanced engineering research, innovation, and technical development.",
     studyMode: "Full & Part Time",
     durationOfStudy: "3 Years / 9 Semesters",
