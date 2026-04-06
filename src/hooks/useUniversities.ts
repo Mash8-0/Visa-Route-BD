@@ -234,6 +234,7 @@ export const useUniversity = (id: string | undefined) => {
         registrationFee: prog.registration_fee ?? undefined,
         tuitionFee: prog.tuition_fee ?? undefined,
         totalFees: prog.total_fees ?? undefined,
+        comingSoon: (prog as any).coming_soon ?? false,
       }));
 
 
