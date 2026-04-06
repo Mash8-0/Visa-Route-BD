@@ -290,7 +290,7 @@ const UniversityDetail = () => {
 
                   {/* Summary cards */}
                   <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 mb-6 sm:mb-8">
-                    {(["Foundation", "Diploma", "Bachelor", "Master", "PhD"] as const).map(
+                    {(["Certificate", "Foundation", "Diploma", "Bachelor", "Master", "PhD"] as const).map(
                       (level) => {
                         const count = university.programs.filter(
                           (p) => p.level === level
