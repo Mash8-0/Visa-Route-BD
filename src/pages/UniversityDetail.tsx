@@ -341,9 +341,12 @@ const UniversityDetail = () => {
                             {programs.map((program) => {
                               const key = slugify(program.name);
                               const resolvedKey = resolveProgramDetailsKey(key);
-                              // Try university-scoped key first, then generic
-                              const scopedKey = university ? `${university.id}--${resolvedKey}` : resolvedKey;
-                              const details = programDetailsMap[scopedKey] || programDetailsMap[resolvedKey];
+                              // Try university-scoped key first (raw slug, then resolved alias), then generic
+                              const uniId = university?.id;
+                              const details =
+                                (uniId && programDetailsMap[`${uniId}--${key}`]) ||
+                                (uniId && programDetailsMap[`${uniId}--${resolvedKey}`]) ||
+                                programDetailsMap[resolvedKey];
 
                               return (
                                 <AccordionItem
