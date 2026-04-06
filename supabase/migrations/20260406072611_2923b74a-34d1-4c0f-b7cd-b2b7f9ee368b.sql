@@ -1,0 +1,1 @@
+UPDATE programs SET coming_soon = false WHERE id = '732da6b2-1972-4b6a-80da-13a3ce3f3fd8';
