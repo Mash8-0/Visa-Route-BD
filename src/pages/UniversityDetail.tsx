@@ -56,6 +56,8 @@ const groupProgramsByLevel = (programs: Program[]) => {
 // ✅ Level gradient color
 const getLevelColor = (level: string) => {
   switch (level) {
+    case "Certificate":
+      return "from-teal-500 to-cyan-500";
     case "Foundation":
       return "from-amber-500 to-orange-500";
     case "Diploma":
@@ -74,6 +76,8 @@ const getLevelColor = (level: string) => {
 // ✅ Badge colors per level
 const getLevelBadgeClass = (level: string) => {
   switch (level) {
+    case "Certificate":
+      return "bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300";
     case "Foundation":
       return "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300";
     case "Diploma":
@@ -290,7 +294,7 @@ const UniversityDetail = () => {
 
                   {/* Summary cards */}
                   <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 mb-6 sm:mb-8">
-                    {(["Foundation", "Diploma", "Bachelor", "Master", "PhD"] as const).map(
+                    {(["Certificate", "Foundation", "Diploma", "Bachelor", "Master", "PhD"] as const).map(
                       (level) => {
                         const count = university.programs.filter(
                           (p) => p.level === level
@@ -359,9 +363,16 @@ const UniversityDetail = () => {
                                         </div>
 
                                         <div className="text-left">
-                                          <h3 className="font-semibold text-foreground text-sm sm:text-lg">
-                                            {program.name}
-                                          </h3>
+                                          <div className="flex items-center gap-2">
+                                            <h3 className="font-semibold text-foreground text-sm sm:text-lg">
+                                              {program.name}
+                                            </h3>
+                                            {program.comingSoon && (
+                                              <Badge className="bg-amber-500/10 text-amber-600 border border-amber-300 text-[10px] px-1.5 py-0">
+                                                Coming Soon
+                                              </Badge>
+                                            )}
+                                          </div>
                                           {details?.campus && (
                                             <p className="text-xs text-primary/80 mt-0.5 flex items-center gap-1">
                                               <MapPin className="w-3 h-3" />

@@ -5291,8 +5291,8 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "icms--diploma-in-criminal-investigation": {
-    overview: "A programme designed to provide knowledge and skills related to policing, investigation, enforcement, and industry practices. Also known as Diploma in Policing & Investigation.",
+    "icms--diploma-in-criminal-and-policy-investigation": {
+    overview: "A programme designed to provide knowledge and skills related to policing, criminal investigation, enforcement, and industry practices in the field of law enforcement and public safety.",
     studyMode: "Full Time & Weekend Class",
     durationOfStudy: "Full-time — 2 Years 6 Months",
     intakes: ["January", "May", "September"],
@@ -5312,28 +5312,61 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-  "icms--diploma-in-enforcement-management": {
-    overview: "A diploma specially developed to provide students with knowledge and skills in enforcement organisation, law enforcement, and investigation, with input from industry experts.",
-    studyMode: "Full Time & Weekend Class",
+  "icms--diploma-in-fashion-design": {
+    overview: "A creative diploma programme that develops students’ design thinking, fashion illustration, textile knowledge, and garment construction skills, preparing them for careers in the dynamic fashion industry.",
+    studyMode: "Full Time",
     durationOfStudy: "Full-time — 2 Years 6 Months",
     intakes: ["January", "May", "September"],
     careers: [
-      "Enforcement Officer",
-      "Regulatory Compliance Executive",
-      "Public Safety Officer",
-      "Security Operations Manager",
-      "Government Agency Inspector",
+      "Fashion Designer",
+      "Textile Designer",
+      "Fashion Merchandiser",
+      "Wardrobe Stylist",
+      "Fashion Buyer",
     ],
     fees: {
-      emgs: "RM 3,000",
-      initialAdminFee: "RM 13,200",
-      clearanceFee: "RM 300",
-      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
-      total: "RM 30,750",
+      tuition: {},
+      total: "—",
     },
   },
 
-  "icms--diploma-in-occupational-safety-health": {
+  "icms--diploma-in-management": {
+    overview: "A diploma programme that provides foundational knowledge in management principles, organisational behaviour, and business operations, preparing graduates for supervisory and junior management roles.",
+    studyMode: "Full Time",
+    durationOfStudy: "Full-time — 2 Years 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Management Trainee",
+      "Administrative Executive",
+      "Operations Coordinator",
+      "Human Resource Assistant",
+      "Project Coordinator",
+    ],
+    fees: {
+      tuition: {},
+      total: "—",
+    },
+  },
+
+  "icms--diploma-in-hotel-management-wbl": {
+    overview: "A Work-Based Learning (WBL) diploma that combines academic study with hands-on industry experience in hotel operations, hospitality management, and guest services.",
+    studyMode: "Full Time (WBL)",
+    durationOfStudy: "Full-time — 2 Years 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Hotel Operations Executive",
+      "Front Office Manager",
+      "Food & Beverage Supervisor",
+      "Events Coordinator",
+      "Guest Relations Officer",
+    ],
+    fees: {
+      tuition: {},
+      total: "—",
+    },
+  },
+
+"icms--diploma-in-occupational-safety-health": {
     overview: "This programme develops graduates in occupational health and safety with practical skills, industry-relevant knowledge, and progression opportunities to degree study.",
     studyMode: "Full Time",
     durationOfStudy: "Full-time — 2.5 Years",
@@ -5437,6 +5470,94 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       total: "RM 39,300",
     },
   },
+
+  "icms--bachelor-of-business-management": {
+    overview: "A bachelor’s programme that develops competencies in strategic management, organisational leadership, marketing, and finance, preparing graduates for managerial roles across diverse industries.",
+    studyMode: "Full Time",
+    durationOfStudy: "Full-time — 3 Years",
+    intakes: ["January", "March", "August"],
+    careers: [
+      "Business Manager",
+      "Marketing Executive",
+      "Operations Manager",
+      "Business Development Officer",
+      "Entrepreneur",
+    ],
+    fees: {
+      tuition: {},
+      total: "—",
+    },
+  },
+
+  "icms--bachelor-of-computer-science": {
+    overview: "A comprehensive computing programme covering software development, data structures, algorithms, and emerging technologies. Coming soon at ICMS.",
+    studyMode: "Full Time",
+    durationOfStudy: "Full-time — 3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Software Developer",
+      "Systems Analyst",
+      "Database Administrator",
+      "IT Consultant",
+      "Web Developer",
+    ],
+    fees: {
+      tuition: {},
+      total: "—",
+    },
+  },
+
+  "icms--bachelor-of-business-administration": {
+    overview: "A bachelor’s degree programme that provides comprehensive knowledge in business administration, finance, marketing, and management. Coming soon at ICMS.",
+    studyMode: "Full Time",
+    durationOfStudy: "Full-time — 3 Years",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Business Administrator",
+      "Financial Analyst",
+      "Marketing Manager",
+      "Human Resource Manager",
+      "Management Consultant",
+    ],
+    fees: {
+      tuition: {},
+      total: "—",
+    },
+  },
+
+  "icms--mba": {
+    overview: "A Master of Business Administration programme designed for professionals seeking to advance their careers with strategic leadership and business management skills. Coming soon at ICMS.",
+    studyMode: "Full-time / Part-time",
+    durationOfStudy: "Full-time: 1.5 Years",
+    intakes: ["January", "April", "July", "September", "November"],
+    careers: [
+      "Senior Manager",
+      "Business Consultant",
+      "Director of Operations",
+      "Chief Strategy Officer",
+      "Entrepreneur",
+    ],
+    fees: {
+      tuition: {},
+      total: "—",
+    },
+  },
+
+  "icms--iep-english-course": {
+    overview: "The Intensive English Programme (IEP) is designed to improve students’ English language proficiency in reading, writing, listening, and speaking, preparing them for academic studies at ICMS.",
+    studyMode: "Full Time",
+    durationOfStudy: "6 Months",
+    intakes: ["January", "March", "May", "July", "September", "November"],
+    careers: [
+      "Pathway to degree/diploma programmes at ICMS",
+      "Improved English proficiency for academic and professional use",
+    ],
+    fees: {
+      tuition: {},
+      total: "—",
+    },
+  },
+
 };
 export const programDetailsAliases: Record<string, string> = {
   // Existing diploma / bachelor aliases
@@ -5549,6 +5670,7 @@ export const programDetailsAliases: Record<string, string> = {
   "apu-foundation-programme-architecture-and-design-pathway": "apu-foundation-programme-architecture-design-pathway",
 
   // ICMS slug aliases
+  "icms--diploma-in-criminal-investigation": "icms--diploma-in-criminal-and-policy-investigation",
   "diploma-in-occupational-safety-and-health": "diploma-in-occupational-safety-health",
   "bachelor-in-law-enforcement-hons": "bachelor-in-law-enforcement",
   "bachelor-in-law-enforcement-honours": "bachelor-in-law-enforcement",

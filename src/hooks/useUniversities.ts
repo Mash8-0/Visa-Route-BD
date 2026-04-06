@@ -89,6 +89,7 @@ export interface Program {
   registrationFee?: number;
   tuitionFee?: number;
   totalFees?: number;
+  comingSoon?: boolean;
 }
 
 export interface University {
@@ -148,6 +149,7 @@ export const useUniversities = () => {
           registrationFee: prog.registration_fee ?? undefined,
           tuitionFee: prog.tuition_fee ?? undefined,
           totalFees: prog.total_fees ?? undefined,
+          comingSoon: (prog as any).coming_soon ?? false,
         });
 
         return acc;
@@ -233,6 +235,7 @@ export const useUniversity = (id: string | undefined) => {
         registrationFee: prog.registration_fee ?? undefined,
         tuitionFee: prog.tuition_fee ?? undefined,
         totalFees: prog.total_fees ?? undefined,
+        comingSoon: (prog as any).coming_soon ?? false,
       }));
 
 
