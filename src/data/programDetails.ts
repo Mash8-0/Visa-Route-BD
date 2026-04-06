@@ -5511,7 +5511,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   },
 
   "icms--bachelor-of-business-management": {
-    overview: "A bachelor's programme that develops competencies in strategic management, organisational leadership, marketing, and finance, preparing graduates for managerial roles across diverse industries. (Coming Soon — Not yet available for enrolment.)",
+    overview: "A bachelor's programme that develops competencies in strategic management, organisational leadership, marketing, and finance, preparing graduates for managerial roles across diverse industries.",
     studyMode: "Full Time",
     durationOfStudy: "Full-time — 3 Years",
     intakes: ["January", "March", "August"],
