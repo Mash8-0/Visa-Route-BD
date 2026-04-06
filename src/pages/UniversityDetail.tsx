@@ -76,6 +76,8 @@ const getLevelColor = (level: string) => {
 // ✅ Badge colors per level
 const getLevelBadgeClass = (level: string) => {
   switch (level) {
+    case "Certificate":
+      return "bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300";
     case "Foundation":
       return "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300";
     case "Diploma":
