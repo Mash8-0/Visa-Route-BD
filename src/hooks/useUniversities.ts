@@ -89,6 +89,7 @@ export interface Program {
   registrationFee?: number;
   tuitionFee?: number;
   totalFees?: number;
+  comingSoon?: boolean;
 }
 
 export interface University {
