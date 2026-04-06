@@ -32,6 +32,15 @@ const UniversityCardSkeleton = () => (
   </div>
 );
 
+// Universities that are not yet fully updated with program details
+const NOT_YET_UPDATED_IDS = new Set([
+  "help", "uiam", "imu", "limkokwing", "lsbf", "mahsa", "monash", "mmu",
+  "segi", "sunway", "taylors", "ucsi", "ukm", "unikl",
+  // All public universities
+  "um", "unimap", "ums", "unimas", "umt", "upsi", "upm", "usm",
+  "unisza", "utm", "uitm", "uthm", "uum",
+]);
+
 const Universities = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [filter, setFilter] = useState<"All" | "Public" | "Private">("All");
