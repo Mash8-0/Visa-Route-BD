@@ -133,6 +133,13 @@ const Universities = () => {
                       animate-fade-in-up"
                     style={{ animationDelay: `${Math.min(index * 0.05, 0.4)}s` }}
                   >
+                    {/* Not Yet Updated Tag */}
+                    {NOT_YET_UPDATED_IDS.has(uni.id) && (
+                      <span className="absolute top-3 right-3 z-20 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300 border border-amber-200 dark:border-amber-700/50">
+                        Not Yet Updated
+                      </span>
+                    )}
+
                     {/* Glow effect on hover */}
                     <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-indigo-500/0 via-purple-500/0 to-pink-500/0 opacity-0 group-hover:opacity-100 group-hover:from-indigo-500/20 group-hover:via-purple-500/10 group-hover:to-pink-500/20 transition-all duration-500 blur-xl -z-10" />
 
