@@ -955,9 +955,9 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     code: "N/340/7/0783 (FA14726) 08/26",
     overview:
       "The ALFA MBA is ideal for individuals seeking to develop their potential to manage and lead in the current dynamic and complex organisational environment. It is a highly valued qualification for middle and senior managers or entrepreneurs in both public and private sectors looking to develop their management skills and leadership styles. ALFA’s goal is to enhance students capabilities and well-knowledge equipped by shaping amazing learning for the MBA advancement of the students. The ALFA MBA brings together diversified people, perspectives, and organizations to enhance management practice and respond to the contemporary business world and management issues such as uncertainty about the future in financial management, monitoring performance, regulation and compliance, competencies and recruiting the right talent, technology, exploding data, customer service, sustainability, innovation and ethics.",
-    studyMode: "Full Time || Coursework ",
-    durationOfStudy: "1 Year 4 Months",
-    duration: "1 Year 4 Months Minimum",
+    studyMode: "Full Time || Coursework",
+    durationOfStudy: "1 Year",
+    duration: "1 Year",
     intakes: ["January", "May", "September"],
     careers: [
       "Business Manager",
@@ -968,15 +968,13 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       "Entrepreneur",
     ],
     fees: {
-      emgs: "RM 3,500",
-      registrationInternational: "RM 2,500",
-      additionalFees: "RM 1,500",
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,700",
+      clearanceFee: "RM 300",
       tuition: {
-        year1: "RM 13,500",
-        year2: "RM 12,500",
-        year3: "N/A",
+        year2: "RM 2,000",
       },
-      total: "RM 27,500",
+      total: "RM 19,000",
     },
   },
 
