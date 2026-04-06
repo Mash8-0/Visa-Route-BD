@@ -1,0 +1,1 @@
+UPDATE programs SET duration = '1 Year', coming_soon = false WHERE id = '1188cbfd-632e-4a51-a9ff-063a1e11ce2f';

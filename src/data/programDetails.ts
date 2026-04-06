@@ -5566,22 +5566,24 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   },
 
   "icms--mba": {
-    overview: "A Master of Business Administration programme designed for professionals seeking to advance their careers with strategic leadership and business management skills.",
-    studyMode: "Full-time / Part-time",
-    durationOfStudy: "Full-time: 1.5 Years",
-    intakes: ["January", "April", "July", "September", "November"],
+    overview:
+      "The ICMS MBA is ideal for individuals seeking to develop their potential to manage and lead in the current dynamic and complex organisational environment. It is a highly valued qualification for middle and senior managers or entrepreneurs in both public and private sectors looking to develop their management skills and leadership styles. ALFA's goal is to enhance students capabilities and well-knowledge equipped by shaping amazing learning for the MBA advancement of the students. The ALFA MBA brings together diversified people, perspectives, and organizations to enhance management practice and respond to the contemporary business world and management issues such as uncertainty about the future in financial management, monitoring performance, regulation and compliance, competencies and recruiting the right talent, technology, exploding data, customer service, sustainability, innovation and ethics.",
+    studyMode: "Full Time || Coursework",
+    durationOfStudy: "1 Year",
+    intakes: ["January", "May", "September"],
     careers: [
-      "Senior Manager",
-      "Business Consultant",
-      "Director of Operations",
-      "Chief Strategy Officer",
+      "Business Manager",
+      "Operations Manager",
+      "Management Consultant",
+      "Business Development Manager",
+      "Corporate Executive",
       "Entrepreneur",
     ],
     fees: {
       emgs: "RM 3,000",
       initialAdminFee: "RM 13,700",
       clearanceFee: "RM 300",
-      tuition: { semester3: "RM 2,000" },
+      tuition: { year2: "RM 2,000" },
       total: "RM 19,000",
     },
   },
