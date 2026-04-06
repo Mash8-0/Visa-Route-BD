@@ -5349,7 +5349,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   },
 
   "icms--diploma-in-hotel-management-wbl": {
-    overview: "A Work-Based Learning (WBL) diploma that combines academic study with hands-on industry experience in hotel operations, hospitality management, and guest services.",
+    overview: "A Work-Based Learning (WBL) diploma that combines academic study with hands-on industry experience in hotel operations, hospitality management, and guest services. (Coming Soon — Not yet available for enrolment.)",
     studyMode: "Full Time (WBL)",
     durationOfStudy: "Full-time — 2 Years 6 Months",
     intakes: ["January", "May", "September"],
