@@ -56,6 +56,8 @@ const groupProgramsByLevel = (programs: Program[]) => {
 // ✅ Level gradient color
 const getLevelColor = (level: string) => {
   switch (level) {
+    case "Certificate":
+      return "from-teal-500 to-cyan-500";
     case "Foundation":
       return "from-amber-500 to-orange-500";
     case "Diploma":
