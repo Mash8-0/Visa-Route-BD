@@ -5523,8 +5523,11 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       "Entrepreneur",
     ],
     fees: {
-      tuition: { year1: "—" },
-      total: "—",
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,112",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 3,556", semester4: "RM 3,556", semester5: "RM 3,556", semester6: "RM 3,556", semester7: "RM 3,556", semester8: "RM 3,556", semester9: "RM 3,556" },
+      total: "RM 41,304",
     },
   },
 
@@ -5547,7 +5550,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   },
 
   "icms--bachelor-of-business-administration": {
-    overview: "A bachelor's degree programme that provides comprehensive knowledge in business administration, finance, marketing, and management. The programme equips students with essential skills in strategic planning, financial management, organisational behaviour, and business communication, preparing them for leadership roles across various industries and sectors.",
+    overview: "A bachelor's degree programme that provides comprehensive knowledge in business administration, finance, marketing, and management. (Coming Soon — Not yet available for enrolment.)",
     studyMode: "Full Time",
     durationOfStudy: "Full-time — 3 Years",
     intakes: ["January", "May", "September"],
@@ -5559,11 +5562,8 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       "Management Consultant",
     ],
     fees: {
-      emgs: "RM 3,000",
-      initialAdminFee: "RM 13,112",
-      clearanceFee: "RM 300",
-      tuition: { semester3: "RM 3,556", semester4: "RM 3,556", semester5: "RM 3,556", semester6: "RM 3,556", semester7: "RM 3,556", semester8: "RM 3,556", semester9: "RM 3,556" },
-      total: "RM 41,304",
+      tuition: { year1: "—" },
+      total: "—",
     },
   },
 
