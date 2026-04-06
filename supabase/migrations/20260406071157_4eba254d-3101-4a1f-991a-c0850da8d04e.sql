@@ -1,0 +1,1 @@
+UPDATE programs SET duration = '1 year', emgs_fee = 3000, total_fees = 19000 WHERE id = 'd6808e0e-948c-4568-9ca5-f29de26704a5';
