@@ -5462,10 +5462,10 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     ],
     fees: {
       emgs: "RM 3,000",
-      initialAdminFee: "RM 16,000",
+      initialAdminFee: "RM 15,000",
       clearanceFee: "RM 300",
-      tuition: { year2: "RM 10,500" },
-      total: "RM 29,800",
+      tuition: {},
+      total: "RM 18,300",
     },
   },
 
