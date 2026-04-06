@@ -5523,8 +5523,11 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       "Entrepreneur",
     ],
     fees: {
-      tuition: {},
-      total: "—",
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,112",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 3,556", semester4: "RM 3,556", semester5: "RM 3,556", semester6: "RM 3,556", semester7: "RM 3,556", semester8: "RM 3,556", semester9: "RM 3,556" },
+      total: "RM 41,304",
     },
   },
 
