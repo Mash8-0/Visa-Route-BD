@@ -363,9 +363,16 @@ const UniversityDetail = () => {
                                         </div>
 
                                         <div className="text-left">
-                                          <h3 className="font-semibold text-foreground text-sm sm:text-lg">
-                                            {program.name}
-                                          </h3>
+                                          <div className="flex items-center gap-2">
+                                            <h3 className="font-semibold text-foreground text-sm sm:text-lg">
+                                              {program.name}
+                                            </h3>
+                                            {program.comingSoon && (
+                                              <Badge className="bg-amber-500/10 text-amber-600 border border-amber-300 text-[10px] px-1.5 py-0">
+                                                Coming Soon
+                                              </Badge>
+                                            )}
+                                          </div>
                                           {details?.campus && (
                                             <p className="text-xs text-primary/80 mt-0.5 flex items-center gap-1">
                                               <MapPin className="w-3 h-3" />
