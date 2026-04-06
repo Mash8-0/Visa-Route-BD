@@ -5565,7 +5565,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   },
 
   "icms--mba": {
-    overview: "A Master of Business Administration programme designed for professionals seeking to advance their careers with strategic leadership and business management skills. Coming soon at ICMS.",
+    overview: "A Master of Business Administration programme designed for professionals seeking to advance their careers with strategic leadership and business management skills.",
     studyMode: "Full-time / Part-time",
     durationOfStudy: "Full-time: 1.5 Years",
     intakes: ["January", "April", "July", "September", "November"],
@@ -5577,8 +5577,11 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       "Entrepreneur",
     ],
     fees: {
-      tuition: {},
-      total: "—",
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,700",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 2,000" },
+      total: "RM 19,000",
     },
   },
 
