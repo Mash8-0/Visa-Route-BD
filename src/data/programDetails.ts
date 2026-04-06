@@ -5532,7 +5532,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   },
 
   "icms--bachelor-of-computer-science": {
-    overview: "A comprehensive computing programme covering software development, data structures, algorithms, and emerging technologies. Coming soon at ICMS.",
+    overview: "A comprehensive computing programme covering software development, data structures, algorithms, and emerging technologies. (Coming Soon — Not yet available for enrolment.)",
     studyMode: "Full Time",
     durationOfStudy: "Full-time — 3 Years",
     intakes: ["January", "May", "September"],
