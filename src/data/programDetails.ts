@@ -5366,8 +5366,50 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-"icms--diploma-in-occupational-safety-health": {
-    overview: "This programme develops graduates in occupational health and safety with practical skills, industry-relevant knowledge, and progression opportunities to degree study.",
+  "icms--diploma-in-criminal-justice": {
+    overview: "A diploma programme focusing on the principles of criminal justice, legal frameworks, correctional systems, and community safety, preparing students for careers in justice administration and public safety.",
+    studyMode: "Full Time",
+    durationOfStudy: "Full-time — 2 Years 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Criminal Justice Officer",
+      "Probation Officer",
+      "Legal Assistant",
+      "Court Administrator",
+      "Community Safety Officer",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,200",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
+      total: "RM 30,750",
+    },
+  },
+
+  "icms--diploma-in-enforcement-management": {
+    overview: "This diploma is specially developed to provide students with knowledge and skills in enforcement organisation, law enforcement, and investigation, with input from industry experts.",
+    studyMode: "Full Time & Weekend Class",
+    durationOfStudy: "Full-time — 2 Years 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Enforcement Officer",
+      "Regulatory Compliance Executive",
+      "Investigation Officer",
+      "Public Safety Manager",
+      "Risk Assessment Officer",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,200",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
+      total: "RM 30,750",
+    },
+  },
+
+  "icms--diploma-in-occupational-safety-health": {
+    overview: "This programme develops graduates in occupational health and safety with practical skills, industry-relevant knowledge, and progression opportunities to degree study. (Coming Soon — Not yet available for enrolment.)",
     studyMode: "Full Time",
     durationOfStudy: "Full-time — 2.5 Years",
     intakes: ["January", "May", "September"],
@@ -5379,11 +5421,8 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       "OSH Compliance Executive",
     ],
     fees: {
-      emgs: "RM 3,000",
-      initialAdminFee: "RM 13,200",
-      clearanceFee: "RM 300",
-      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
-      total: "RM 30,750",
+      tuition: {},
+      total: "—",
     },
   },
 
