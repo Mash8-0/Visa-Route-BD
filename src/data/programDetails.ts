@@ -5349,7 +5349,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   },
 
   "icms--diploma-in-hotel-management-wbl": {
-    overview: "A Work-Based Learning (WBL) diploma that combines academic study with hands-on industry experience in hotel operations, hospitality management, and guest services.",
+    overview: "A Work-Based Learning (WBL) diploma that combines academic study with hands-on industry experience in hotel operations, hospitality management, and guest services. (Coming Soon — Not yet available for enrolment.)",
     studyMode: "Full Time (WBL)",
     durationOfStudy: "Full-time — 2 Years 6 Months",
     intakes: ["January", "May", "September"],
@@ -5366,8 +5366,50 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
     },
   },
 
-"icms--diploma-in-occupational-safety-health": {
-    overview: "This programme develops graduates in occupational health and safety with practical skills, industry-relevant knowledge, and progression opportunities to degree study.",
+  "icms--diploma-in-criminal-justice": {
+    overview: "A diploma programme focusing on the principles of criminal justice, legal frameworks, correctional systems, and community safety, preparing students for careers in justice administration and public safety.",
+    studyMode: "Full Time",
+    durationOfStudy: "Full-time — 2 Years 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Criminal Justice Officer",
+      "Probation Officer",
+      "Legal Assistant",
+      "Court Administrator",
+      "Community Safety Officer",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,200",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
+      total: "RM 30,750",
+    },
+  },
+
+  "icms--diploma-in-enforcement-management": {
+    overview: "This diploma is specially developed to provide students with knowledge and skills in enforcement organisation, law enforcement, and investigation, with input from industry experts.",
+    studyMode: "Full Time & Weekend Class",
+    durationOfStudy: "Full-time — 2 Years 6 Months",
+    intakes: ["January", "May", "September"],
+    careers: [
+      "Enforcement Officer",
+      "Regulatory Compliance Executive",
+      "Investigation Officer",
+      "Public Safety Manager",
+      "Risk Assessment Officer",
+    ],
+    fees: {
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,200",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
+      total: "RM 30,750",
+    },
+  },
+
+  "icms--diploma-in-occupational-safety-health": {
+    overview: "This programme develops graduates in occupational health and safety with practical skills, industry-relevant knowledge, and progression opportunities to degree study. (Coming Soon — Not yet available for enrolment.)",
     studyMode: "Full Time",
     durationOfStudy: "Full-time — 2.5 Years",
     intakes: ["January", "May", "September"],
@@ -5379,11 +5421,8 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       "OSH Compliance Executive",
     ],
     fees: {
-      emgs: "RM 3,000",
-      initialAdminFee: "RM 13,200",
-      clearanceFee: "RM 300",
-      tuition: { semester3: "RM 4,750", semester4: "RM 4,750", semester5: "RM 4,750", semester6: "RM 4,750", semester7: "RM 0" },
-      total: "RM 30,750",
+      tuition: {},
+      total: "—",
     },
   },
 
@@ -5484,13 +5523,16 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       "Entrepreneur",
     ],
     fees: {
-      tuition: {},
-      total: "—",
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,112",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 3,556", semester4: "RM 3,556", semester5: "RM 3,556", semester6: "RM 3,556", semester7: "RM 3,556", semester8: "RM 3,556", semester9: "RM 3,556" },
+      total: "RM 41,304",
     },
   },
 
   "icms--bachelor-of-computer-science": {
-    overview: "A comprehensive computing programme covering software development, data structures, algorithms, and emerging technologies. Coming soon at ICMS.",
+    overview: "A comprehensive computing programme covering software development, data structures, algorithms, and emerging technologies. (Coming Soon — Not yet available for enrolment.)",
     studyMode: "Full Time",
     durationOfStudy: "Full-time — 3 Years",
     intakes: ["January", "May", "September"],
@@ -5526,7 +5568,7 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
   },
 
   "icms--mba": {
-    overview: "A Master of Business Administration programme designed for professionals seeking to advance their careers with strategic leadership and business management skills. Coming soon at ICMS.",
+    overview: "A Master of Business Administration programme designed for professionals seeking to advance their careers with strategic leadership and business management skills.",
     studyMode: "Full-time / Part-time",
     durationOfStudy: "Full-time: 1.5 Years",
     intakes: ["January", "April", "July", "September", "November"],
@@ -5538,8 +5580,11 @@ export const programDetailsMap: Record<string, ProgramDetails> = {
       "Entrepreneur",
     ],
     fees: {
-      tuition: {},
-      total: "—",
+      emgs: "RM 3,000",
+      initialAdminFee: "RM 13,700",
+      clearanceFee: "RM 300",
+      tuition: { semester3: "RM 2,000" },
+      total: "RM 19,000",
     },
   },
 
