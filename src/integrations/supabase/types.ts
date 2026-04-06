@@ -44,6 +44,7 @@ export type Database = {
       programs: {
         Row: {
           career_opportunities: string[] | null
+          coming_soon: boolean
           created_at: string
           duration: string
           emgs_fee: number | null
@@ -60,6 +61,7 @@ export type Database = {
         }
         Insert: {
           career_opportunities?: string[] | null
+          coming_soon?: boolean
           created_at?: string
           duration: string
           emgs_fee?: number | null
@@ -76,6 +78,7 @@ export type Database = {
         }
         Update: {
           career_opportunities?: string[] | null
+          coming_soon?: boolean
           created_at?: string
           duration?: string
           emgs_fee?: number | null
