@@ -9,6 +9,9 @@ import financialAdvisorImage from "@/assets/financial-advisor-farhad.png";
 import clientRelationsManagerImage from "@/assets/Client Relations Manager.png";
 import ibrahimRatulImage from "@/assets/ibrahim-ratul.png";
 import ahnafMottakeImage from "@/assets/ahnaf-mottake.png";
+import risaCounsellorImage from "@/assets/Risa web photo.png";
+import ahonaCounsellorImage from "@/assets/ahona web photo.png";
+import internationalStudentCounsellorImage from "@/assets/Internation Student Counsellor.png";
 
 
 const teamMembers = [
@@ -56,6 +59,30 @@ const teamMembers = [
     bio: "Inspiring and connecting prospective students through authentic storytelling and trusted guidance toward their dream universities.",
     linkedin: "#",
     email: "ibrahim@visaroutebd.com",
+  },
+  {
+    name: "Yeasin Tanvir",
+    role: "International Student Counsellor",
+    image: internationalStudentCounsellorImage,
+    bio: "Expert in Malaysian visa regulations with helping students navigate immigration.",
+    linkedin: "#",
+    email: "finance@visaroutebd.com",
+  },
+  {
+    name: "Risa",
+    role: "Counsellor",
+    image: risaCounsellorImage,
+    bio: "Dedicated to ensuring every student's journey from application to graduation is smooth.",
+    linkedin: "#",
+    email: "james@visaroutebd.com",
+  },
+  {
+    name: "Ahona",
+    role: "Counsellor",
+    image: ahonaCounsellorImage,
+    bio: "From ambition to admission — guiding your global education journey.",
+    linkedin: "#",
+    email: "aisha@visaroutebd.com",
   },
   {
     name: "Ahnaf Mottake",
