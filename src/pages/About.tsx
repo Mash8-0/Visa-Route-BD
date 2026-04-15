@@ -12,7 +12,7 @@ import ahnafMottakeImage from "@/assets/ahnaf-mottake.png";
 import risaCounsellorImage from "@/assets/Risa web photo.png";
 import ahonaCounsellorImage from "@/assets/ahona web photo.png";
 import internationalStudentCounsellorImage from "@/assets/Internation Student Counsellor.png";
-
+import fardinTanjimImage from "@/assets/fardin-tanjim.png";
 
 const teamMembers = [
   {
@@ -70,7 +70,7 @@ const teamMembers = [
   },
   {
     name: "Risa",
-    role: "Counsellor",
+    role: "International Student Counsellor",
     image: risaCounsellorImage,
     bio: "Dedicated to ensuring every student's journey from application to graduation is smooth.",
     linkedin: "#",
@@ -78,7 +78,7 @@ const teamMembers = [
   },
   {
     name: "Ahona",
-    role: "Counsellor",
+    role: "International Student Counsellor",
     image: ahonaCounsellorImage,
     bio: "From ambition to admission — guiding your global education journey.",
     linkedin: "#",
@@ -91,6 +91,14 @@ const teamMembers = [
     bio: "A motivated Web Developer who enjoys turning ideas into interactive and reliable web experiences.",
     linkedin: "#",
     email: "ahnaf@visaroutebd.com",
+  },
+  {
+    name: "Fardin Tanjim",
+    role: "Media Manager",
+    image: fardinTanjimImage,
+    bio: "Crafting compelling visual stories and managing brand presence to connect students with opportunities worldwide.",
+    linkedin: "#",
+    email: "fardin@visaroutebd.com",
   },
 ];
 
