@@ -7,7 +7,7 @@ import ceoFounderImage from "@/assets/ceo-founder.png";
 import coFounderImage from "@/assets/co-founder-coo.png";
 import financialAdvisorImage from "@/assets/financial-advisor-farhad.png";
 import clientRelationsManagerImage from "@/assets/Client Relations Manager.png";
-import internationalStudentCounsellorImage from "@/assets/Internation Student Counsellor.png";
+import ibrahimRatulImage from "@/assets/ibrahim-ratul.png";
 import risaCounsellorImage from "@/assets/Risa web photo.png";
 import ahonaCounsellorImage from "@/assets/ahona web photo.png";
 
@@ -51,12 +51,12 @@ const teamMembers = [
   },
 
   {
-    name: "Yeasin Tanvir ",
-    role: "International Student Counsellor",
-    image: internationalStudentCounsellorImage,
-    bio: "Expert in Malaysian visa regulations with helping students navigate immigration.",
+    name: "Ibrahim Ratul",
+    role: "Senior Student Influencer",
+    image: ibrahimRatulImage,
+    bio: "Inspiring and connecting prospective students through authentic storytelling and trusted guidance toward their dream universities.",
     linkedin: "#",
-    email: "finance@visaroutebd.com",
+    email: "ibrahim@visaroutebd.com",
   },
   {
     name: "Md Jubair ",
