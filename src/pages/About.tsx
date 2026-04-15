@@ -8,8 +8,7 @@ import coFounderImage from "@/assets/co-founder-coo.png";
 import financialAdvisorImage from "@/assets/financial-advisor-farhad.png";
 import clientRelationsManagerImage from "@/assets/Client Relations Manager.png";
 import ibrahimRatulImage from "@/assets/ibrahim-ratul.png";
-import risaCounsellorImage from "@/assets/Risa web photo.png";
-import ahonaCounsellorImage from "@/assets/ahona web photo.png";
+import ahnafMottakeImage from "@/assets/ahnaf-mottake.png";
 
 
 const teamMembers = [
@@ -59,36 +58,12 @@ const teamMembers = [
     email: "ibrahim@visaroutebd.com",
   },
   {
-    name: "Md Jubair ",
-    role: "Student Counsellor",
-    image: "#",
-    bio: "Student Counsellor delivering personalized academic and visa guidance for international education.",
-    linkedin: "#",
-    email: "priya@visaroutebd.com",
-  },
-  {
-    name: "Risa",
-    role: "Counsellor",
-    image: risaCounsellorImage ,
-    bio: "Dedicated to ensuring every student's journey from application to graduation is smooth.",
-    linkedin: "#",
-    email: "james@visaroutebd.com",
-  },
-  {
-    name: "Ahona",
-    role: "Counsellor",
-    image: ahonaCounsellorImage,
-    bio: "From ambition to admission   guiding your global education journey",
-    linkedin: "#",
-    email: "aisha@visaroutebd.com",
-  },
-  {
     name: "Ahnaf Mottake",
     role: "Junior Web Developer",
-    image: "#",
+    image: ahnafMottakeImage,
     bio: "A motivated Web Developer who enjoys turning ideas into interactive and reliable web experiences.",
     linkedin: "#",
-    email: "aisha@visaroutebd.com",
+    email: "ahnaf@visaroutebd.com",
   },
 ];
 
