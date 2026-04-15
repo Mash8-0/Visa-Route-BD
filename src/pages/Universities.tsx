@@ -36,9 +36,10 @@ const UniversityCardSkeleton = () => (
 const NOT_YET_UPDATED_IDS = new Set([
   "help", "uiam", "imu", "limkokwing", "lsbf", "mahsa", "monash", "mmu",
   "segi", "sunway", "taylors", "ucsi", "ukm", "unikl",
+  "inti", "utp", "uniten", "utar", "kdu", "nottingham", "yes-international",
   // All public universities
-  "um", "unimap", "ums", "unimas", "umt", "upsi", "upm", "usm",
-  "unisza", "utm", "uitm", "uthm", "uum",
+  "um", "umt", "upm", "usm",
+  "utm", "uitm", "uthm", "uum",
 ]);
 
 const Universities = () => {
