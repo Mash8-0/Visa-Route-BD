@@ -83,6 +83,7 @@ const teamMembers = [
     bio: "From ambition to admission — guiding your global education journey.",
     linkedin: "#",
     email: "aisha@visaroutebd.com",
+  },
   {
     name: "Ahnaf Mottake",
     role: "Junior Web Developer",
