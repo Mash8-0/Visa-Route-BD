@@ -1,0 +1,15 @@
+UPDATE public.universities SET logo_url = '/universities/um.png' WHERE id = 'um';
+UPDATE public.universities SET logo_url = '/universities/upm.png' WHERE id = 'upm';
+UPDATE public.universities SET logo_url = '/universities/ukm.png' WHERE id = 'ukm';
+UPDATE public.universities SET logo_url = '/universities/usm.png' WHERE id = 'usm';
+UPDATE public.universities SET logo_url = '/universities/utm.png' WHERE id = 'utm';
+UPDATE public.universities SET logo_url = '/universities/uitm.png' WHERE id = 'uitm';
+UPDATE public.universities SET logo_url = '/universities/iium.jpg' WHERE id = 'uiam';
+UPDATE public.universities SET logo_url = '/universities/uum.png' WHERE id = 'uum';
+UPDATE public.universities SET logo_url = '/universities/unimas.png' WHERE id = 'unimas';
+UPDATE public.universities SET logo_url = '/universities/ums.png' WHERE id = 'ums';
+UPDATE public.universities SET logo_url = '/universities/umt.png' WHERE id = 'umt';
+UPDATE public.universities SET logo_url = '/universities/upsi.png' WHERE id = 'upsi';
+UPDATE public.universities SET logo_url = '/universities/uthm.png' WHERE id = 'uthm';
+UPDATE public.universities SET logo_url = '/universities/unimap.png' WHERE id = 'unimap';
+UPDATE public.universities SET logo_url = '/universities/unisza.png' WHERE id = 'unisza';
