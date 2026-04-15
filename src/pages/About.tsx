@@ -34,6 +34,14 @@ const teamMembers = [
     imagePosition: "object-contain object-[center_0%]",
   },
   {
+    name: "Md Farhad Amir",
+    role: "Financial Advisor",
+    image: financialAdvisorImage,
+    bio: "Providing strategic financial guidance to ensure students make smart, informed investments in their education journey.",
+    linkedin: "#",
+    email: "farhad@visaroutebd.com",
+  },
+  {
     name: "Md Rafi Ul Alam",
     role: "Client Relations Manager",
     image: clientRelationsManagerImage ,
