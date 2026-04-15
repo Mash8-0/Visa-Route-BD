@@ -5,6 +5,7 @@ import { Users, Target, Award, Heart, Lightbulb, Eye, Linkedin, Mail } from "luc
 import { Card, CardContent } from "@/components/ui/card";
 import ceoFounderImage from "@/assets/ceo-founder.png";
 import coFounderImage from "@/assets/co-founder-coo.png";
+import financialAdvisorImage from "@/assets/financial-advisor-farhad.png";
 import clientRelationsManagerImage from "@/assets/Client Relations Manager.png";
 import internationalStudentCounsellorImage from "@/assets/Internation Student Counsellor.png";
 import risaCounsellorImage from "@/assets/Risa web photo.png";
@@ -31,6 +32,14 @@ const teamMembers = [
     email: "admin@visaroutebd.com",
     isCoFounder: true,
     imagePosition: "object-contain object-[center_0%]",
+  },
+  {
+    name: "Md Farhad Amir",
+    role: "Financial Advisor",
+    image: financialAdvisorImage,
+    bio: "Providing strategic financial guidance to ensure students make smart, informed investments in their education journey.",
+    linkedin: "#",
+    email: "farhad@visaroutebd.com",
   },
   {
     name: "Md Rafi Ul Alam",
